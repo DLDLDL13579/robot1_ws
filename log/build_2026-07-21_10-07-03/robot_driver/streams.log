@@ -1,0 +1,25 @@
+[4.508s] Invoking command in '/home/sunrise/robot1_ws/src/robot_driver': PYTHONPATH=/home/sunrise/robot1_ws/build/robot_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sunrise/robot1_ws/install/robot_driver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_driver build --build-base /home/sunrise/robot1_ws/build/robot_driver/build install --record /home/sunrise/robot1_ws/build/robot_driver/install.log --install-scripts $base/lib/robot_driver --single-version-externally-managed install_data
+[5.611s] /usr/local/lib/python3.10/dist-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'
+[5.612s]   warnings.warn(msg)
+[6.227s] running egg_info
+[6.331s] writing ../../build/robot_driver/robot_driver.egg-info/PKG-INFO
+[6.334s] writing dependency_links to ../../build/robot_driver/robot_driver.egg-info/dependency_links.txt
+[6.337s] writing requirements to ../../build/robot_driver/robot_driver.egg-info/requires.txt
+[6.338s] writing top-level names to ../../build/robot_driver/robot_driver.egg-info/top_level.txt
+[6.552s] reading manifest file '../../build/robot_driver/robot_driver.egg-info/SOURCES.txt'
+[6.564s] writing manifest file '../../build/robot_driver/robot_driver.egg-info/SOURCES.txt'
+[6.565s] running build
+[6.566s] running build_py
+[6.568s] copying robot_driver/__init__.py -> /home/sunrise/robot1_ws/build/robot_driver/build/lib/robot_driver
+[6.569s] copying robot_driver/robot_driver_node.py -> /home/sunrise/robot1_ws/build/robot_driver/build/lib/robot_driver
+[6.572s] running install
+[6.618s] running install_lib
+[6.750s] running install_data
+[6.752s] copying resource/robot_driver -> /home/sunrise/robot1_ws/install/robot_driver/share/ament_index/resource_index/packages
+[6.755s] copying package.xml -> /home/sunrise/robot1_ws/install/robot_driver/share/robot_driver
+[6.756s] running install_egg_info
+[6.906s] removing '/home/sunrise/robot1_ws/install/robot_driver/lib/python3.10/site-packages/robot_driver-0.0.0-py3.10.egg-info' (and everything under it)
+[6.908s] Copying ../../build/robot_driver/robot_driver.egg-info to /home/sunrise/robot1_ws/install/robot_driver/lib/python3.10/site-packages/robot_driver-0.0.0-py3.10.egg-info
+[6.915s] running install_scripts
+[7.234s] writing list of installed files to '/home/sunrise/robot1_ws/build/robot_driver/install.log'
+[7.452s] Invoked command in '/home/sunrise/robot1_ws/src/robot_driver' returned '0': PYTHONPATH=/home/sunrise/robot1_ws/build/robot_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sunrise/robot1_ws/install/robot_driver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_driver build --build-base /home/sunrise/robot1_ws/build/robot_driver/build install --record /home/sunrise/robot1_ws/build/robot_driver/install.log --install-scripts $base/lib/robot_driver --single-version-externally-managed install_data

@@ -1,0 +1,2 @@
+[console_scripts]
+robot_driver_node = robot_driver.robot_driver_node:main

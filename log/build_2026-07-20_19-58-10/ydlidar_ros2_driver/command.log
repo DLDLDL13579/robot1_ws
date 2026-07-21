@@ -1,0 +1,2 @@
+Invoking command in '/home/sunrise/robot1_ws/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=/opt/tros/humble:/opt/ros/humble /usr/bin/cmake /home/sunrise/robot1_ws/src/ydlidar_ros2_driver -DCMAKE_INSTALL_PREFIX=/home/sunrise/robot1_ws/install/ydlidar_ros2_driver
+Invoked command in '/home/sunrise/robot1_ws/build/ydlidar_ros2_driver' returned '1': CMAKE_PREFIX_PATH=/opt/tros/humble:/opt/ros/humble /usr/bin/cmake /home/sunrise/robot1_ws/src/ydlidar_ros2_driver -DCMAKE_INSTALL_PREFIX=/home/sunrise/robot1_ws/install/ydlidar_ros2_driver

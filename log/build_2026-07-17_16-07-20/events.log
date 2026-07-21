@@ -1,0 +1,1812 @@
+[0.000000] (-) TimerEvent: {}
+[0.000483] (ydlidar_ros2_driver) JobQueued: {'identifier': 'ydlidar_ros2_driver', 'dependencies': OrderedDict()}
+[0.002387] (ydlidar_ros2_driver) JobStarted: {'identifier': 'ydlidar_ros2_driver'}
+[0.038650] (ydlidar_ros2_driver) JobProgress: {'identifier': 'ydlidar_ros2_driver', 'progress': 'cmake'}
+[0.041011] (ydlidar_ros2_driver) Command: {'cmd': ['/usr/bin/cmake', '/root/robot1_ws/src/ydlidar_ros2_driver', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/root/robot1_ws/install/ydlidar_ros2_driver'], 'cwd': '/root/robot1_ws/build/ydlidar_ros2_driver', 'env': OrderedDict([('LANGUAGE', 'en_US.UTF-8'), ('USER', 'root'), ('SSH_CLIENT', '192.168.31.58 55796 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '0'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/root'), ('OLDPWD', '/tmp/YDLidar-SDK/build'), ('SSH_TTY', '/dev/pts/2'), ('ROS_PYTHON_VERSION', '3'), ('PS1', ''), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/0/bus'), ('DEBUGINFOD_URLS', ''), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '2244'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('PWD', '/root/robot1_ws/build/ydlidar_ros2_driver'), ('SSH_CONNECTION', '192.168.31.58 55796 192.168.31.47 22'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.098774] (-) TimerEvent: {}
+[0.199352] (-) TimerEvent: {}
+[0.299861] (-) TimerEvent: {}
+[0.335764] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.2.0\n'}
+[0.400088] (-) TimerEvent: {}
+[0.500653] (-) TimerEvent: {}
+[0.601183] (-) TimerEvent: {}
+[0.657525] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.2.0\n'}
+[0.691215] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.701382] (-) TimerEvent: {}
+[0.801914] (-) TimerEvent: {}
+[0.902452] (-) TimerEvent: {}
+[1.002952] (-) TimerEvent: {}
+[1.018585] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.080884] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.082327] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.085005] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.102929] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.103796] (-) TimerEvent: {}
+[1.204242] (-) TimerEvent: {}
+[1.304767] (-) TimerEvent: {}
+[1.405368] (-) TimerEvent: {}
+[1.505908] (-) TimerEvent: {}
+[1.543084] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.606123] (-) TimerEvent: {}
+[1.607082] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.608752] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.612085] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.627950] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.706341] (-) TimerEvent: {}
+[1.806876] (-) TimerEvent: {}
+[1.907384] (-) TimerEvent: {}
+[2.007884] (-) TimerEvent: {}
+[2.108356] (-) TimerEvent: {}
+[2.208786] (-) TimerEvent: {}
+[2.309243] (-) TimerEvent: {}
+[2.409706] (-) TimerEvent: {}
+[2.510190] (-) TimerEvent: {}
+[2.610655] (-) TimerEvent: {}
+[2.711165] (-) TimerEvent: {}
+[2.811636] (-) TimerEvent: {}
+[2.912101] (-) TimerEvent: {}
+[3.012555] (-) TimerEvent: {}
+[3.113057] (-) TimerEvent: {}
+[3.213575] (-) TimerEvent: {}
+[3.314118] (-) TimerEvent: {}
+[3.414619] (-) TimerEvent: {}
+[3.515118] (-) TimerEvent: {}
+[3.615564] (-) TimerEvent: {}
+[3.716000] (-) TimerEvent: {}
+[3.816449] (-) TimerEvent: {}
+[3.916926] (-) TimerEvent: {}
+[4.017440] (-) TimerEvent: {}
+[4.117965] (-) TimerEvent: {}
+[4.209588] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[4.218182] (-) TimerEvent: {}
+[4.318640] (-) TimerEvent: {}
+[4.419143] (-) TimerEvent: {}
+[4.519647] (-) TimerEvent: {}
+[4.620181] (-) TimerEvent: {}
+[4.687366] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[4.720367] (-) TimerEvent: {}
+[4.799441] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[4.820561] (-) TimerEvent: {}
+[4.921076] (-) TimerEvent: {}
+[5.021606] (-) TimerEvent: {}
+[5.037834] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[5.066277] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[5.120969] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[5.121802] (-) TimerEvent: {}
+[5.210487] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.222047] (-) TimerEvent: {}
+[5.322532] (-) TimerEvent: {}
+[5.324846] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.422761] (-) TimerEvent: {}
+[5.523306] (-) TimerEvent: {}
+[5.623800] (-) TimerEvent: {}
+[5.629952] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[5.644659] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[5.724014] (-) TimerEvent: {}
+[5.824591] (-) TimerEvent: {}
+[5.925225] (-) TimerEvent: {}
+[6.025828] (-) TimerEvent: {}
+[6.067276] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[6.126051] (-) TimerEvent: {}
+[6.210154] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[6.226310] (-) TimerEvent: {}
+[6.326908] (-) TimerEvent: {}
+[6.427546] (-) TimerEvent: {}
+[6.428674] (ydlidar_ros2_driver) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[6.477974] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[6.527767] (-) TimerEvent: {}
+[6.628311] (-) TimerEvent: {}
+[6.728891] (-) TimerEvent: {}
+[6.829476] (-) TimerEvent: {}
+[6.833561] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[6.835190] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[6.929730] (-) TimerEvent: {}
+[7.030274] (-) TimerEvent: {}
+[7.130789] (-) TimerEvent: {}
+[7.182673] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[7.188510] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[7.230985] (-) TimerEvent: {}
+[7.331477] (-) TimerEvent: {}
+[7.431950] (-) TimerEvent: {}
+[7.532436] (-) TimerEvent: {}
+[7.632945] (-) TimerEvent: {}
+[7.733444] (-) TimerEvent: {}
+[7.758272] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[7.833673] (-) TimerEvent: {}
+[7.934187] (-) TimerEvent: {}
+[8.027359] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)\n'}
+[8.034359] (-) TimerEvent: {}
+[8.134850] (-) TimerEvent: {}
+[8.216993] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Found std_srvs: 4.9.0 (/opt/ros/humble/share/std_srvs/cmake)\n'}
+[8.235133] (-) TimerEvent: {}
+[8.335636] (-) TimerEvent: {}
+[8.337667] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[8.435899] (-) TimerEvent: {}
+[8.536479] (-) TimerEvent: {}
+[8.636992] (-) TimerEvent: {}
+[8.740984] (-) TimerEvent: {}
+[8.841708] (-) TimerEvent: {}
+[8.942332] (-) TimerEvent: {}
+[8.974298] (ydlidar_ros2_driver) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[8.991235] (ydlidar_ros2_driver) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[8.994650] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /root/robot1_ws/src/ydlidar_ros2_driver/src\n'}
+[8.995747] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[9.011983] (ydlidar_ros2_driver) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[9.012945] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[9.017430] (ydlidar_ros2_driver) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[9.023674] (ydlidar_ros2_driver) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[9.028747] (ydlidar_ros2_driver) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[9.042509] (-) TimerEvent: {}
+[9.044020] (ydlidar_ros2_driver) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[9.044857] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[9.049304] (ydlidar_ros2_driver) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[9.058132] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Configuring done\n'}
+[9.142724] (-) TimerEvent: {}
+[9.168196] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Generating done\n'}
+[9.210459] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Build files have been written to: /root/robot1_ws/build/ydlidar_ros2_driver\n'}
+[9.243103] (-) TimerEvent: {}
+[9.290199] (ydlidar_ros2_driver) CommandEnded: {'returncode': 0}
+[9.294007] (ydlidar_ros2_driver) JobProgress: {'identifier': 'ydlidar_ros2_driver', 'progress': 'build'}
+[9.301546] (ydlidar_ros2_driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/robot1_ws/build/ydlidar_ros2_driver', '--', '-j4', '-l4'], 'cwd': '/root/robot1_ws/build/ydlidar_ros2_driver', 'env': OrderedDict([('LANGUAGE', 'en_US.UTF-8'), ('USER', 'root'), ('SSH_CLIENT', '192.168.31.58 55796 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '0'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/root'), ('OLDPWD', '/tmp/YDLidar-SDK/build'), ('SSH_TTY', '/dev/pts/2'), ('ROS_PYTHON_VERSION', '3'), ('PS1', ''), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/0/bus'), ('DEBUGINFOD_URLS', ''), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '2244'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('PWD', '/root/robot1_ws/build/ydlidar_ros2_driver'), ('SSH_CONNECTION', '192.168.31.58 55796 192.168.31.47 22'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[9.343296] (-) TimerEvent: {}
+[9.443901] (-) TimerEvent: {}
+[9.510330] (ydlidar_ros2_driver) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/ydlidar_ros2_driver_client.dir/src/ydlidar_ros2_driver_client.cpp.o\n'}
+[9.511423] (ydlidar_ros2_driver) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/ydlidar_ros2_driver_node.dir/src/ydlidar_ros2_driver_node.cpp.o\n'}
+[9.544142] (-) TimerEvent: {}
+[9.644714] (-) TimerEvent: {}
+[9.745255] (-) TimerEvent: {}
+[9.845780] (-) TimerEvent: {}
+[9.946322] (-) TimerEvent: {}
+[10.046872] (-) TimerEvent: {}
+[10.147424] (-) TimerEvent: {}
+[10.248067] (-) TimerEvent: {}
+[10.348786] (-) TimerEvent: {}
+[10.449459] (-) TimerEvent: {}
+[10.550084] (-) TimerEvent: {}
+[10.650634] (-) TimerEvent: {}
+[10.751275] (-) TimerEvent: {}
+[10.851861] (-) TimerEvent: {}
+[10.952381] (-) TimerEvent: {}
+[11.052877] (-) TimerEvent: {}
+[11.153406] (-) TimerEvent: {}
+[11.253970] (-) TimerEvent: {}
+[11.355259] (-) TimerEvent: {}
+[11.455842] (-) TimerEvent: {}
+[11.556966] (-) TimerEvent: {}
+[11.657558] (-) TimerEvent: {}
+[11.758138] (-) TimerEvent: {}
+[11.858763] (-) TimerEvent: {}
+[11.959847] (-) TimerEvent: {}
+[12.060441] (-) TimerEvent: {}
+[12.161577] (-) TimerEvent: {}
+[12.262133] (-) TimerEvent: {}
+[12.363274] (-) TimerEvent: {}
+[12.463819] (-) TimerEvent: {}
+[12.564370] (-) TimerEvent: {}
+[12.664944] (-) TimerEvent: {}
+[12.765529] (-) TimerEvent: {}
+[12.866090] (-) TimerEvent: {}
+[12.966671] (-) TimerEvent: {}
+[13.067251] (-) TimerEvent: {}
+[13.167805] (-) TimerEvent: {}
+[13.268353] (-) TimerEvent: {}
+[13.368901] (-) TimerEvent: {}
+[13.469477] (-) TimerEvent: {}
+[13.571307] (-) TimerEvent: {}
+[13.671935] (-) TimerEvent: {}
+[13.772534] (-) TimerEvent: {}
+[13.873117] (-) TimerEvent: {}
+[13.973740] (-) TimerEvent: {}
+[14.074328] (-) TimerEvent: {}
+[14.175282] (-) TimerEvent: {}
+[14.277058] (-) TimerEvent: {}
+[14.377651] (-) TimerEvent: {}
+[14.478242] (-) TimerEvent: {}
+[14.578810] (-) TimerEvent: {}
+[14.679434] (-) TimerEvent: {}
+[14.779968] (-) TimerEvent: {}
+[14.880508] (-) TimerEvent: {}
+[14.981044] (-) TimerEvent: {}
+[15.081555] (-) TimerEvent: {}
+[15.182064] (-) TimerEvent: {}
+[15.282563] (-) TimerEvent: {}
+[15.383159] (-) TimerEvent: {}
+[15.483717] (-) TimerEvent: {}
+[15.584279] (-) TimerEvent: {}
+[15.684842] (-) TimerEvent: {}
+[15.785405] (-) TimerEvent: {}
+[15.885956] (-) TimerEvent: {}
+[15.986527] (-) TimerEvent: {}
+[16.087115] (-) TimerEvent: {}
+[16.187652] (-) TimerEvent: {}
+[16.288217] (-) TimerEvent: {}
+[16.388794] (-) TimerEvent: {}
+[16.489344] (-) TimerEvent: {}
+[16.589916] (-) TimerEvent: {}
+[16.690531] (-) TimerEvent: {}
+[16.791138] (-) TimerEvent: {}
+[16.891644] (-) TimerEvent: {}
+[16.992207] (-) TimerEvent: {}
+[17.092793] (-) TimerEvent: {}
+[17.193390] (-) TimerEvent: {}
+[17.293951] (-) TimerEvent: {}
+[17.394496] (-) TimerEvent: {}
+[17.495141] (-) TimerEvent: {}
+[17.595677] (-) TimerEvent: {}
+[17.696203] (-) TimerEvent: {}
+[17.796747] (-) TimerEvent: {}
+[17.897309] (-) TimerEvent: {}
+[17.997838] (-) TimerEvent: {}
+[18.098370] (-) TimerEvent: {}
+[18.198870] (-) TimerEvent: {}
+[18.299452] (-) TimerEvent: {}
+[18.400467] (-) TimerEvent: {}
+[18.501049] (-) TimerEvent: {}
+[18.601614] (-) TimerEvent: {}
+[18.702150] (-) TimerEvent: {}
+[18.802700] (-) TimerEvent: {}
+[18.903259] (-) TimerEvent: {}
+[19.003817] (-) TimerEvent: {}
+[19.104358] (-) TimerEvent: {}
+[19.204916] (-) TimerEvent: {}
+[19.305452] (-) TimerEvent: {}
+[19.406004] (-) TimerEvent: {}
+[19.506570] (-) TimerEvent: {}
+[19.607154] (-) TimerEvent: {}
+[19.707661] (-) TimerEvent: {}
+[19.808215] (-) TimerEvent: {}
+[19.908782] (-) TimerEvent: {}
+[20.009306] (-) TimerEvent: {}
+[20.109821] (-) TimerEvent: {}
+[20.210341] (-) TimerEvent: {}
+[20.310881] (-) TimerEvent: {}
+[20.411459] (-) TimerEvent: {}
+[20.512022] (-) TimerEvent: {}
+[20.612589] (-) TimerEvent: {}
+[20.713126] (-) TimerEvent: {}
+[20.813673] (-) TimerEvent: {}
+[20.914201] (-) TimerEvent: {}
+[21.014744] (-) TimerEvent: {}
+[21.115279] (-) TimerEvent: {}
+[21.215806] (-) TimerEvent: {}
+[21.316309] (-) TimerEvent: {}
+[21.416846] (-) TimerEvent: {}
+[21.517380] (-) TimerEvent: {}
+[21.617927] (-) TimerEvent: {}
+[21.718445] (-) TimerEvent: {}
+[21.819074] (-) TimerEvent: {}
+[21.919610] (-) TimerEvent: {}
+[22.020120] (-) TimerEvent: {}
+[22.120645] (-) TimerEvent: {}
+[22.221176] (-) TimerEvent: {}
+[22.321705] (-) TimerEvent: {}
+[22.422251] (-) TimerEvent: {}
+[22.522803] (-) TimerEvent: {}
+[22.623403] (-) TimerEvent: {}
+[22.723941] (-) TimerEvent: {}
+[22.824483] (-) TimerEvent: {}
+[22.925048] (-) TimerEvent: {}
+[23.025585] (-) TimerEvent: {}
+[23.126130] (-) TimerEvent: {}
+[23.226651] (-) TimerEvent: {}
+[23.327190] (-) TimerEvent: {}
+[23.427714] (-) TimerEvent: {}
+[23.528268] (-) TimerEvent: {}
+[23.628807] (-) TimerEvent: {}
+[23.729335] (-) TimerEvent: {}
+[23.829896] (-) TimerEvent: {}
+[23.930471] (-) TimerEvent: {}
+[24.031075] (-) TimerEvent: {}
+[24.131666] (-) TimerEvent: {}
+[24.232217] (-) TimerEvent: {}
+[24.336335] (-) TimerEvent: {}
+[24.436947] (-) TimerEvent: {}
+[24.538913] (-) TimerEvent: {}
+[24.639602] (-) TimerEvent: {}
+[24.740116] (-) TimerEvent: {}
+[24.840626] (-) TimerEvent: {}
+[24.941141] (-) TimerEvent: {}
+[25.041634] (-) TimerEvent: {}
+[25.142194] (-) TimerEvent: {}
+[25.242744] (-) TimerEvent: {}
+[25.343342] (-) TimerEvent: {}
+[25.447648] (-) TimerEvent: {}
+[25.551664] (-) TimerEvent: {}
+[25.652744] (-) TimerEvent: {}
+[25.753569] (-) TimerEvent: {}
+[25.857841] (-) TimerEvent: {}
+[25.958429] (-) TimerEvent: {}
+[26.059319] (-) TimerEvent: {}
+[26.159899] (-) TimerEvent: {}
+[26.260463] (-) TimerEvent: {}
+[26.363318] (-) TimerEvent: {}
+[26.464123] (-) TimerEvent: {}
+[26.564872] (-) TimerEvent: {}
+[26.665489] (-) TimerEvent: {}
+[26.766060] (-) TimerEvent: {}
+[26.866673] (-) TimerEvent: {}
+[26.967284] (-) TimerEvent: {}
+[27.067897] (-) TimerEvent: {}
+[27.168486] (-) TimerEvent: {}
+[27.269028] (-) TimerEvent: {}
+[27.369557] (-) TimerEvent: {}
+[27.470122] (-) TimerEvent: {}
+[27.570698] (-) TimerEvent: {}
+[27.671212] (-) TimerEvent: {}
+[27.771740] (-) TimerEvent: {}
+[27.870518] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp: In function \xe2\x80\x98int main(int, char**)\xe2\x80\x99:\n'}
+[27.871542] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:44:26: error: no matching function for call to \xe2\x80\x98rclcpp::Node::declare_parameter(const char [5])\xe2\x80\x99\n'}
+[27.872265] (-) TimerEvent: {}
+[27.872463] (ydlidar_ros2_driver) StderrLine: {'line': b'   44 |   node->declare_parameter("port");\n'}
+[27.873181] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~\n'}
+[27.875931] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[27.876823] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[27.878200] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[27.884924] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[27.894364] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note: candidate: \xe2\x80\x98template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[27.909433] (ydlidar_ros2_driver) StderrLine: {'line': b'  421 |   declare_parameter(\n'}
+[27.919310] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[27.935190] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note:   template argument deduction/substitution failed:\n'}
+[27.936209] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:44:26: note:   candidate expects 4 arguments, 1 provided\n'}
+[27.937135] (ydlidar_ros2_driver) StderrLine: {'line': b'   44 |   node->declare_parameter("port");\n'}
+[27.938000] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~\n'}
+[27.938825] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[27.939749] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[27.940641] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[27.941500] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[27.942389] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note: candidate: \xe2\x80\x98template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[27.943363] (ydlidar_ros2_driver) StderrLine: {'line': b'  434 |   declare_parameter(\n'}
+[27.944395] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[27.945361] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note:   template argument deduction/substitution failed:\n'}
+[27.946254] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:44:26: note:   couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98ParameterT\xe2\x80\x99\n'}
+[27.947177] (ydlidar_ros2_driver) StderrLine: {'line': b'   44 |   node->declare_parameter("port");\n'}
+[27.948116] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~\n'}
+[27.948999] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[27.949869] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[27.950765] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[27.951707] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[27.952554] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note: candidate: \xe2\x80\x98const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[27.953414] (ydlidar_ros2_driver) StderrLine: {'line': b'  366 |   declare_parameter(\n'}
+[27.954273] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[27.955203] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note:   candidate expects 4 arguments, 1 provided\n'}
+[27.956125] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note: candidate: \xe2\x80\x98const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[27.957075] (ydlidar_ros2_driver) StderrLine: {'line': b'  391 |   declare_parameter(\n'}
+[27.958004] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[27.958945] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note:   candidate expects 4 arguments, 1 provided\n'}
+[27.959897] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:51:26: error: no matching function for call to \xe2\x80\x98rclcpp::Node::declare_parameter(const char [13])\xe2\x80\x99\n'}
+[27.960862] (ydlidar_ros2_driver) StderrLine: {'line': b'   51 |   node->declare_parameter("ignore_array");\n'}
+[27.961833] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~\n'}
+[27.962790] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[27.963783] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[27.964711] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[27.965684] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[27.966627] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note: candidate: \xe2\x80\x98template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[27.967667] (ydlidar_ros2_driver) StderrLine: {'line': b'  421 |   declare_parameter(\n'}
+[27.968513] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[27.969399] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note:   template argument deduction/substitution failed:\n'}
+[27.970254] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:51:26: note:   candidate expects 4 arguments, 1 provided\n'}
+[27.971170] (ydlidar_ros2_driver) StderrLine: {'line': b'   51 |   node->declare_parameter("ignore_array");\n'}
+[27.972096] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~\n'}
+[27.972918] (-) TimerEvent: {}
+[27.973155] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[27.974030] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[27.974941] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[27.975912] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[27.976870] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note: candidate: \xe2\x80\x98template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[27.977826] (ydlidar_ros2_driver) StderrLine: {'line': b'  434 |   declare_parameter(\n'}
+[27.978681] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[27.979648] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note:   template argument deduction/substitution failed:\n'}
+[27.980630] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:51:26: note:   couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98ParameterT\xe2\x80\x99\n'}
+[27.981613] (ydlidar_ros2_driver) StderrLine: {'line': b'   51 |   node->declare_parameter("ignore_array");\n'}
+[27.982580] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~\n'}
+[27.983640] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[27.984598] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[27.985534] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[27.986474] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[27.987418] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note: candidate: \xe2\x80\x98const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[27.988295] (ydlidar_ros2_driver) StderrLine: {'line': b'  366 |   declare_parameter(\n'}
+[27.989099] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[27.989823] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note:   candidate expects 4 arguments, 1 provided\n'}
+[27.990557] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note: candidate: \xe2\x80\x98const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[27.991373] (ydlidar_ros2_driver) StderrLine: {'line': b'  391 |   declare_parameter(\n'}
+[27.992196] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[27.992998] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note:   candidate expects 4 arguments, 1 provided\n'}
+[27.993909] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:56:26: error: no matching function for call to \xe2\x80\x98rclcpp::Node::declare_parameter(const char [9])\xe2\x80\x99\n'}
+[27.994786] (ydlidar_ros2_driver) StderrLine: {'line': b'   56 |   node->declare_parameter("frame_id");\n'}
+[27.995664] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~\n'}
+[27.996408] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[27.997173] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[27.998157] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[27.999179] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.000176] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note: candidate: \xe2\x80\x98template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.001408] (ydlidar_ros2_driver) StderrLine: {'line': b'  421 |   declare_parameter(\n'}
+[28.003270] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.004213] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note:   template argument deduction/substitution failed:\n'}
+[28.005171] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:56:26: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.006139] (ydlidar_ros2_driver) StderrLine: {'line': b'   56 |   node->declare_parameter("frame_id");\n'}
+[28.007120] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~\n'}
+[28.008107] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.009052] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.010001] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.010945] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.011982] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note: candidate: \xe2\x80\x98template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.012931] (ydlidar_ros2_driver) StderrLine: {'line': b'  434 |   declare_parameter(\n'}
+[28.013852] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.014723] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note:   template argument deduction/substitution failed:\n'}
+[28.015655] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:56:26: note:   couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98ParameterT\xe2\x80\x99\n'}
+[28.016536] (ydlidar_ros2_driver) StderrLine: {'line': b'   56 |   node->declare_parameter("frame_id");\n'}
+[28.017412] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~\n'}
+[28.018293] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.019240] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.020262] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.021299] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.022277] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note: candidate: \xe2\x80\x98const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.023337] (ydlidar_ros2_driver) StderrLine: {'line': b'  366 |   declare_parameter(\n'}
+[28.024362] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.025298] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.026200] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note: candidate: \xe2\x80\x98const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.027177] (ydlidar_ros2_driver) StderrLine: {'line': b'  391 |   declare_parameter(\n'}
+[28.028082] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.028920] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.029737] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:62:26: error: no matching function for call to \xe2\x80\x98rclcpp::Node::declare_parameter(const char [9])\xe2\x80\x99\n'}
+[28.030573] (ydlidar_ros2_driver) StderrLine: {'line': b'   62 |   node->declare_parameter("baudrate");\n'}
+[28.031469] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~\n'}
+[28.032378] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.033262] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.034215] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.035178] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.036156] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note: candidate: \xe2\x80\x98template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.037187] (ydlidar_ros2_driver) StderrLine: {'line': b'  421 |   declare_parameter(\n'}
+[28.038144] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.039078] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note:   template argument deduction/substitution failed:\n'}
+[28.040072] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:62:26: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.040992] (ydlidar_ros2_driver) StderrLine: {'line': b'   62 |   node->declare_parameter("baudrate");\n'}
+[28.041857] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~\n'}
+[28.042707] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.043648] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.044524] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.045468] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.046370] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note: candidate: \xe2\x80\x98template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.047393] (ydlidar_ros2_driver) StderrLine: {'line': b'  434 |   declare_parameter(\n'}
+[28.048388] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.049350] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note:   template argument deduction/substitution failed:\n'}
+[28.050331] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:62:26: note:   couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98ParameterT\xe2\x80\x99\n'}
+[28.051401] (ydlidar_ros2_driver) StderrLine: {'line': b'   62 |   node->declare_parameter("baudrate");\n'}
+[28.052333] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~\n'}
+[28.053247] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.054187] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.055170] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.056079] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.056946] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note: candidate: \xe2\x80\x98const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.057829] (ydlidar_ros2_driver) StderrLine: {'line': b'  366 |   declare_parameter(\n'}
+[28.058676] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.059658] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.060581] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note: candidate: \xe2\x80\x98const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.061579] (ydlidar_ros2_driver) StderrLine: {'line': b'  391 |   declare_parameter(\n'}
+[28.062543] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.063664] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.064678] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:67:26: error: no matching function for call to \xe2\x80\x98rclcpp::Node::declare_parameter(const char [11])\xe2\x80\x99\n'}
+[28.065685] (ydlidar_ros2_driver) StderrLine: {'line': b'   67 |   node->declare_parameter("lidar_type");\n'}
+[28.066672] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~\n'}
+[28.067711] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.068679] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.069661] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.070707] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.071753] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note: candidate: \xe2\x80\x98template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.072746] (ydlidar_ros2_driver) StderrLine: {'line': b'  421 |   declare_parameter(\n'}
+[28.073670] (-) TimerEvent: {}
+[28.073940] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.074902] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note:   template argument deduction/substitution failed:\n'}
+[28.075936] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:67:26: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.076916] (ydlidar_ros2_driver) StderrLine: {'line': b'   67 |   node->declare_parameter("lidar_type");\n'}
+[28.077905] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~\n'}
+[28.078888] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.079969] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.081008] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.082002] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.082994] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note: candidate: \xe2\x80\x98template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.084106] (ydlidar_ros2_driver) StderrLine: {'line': b'  434 |   declare_parameter(\n'}
+[28.085105] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.086091] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note:   template argument deduction/substitution failed:\n'}
+[28.087134] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:67:26: note:   couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98ParameterT\xe2\x80\x99\n'}
+[28.088183] (ydlidar_ros2_driver) StderrLine: {'line': b'   67 |   node->declare_parameter("lidar_type");\n'}
+[28.089176] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~\n'}
+[28.090132] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.091162] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.092124] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.093056] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.094005] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note: candidate: \xe2\x80\x98const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.095010] (ydlidar_ros2_driver) StderrLine: {'line': b'  366 |   declare_parameter(\n'}
+[28.096093] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.097093] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.098112] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note: candidate: \xe2\x80\x98const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.099137] (ydlidar_ros2_driver) StderrLine: {'line': b'  391 |   declare_parameter(\n'}
+[28.100202] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.101158] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.102141] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:72:26: error: no matching function for call to \xe2\x80\x98rclcpp::Node::declare_parameter(const char [12])\xe2\x80\x99\n'}
+[28.103176] (ydlidar_ros2_driver) StderrLine: {'line': b'   72 |   node->declare_parameter("device_type");\n'}
+[28.104175] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~\n'}
+[28.105142] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.106109] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.107111] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.108103] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.109051] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note: candidate: \xe2\x80\x98template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.110047] (ydlidar_ros2_driver) StderrLine: {'line': b'  421 |   declare_parameter(\n'}
+[28.110998] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.112026] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note:   template argument deduction/substitution failed:\n'}
+[28.112970] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:72:26: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.113910] (ydlidar_ros2_driver) StderrLine: {'line': b'   72 |   node->declare_parameter("device_type");\n'}
+[28.114888] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~\n'}
+[28.115911] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.116891] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.117827] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.118741] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.119783] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note: candidate: \xe2\x80\x98template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.120749] (ydlidar_ros2_driver) StderrLine: {'line': b'  434 |   declare_parameter(\n'}
+[28.121710] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.122670] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note:   template argument deduction/substitution failed:\n'}
+[28.123718] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:72:26: note:   couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98ParameterT\xe2\x80\x99\n'}
+[28.124758] (ydlidar_ros2_driver) StderrLine: {'line': b'   72 |   node->declare_parameter("device_type");\n'}
+[28.125720] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~\n'}
+[28.126683] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.127714] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.128685] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.129670] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.130620] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note: candidate: \xe2\x80\x98const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.131667] (ydlidar_ros2_driver) StderrLine: {'line': b'  366 |   declare_parameter(\n'}
+[28.132623] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.133576] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.134566] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note: candidate: \xe2\x80\x98const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.135663] (ydlidar_ros2_driver) StderrLine: {'line': b'  391 |   declare_parameter(\n'}
+[28.136624] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.137537] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.138441] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:77:26: error: no matching function for call to \xe2\x80\x98rclcpp::Node::declare_parameter(const char [12])\xe2\x80\x99\n'}
+[28.139412] (ydlidar_ros2_driver) StderrLine: {'line': b'   77 |   node->declare_parameter("sample_rate");\n'}
+[28.140291] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~\n'}
+[28.141135] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.141996] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.142846] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.143784] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.144706] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note: candidate: \xe2\x80\x98template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.145700] (ydlidar_ros2_driver) StderrLine: {'line': b'  421 |   declare_parameter(\n'}
+[28.146675] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.147705] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note:   template argument deduction/substitution failed:\n'}
+[28.148592] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:77:26: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.149546] (ydlidar_ros2_driver) StderrLine: {'line': b'   77 |   node->declare_parameter("sample_rate");\n'}
+[28.150543] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~\n'}
+[28.151616] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.152613] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.153604] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.154570] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.156880] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note: candidate: \xe2\x80\x98template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.157884] (ydlidar_ros2_driver) StderrLine: {'line': b'  434 |   declare_parameter(\n'}
+[28.158873] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.159924] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note:   template argument deduction/substitution failed:\n'}
+[28.160905] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:77:26: note:   couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98ParameterT\xe2\x80\x99\n'}
+[28.161953] (ydlidar_ros2_driver) StderrLine: {'line': b'   77 |   node->declare_parameter("sample_rate");\n'}
+[28.162969] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~\n'}
+[28.164041] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.165043] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.165988] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.166848] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.167788] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note: candidate: \xe2\x80\x98const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.168669] (ydlidar_ros2_driver) StderrLine: {'line': b'  366 |   declare_parameter(\n'}
+[28.169516] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.170352] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.171250] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note: candidate: \xe2\x80\x98const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.172159] (ydlidar_ros2_driver) StderrLine: {'line': b'  391 |   declare_parameter(\n'}
+[28.173029] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.173875] (-) TimerEvent: {}
+[28.174126] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.175067] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:82:26: error: no matching function for call to \xe2\x80\x98rclcpp::Node::declare_parameter(const char [21])\xe2\x80\x99\n'}
+[28.176144] (ydlidar_ros2_driver) StderrLine: {'line': b'   82 |   node->declare_parameter("abnormal_check_count");\n'}
+[28.177098] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~\n'}
+[28.177973] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.178871] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.179908] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.180877] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.181825] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note: candidate: \xe2\x80\x98template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.182816] (ydlidar_ros2_driver) StderrLine: {'line': b'  421 |   declare_parameter(\n'}
+[28.183895] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.184908] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note:   template argument deduction/substitution failed:\n'}
+[28.185872] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:82:26: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.186886] (ydlidar_ros2_driver) StderrLine: {'line': b'   82 |   node->declare_parameter("abnormal_check_count");\n'}
+[28.188236] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~\n'}
+[28.189811] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.190756] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.191840] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.192814] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.193752] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note: candidate: \xe2\x80\x98template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.194687] (ydlidar_ros2_driver) StderrLine: {'line': b'  434 |   declare_parameter(\n'}
+[28.195694] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.196634] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note:   template argument deduction/substitution failed:\n'}
+[28.197565] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:82:26: note:   couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98ParameterT\xe2\x80\x99\n'}
+[28.198518] (ydlidar_ros2_driver) StderrLine: {'line': b'   82 |   node->declare_parameter("abnormal_check_count");\n'}
+[28.199549] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~\n'}
+[28.200532] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.201629] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.202630] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.203742] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.204722] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note: candidate: \xe2\x80\x98const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.205710] (ydlidar_ros2_driver) StderrLine: {'line': b'  366 |   declare_parameter(\n'}
+[28.206695] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.207749] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.208738] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note: candidate: \xe2\x80\x98const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.209722] (ydlidar_ros2_driver) StderrLine: {'line': b'  391 |   declare_parameter(\n'}
+[28.210685] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.211730] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.212707] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:88:26: error: no matching function for call to \xe2\x80\x98rclcpp::Node::declare_parameter(const char [14])\xe2\x80\x99\n'}
+[28.213706] (ydlidar_ros2_driver) StderrLine: {'line': b'   88 |   node->declare_parameter("intensity_bit");\n'}
+[28.214686] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~\n'}
+[28.215750] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.216726] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.217633] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.218506] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.219460] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note: candidate: \xe2\x80\x98template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.220396] (ydlidar_ros2_driver) StderrLine: {'line': b'  421 |   declare_parameter(\n'}
+[28.221285] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.222147] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note:   template argument deduction/substitution failed:\n'}
+[28.223058] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:88:26: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.224038] (ydlidar_ros2_driver) StderrLine: {'line': b'   88 |   node->declare_parameter("intensity_bit");\n'}
+[28.224964] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~\n'}
+[28.225926] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.226905] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.227956] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.228946] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.229979] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note: candidate: \xe2\x80\x98template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.230986] (ydlidar_ros2_driver) StderrLine: {'line': b'  434 |   declare_parameter(\n'}
+[28.232066] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.233056] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note:   template argument deduction/substitution failed:\n'}
+[28.234035] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:88:26: note:   couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98ParameterT\xe2\x80\x99\n'}
+[28.235384] (ydlidar_ros2_driver) StderrLine: {'line': b'   88 |   node->declare_parameter("intensity_bit");\n'}
+[28.236609] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~\n'}
+[28.237677] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.238616] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.239663] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.240669] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.241664] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note: candidate: \xe2\x80\x98const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.242691] (ydlidar_ros2_driver) StderrLine: {'line': b'  366 |   declare_parameter(\n'}
+[28.243744] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.244735] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.245671] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note: candidate: \xe2\x80\x98const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.246663] (ydlidar_ros2_driver) StderrLine: {'line': b'  391 |   declare_parameter(\n'}
+[28.247680] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.248618] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.249613] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:95:26: error: no matching function for call to \xe2\x80\x98rclcpp::Node::declare_parameter(const char [17])\xe2\x80\x99\n'}
+[28.250589] (ydlidar_ros2_driver) StderrLine: {'line': b'   95 |   node->declare_parameter("fixed_resolution");\n'}
+[28.252083] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~\n'}
+[28.253236] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.254409] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.255735] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.257057] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.258298] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note: candidate: \xe2\x80\x98template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.259738] (ydlidar_ros2_driver) StderrLine: {'line': b'  421 |   declare_parameter(\n'}
+[28.261720] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.262916] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note:   template argument deduction/substitution failed:\n'}
+[28.264200] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:95:26: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.265346] (ydlidar_ros2_driver) StderrLine: {'line': b'   95 |   node->declare_parameter("fixed_resolution");\n'}
+[28.266419] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~\n'}
+[28.267612] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.268704] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.269742] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.270892] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.272097] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note: candidate: \xe2\x80\x98template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.273219] (ydlidar_ros2_driver) StderrLine: {'line': b'  434 |   declare_parameter(\n'}
+[28.274267] (-) TimerEvent: {}
+[28.274600] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.275956] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note:   template argument deduction/substitution failed:\n'}
+[28.277070] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:95:26: note:   couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98ParameterT\xe2\x80\x99\n'}
+[28.278125] (ydlidar_ros2_driver) StderrLine: {'line': b'   95 |   node->declare_parameter("fixed_resolution");\n'}
+[28.279268] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~\n'}
+[28.280361] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.281432] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.282473] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.283663] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.284803] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note: candidate: \xe2\x80\x98const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.285942] (ydlidar_ros2_driver) StderrLine: {'line': b'  366 |   declare_parameter(\n'}
+[28.286982] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.288138] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.289154] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note: candidate: \xe2\x80\x98const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.290320] (ydlidar_ros2_driver) StderrLine: {'line': b'  391 |   declare_parameter(\n'}
+[28.291415] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.292456] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.293555] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:100:26: error: no matching function for call to \xe2\x80\x98rclcpp::Node::declare_parameter(const char [10])\xe2\x80\x99\n'}
+[28.294649] (ydlidar_ros2_driver) StderrLine: {'line': b'  100 |   node->declare_parameter("reversion");\n'}
+[28.295860] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~\n'}
+[28.296976] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.298080] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.299257] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.300719] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.301739] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note: candidate: \xe2\x80\x98template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.302990] (ydlidar_ros2_driver) StderrLine: {'line': b'  421 |   declare_parameter(\n'}
+[28.304130] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.305151] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note:   template argument deduction/substitution failed:\n'}
+[28.306175] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:100:26: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.307302] (ydlidar_ros2_driver) StderrLine: {'line': b'  100 |   node->declare_parameter("reversion");\n'}
+[28.308371] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~\n'}
+[28.309377] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.310397] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.311918] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.312889] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.313846] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note: candidate: \xe2\x80\x98template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.314820] (ydlidar_ros2_driver) StderrLine: {'line': b'  434 |   declare_parameter(\n'}
+[28.315870] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.316834] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note:   template argument deduction/substitution failed:\n'}
+[28.317800] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:100:26: note:   couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98ParameterT\xe2\x80\x99\n'}
+[28.318795] (ydlidar_ros2_driver) StderrLine: {'line': b'  100 |   node->declare_parameter("reversion");\n'}
+[28.319845] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~\n'}
+[28.320866] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.321863] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.322839] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.324005] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.325055] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note: candidate: \xe2\x80\x98const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.326615] (ydlidar_ros2_driver) StderrLine: {'line': b'  366 |   declare_parameter(\n'}
+[28.331177] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.332242] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.333247] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note: candidate: \xe2\x80\x98const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.334255] (ydlidar_ros2_driver) StderrLine: {'line': b'  391 |   declare_parameter(\n'}
+[28.335292] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.336315] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.337326] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:105:26: error: no matching function for call to \xe2\x80\x98rclcpp::Node::declare_parameter(const char [9])\xe2\x80\x99\n'}
+[28.338402] (ydlidar_ros2_driver) StderrLine: {'line': b'  105 |   node->declare_parameter("inverted");\n'}
+[28.339509] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~\n'}
+[28.340538] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.341546] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.342514] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.343666] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.344656] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note: candidate: \xe2\x80\x98template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.345641] (ydlidar_ros2_driver) StderrLine: {'line': b'  421 |   declare_parameter(\n'}
+[28.346646] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.347686] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note:   template argument deduction/substitution failed:\n'}
+[28.348640] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:105:26: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.349609] (ydlidar_ros2_driver) StderrLine: {'line': b'  105 |   node->declare_parameter("inverted");\n'}
+[28.350638] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~\n'}
+[28.351711] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.352755] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.353736] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.354734] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.355818] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note: candidate: \xe2\x80\x98template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.356780] (ydlidar_ros2_driver) StderrLine: {'line': b'  434 |   declare_parameter(\n'}
+[28.357734] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.358719] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note:   template argument deduction/substitution failed:\n'}
+[28.359926] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:105:26: note:   couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98ParameterT\xe2\x80\x99\n'}
+[28.360892] (ydlidar_ros2_driver) StderrLine: {'line': b'  105 |   node->declare_parameter("inverted");\n'}
+[28.361850] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~\n'}
+[28.362847] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.363924] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.364911] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.365862] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.366833] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note: candidate: \xe2\x80\x98const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.367911] (ydlidar_ros2_driver) StderrLine: {'line': b'  366 |   declare_parameter(\n'}
+[28.368869] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.369818] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.370829] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note: candidate: \xe2\x80\x98const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.372184] (ydlidar_ros2_driver) StderrLine: {'line': b'  391 |   declare_parameter(\n'}
+[28.373123] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.374071] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.374953] (-) TimerEvent: {}
+[28.375285] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:109:26: error: no matching function for call to \xe2\x80\x98rclcpp::Node::declare_parameter(const char [15])\xe2\x80\x99\n'}
+[28.376281] (ydlidar_ros2_driver) StderrLine: {'line': b'  109 |   node->declare_parameter("auto_reconnect");\n'}
+[28.377340] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~\n'}
+[28.378638] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.379812] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.381343] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.382894] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.384447] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note: candidate: \xe2\x80\x98template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.385530] (ydlidar_ros2_driver) StderrLine: {'line': b'  421 |   declare_parameter(\n'}
+[28.386577] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.387672] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note:   template argument deduction/substitution failed:\n'}
+[28.388694] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:109:26: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.389736] (ydlidar_ros2_driver) StderrLine: {'line': b'  109 |   node->declare_parameter("auto_reconnect");\n'}
+[28.390751] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~\n'}
+[28.392132] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.393287] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.394328] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.395428] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.396440] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note: candidate: \xe2\x80\x98template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.398168] (ydlidar_ros2_driver) StderrLine: {'line': b'  434 |   declare_parameter(\n'}
+[28.399274] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.400431] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note:   template argument deduction/substitution failed:\n'}
+[28.401452] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:109:26: note:   couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98ParameterT\xe2\x80\x99\n'}
+[28.402645] (ydlidar_ros2_driver) StderrLine: {'line': b'  109 |   node->declare_parameter("auto_reconnect");\n'}
+[28.404124] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~\n'}
+[28.405330] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.406484] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.407800] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.409032] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.410586] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note: candidate: \xe2\x80\x98const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.412629] (ydlidar_ros2_driver) StderrLine: {'line': b'  366 |   declare_parameter(\n'}
+[28.413810] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.414942] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.416117] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note: candidate: \xe2\x80\x98const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.417301] (ydlidar_ros2_driver) StderrLine: {'line': b'  391 |   declare_parameter(\n'}
+[28.418520] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.419866] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.421123] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:114:26: error: no matching function for call to \xe2\x80\x98rclcpp::Node::declare_parameter(const char [16])\xe2\x80\x99\n'}
+[28.422365] (ydlidar_ros2_driver) StderrLine: {'line': b'  114 |   node->declare_parameter("isSingleChannel");\n'}
+[28.423666] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~\n'}
+[28.424884] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.426107] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.427374] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.428651] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.429874] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note: candidate: \xe2\x80\x98template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.431210] (ydlidar_ros2_driver) StderrLine: {'line': b'  421 |   declare_parameter(\n'}
+[28.432419] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.433661] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note:   template argument deduction/substitution failed:\n'}
+[28.434824] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:114:26: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.436169] (ydlidar_ros2_driver) StderrLine: {'line': b'  114 |   node->declare_parameter("isSingleChannel");\n'}
+[28.437389] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~\n'}
+[28.438626] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.439936] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.441196] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.442427] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.443942] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note: candidate: \xe2\x80\x98template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.445262] (ydlidar_ros2_driver) StderrLine: {'line': b'  434 |   declare_parameter(\n'}
+[28.446476] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.447757] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note:   template argument deduction/substitution failed:\n'}
+[28.449025] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:114:26: note:   couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98ParameterT\xe2\x80\x99\n'}
+[28.450375] (ydlidar_ros2_driver) StderrLine: {'line': b'  114 |   node->declare_parameter("isSingleChannel");\n'}
+[28.451731] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~\n'}
+[28.452969] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.454242] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.455514] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.456752] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.457988] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note: candidate: \xe2\x80\x98const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.459280] (ydlidar_ros2_driver) StderrLine: {'line': b'  366 |   declare_parameter(\n'}
+[28.460486] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.461666] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.462990] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note: candidate: \xe2\x80\x98const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.464354] (ydlidar_ros2_driver) StderrLine: {'line': b'  391 |   declare_parameter(\n'}
+[28.465547] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.466767] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.468070] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:119:26: error: no matching function for call to \xe2\x80\x98rclcpp::Node::declare_parameter(const char [10])\xe2\x80\x99\n'}
+[28.469286] (ydlidar_ros2_driver) StderrLine: {'line': b'  119 |   node->declare_parameter("intensity");\n'}
+[28.470514] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~\n'}
+[28.472032] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.473253] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.474466] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.475765] (-) TimerEvent: {}
+[28.476125] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.477351] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note: candidate: \xe2\x80\x98template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.478611] (ydlidar_ros2_driver) StderrLine: {'line': b'  421 |   declare_parameter(\n'}
+[28.479916] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.481146] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note:   template argument deduction/substitution failed:\n'}
+[28.482357] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:119:26: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.483613] (ydlidar_ros2_driver) StderrLine: {'line': b'  119 |   node->declare_parameter("intensity");\n'}
+[28.484830] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~\n'}
+[28.486030] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.487325] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.488554] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.489726] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.490930] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note: candidate: \xe2\x80\x98template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.492239] (ydlidar_ros2_driver) StderrLine: {'line': b'  434 |   declare_parameter(\n'}
+[28.493501] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.494739] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note:   template argument deduction/substitution failed:\n'}
+[28.496061] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:119:26: note:   couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98ParameterT\xe2\x80\x99\n'}
+[28.497316] (ydlidar_ros2_driver) StderrLine: {'line': b'  119 |   node->declare_parameter("intensity");\n'}
+[28.498534] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~\n'}
+[28.499808] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.501006] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.502181] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.503480] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.504743] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note: candidate: \xe2\x80\x98const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.506002] (ydlidar_ros2_driver) StderrLine: {'line': b'  366 |   declare_parameter(\n'}
+[28.507301] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.508679] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.509877] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note: candidate: \xe2\x80\x98const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.511142] (ydlidar_ros2_driver) StderrLine: {'line': b'  391 |   declare_parameter(\n'}
+[28.512257] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.513397] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.514549] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:124:26: error: no matching function for call to \xe2\x80\x98rclcpp::Node::declare_parameter(const char [18])\xe2\x80\x99\n'}
+[28.515852] (ydlidar_ros2_driver) StderrLine: {'line': b'  124 |   node->declare_parameter("support_motor_dtr");\n'}
+[28.517006] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~\n'}
+[28.518159] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.519419] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.520615] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.521774] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.522908] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note: candidate: \xe2\x80\x98template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.524162] (ydlidar_ros2_driver) StderrLine: {'line': b'  421 |   declare_parameter(\n'}
+[28.525309] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.526486] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note:   template argument deduction/substitution failed:\n'}
+[28.527781] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:124:26: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.528939] (ydlidar_ros2_driver) StderrLine: {'line': b'  124 |   node->declare_parameter("support_motor_dtr");\n'}
+[28.530074] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~\n'}
+[28.531295] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.532522] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.533729] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.534869] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.536131] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note: candidate: \xe2\x80\x98template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.537325] (ydlidar_ros2_driver) StderrLine: {'line': b'  434 |   declare_parameter(\n'}
+[28.538577] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.539868] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note:   template argument deduction/substitution failed:\n'}
+[28.541145] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:124:26: note:   couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98ParameterT\xe2\x80\x99\n'}
+[28.542398] (ydlidar_ros2_driver) StderrLine: {'line': b'  124 |   node->declare_parameter("support_motor_dtr");\n'}
+[28.543706] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~\n'}
+[28.544972] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.546209] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.547493] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.548758] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.549928] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note: candidate: \xe2\x80\x98const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.551201] (ydlidar_ros2_driver) StderrLine: {'line': b'  366 |   declare_parameter(\n'}
+[28.552428] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.553657] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.554903] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note: candidate: \xe2\x80\x98const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.556226] (ydlidar_ros2_driver) StderrLine: {'line': b'  391 |   declare_parameter(\n'}
+[28.557436] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.558638] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.559980] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:129:26: error: no matching function for call to \xe2\x80\x98rclcpp::Node::declare_parameter(const char [6])\xe2\x80\x99\n'}
+[28.561231] (ydlidar_ros2_driver) StderrLine: {'line': b'  129 |   node->declare_parameter("debug");\n'}
+[28.562473] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~\n'}
+[28.563846] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.565174] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.566415] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.567794] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.569060] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note: candidate: \xe2\x80\x98template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.570292] (ydlidar_ros2_driver) StderrLine: {'line': b'  421 |   declare_parameter(\n'}
+[28.571636] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.572913] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note:   template argument deduction/substitution failed:\n'}
+[28.574171] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:129:26: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.575490] (ydlidar_ros2_driver) StderrLine: {'line': b'  129 |   node->declare_parameter("debug");\n'}
+[28.576672] (-) TimerEvent: {}
+[28.577029] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~\n'}
+[28.578313] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.579612] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.580850] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.582078] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.583354] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note: candidate: \xe2\x80\x98template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.584627] (ydlidar_ros2_driver) StderrLine: {'line': b'  434 |   declare_parameter(\n'}
+[28.585838] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.587086] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note:   template argument deduction/substitution failed:\n'}
+[28.588343] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:129:26: note:   couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98ParameterT\xe2\x80\x99\n'}
+[28.589611] (ydlidar_ros2_driver) StderrLine: {'line': b'  129 |   node->declare_parameter("debug");\n'}
+[28.590843] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~\n'}
+[28.592137] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.593330] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.594538] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.595840] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.597076] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note: candidate: \xe2\x80\x98const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.598319] (ydlidar_ros2_driver) StderrLine: {'line': b'  366 |   declare_parameter(\n'}
+[28.599602] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.600855] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.602089] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note: candidate: \xe2\x80\x98const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.603386] (ydlidar_ros2_driver) StderrLine: {'line': b'  391 |   declare_parameter(\n'}
+[28.604636] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.605806] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.606988] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:131:9: error: \xe2\x80\x98class CYdLidar\xe2\x80\x99 has no member named \xe2\x80\x98setEnableDebug\xe2\x80\x99\n'}
+[28.608256] (ydlidar_ros2_driver) StderrLine: {'line': b'  131 |   laser.setEnableDebug(b_optvalue);\n'}
+[28.609489] (ydlidar_ros2_driver) StderrLine: {'line': b'      |         ^~~~~~~~~~~~~~\n'}
+[28.610724] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:136:26: error: no matching function for call to \xe2\x80\x98rclcpp::Node::declare_parameter(const char [10])\xe2\x80\x99\n'}
+[28.612090] (ydlidar_ros2_driver) StderrLine: {'line': b'  136 |   node->declare_parameter("angle_max");\n'}
+[28.613299] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~\n'}
+[28.614505] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.615846] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.617084] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.618319] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.619655] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note: candidate: \xe2\x80\x98template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.620888] (ydlidar_ros2_driver) StderrLine: {'line': b'  421 |   declare_parameter(\n'}
+[28.622106] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.623484] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note:   template argument deduction/substitution failed:\n'}
+[28.624736] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:136:26: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.625955] (ydlidar_ros2_driver) StderrLine: {'line': b'  136 |   node->declare_parameter("angle_max");\n'}
+[28.627221] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~\n'}
+[28.628483] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.629742] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.630979] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.632288] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.633474] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note: candidate: \xe2\x80\x98template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.634698] (ydlidar_ros2_driver) StderrLine: {'line': b'  434 |   declare_parameter(\n'}
+[28.635927] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.637090] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note:   template argument deduction/substitution failed:\n'}
+[28.638269] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:136:26: note:   couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98ParameterT\xe2\x80\x99\n'}
+[28.639501] (ydlidar_ros2_driver) StderrLine: {'line': b'  136 |   node->declare_parameter("angle_max");\n'}
+[28.640670] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~\n'}
+[28.641840] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.642990] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.644179] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.645366] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.646489] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note: candidate: \xe2\x80\x98const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.647747] (ydlidar_ros2_driver) StderrLine: {'line': b'  366 |   declare_parameter(\n'}
+[28.648932] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.650092] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.651297] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note: candidate: \xe2\x80\x98const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.652482] (ydlidar_ros2_driver) StderrLine: {'line': b'  391 |   declare_parameter(\n'}
+[28.653656] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.654784] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.656024] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:140:26: error: no matching function for call to \xe2\x80\x98rclcpp::Node::declare_parameter(const char [10])\xe2\x80\x99\n'}
+[28.657249] (ydlidar_ros2_driver) StderrLine: {'line': b'  140 |   node->declare_parameter("angle_min");\n'}
+[28.658387] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~\n'}
+[28.659611] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.660837] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.661881] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.662899] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.664020] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note: candidate: \xe2\x80\x98template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.665051] (ydlidar_ros2_driver) StderrLine: {'line': b'  421 |   declare_parameter(\n'}
+[28.666070] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.667196] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note:   template argument deduction/substitution failed:\n'}
+[28.668287] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:140:26: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.669289] (ydlidar_ros2_driver) StderrLine: {'line': b'  140 |   node->declare_parameter("angle_min");\n'}
+[28.670276] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~\n'}
+[28.671341] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.672386] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.673387] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.674399] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.675585] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note: candidate: \xe2\x80\x98template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.676715] (ydlidar_ros2_driver) StderrLine: {'line': b'  434 |   declare_parameter(\n'}
+[28.677675] (-) TimerEvent: {}
+[28.677975] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.678984] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note:   template argument deduction/substitution failed:\n'}
+[28.680122] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:140:26: note:   couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98ParameterT\xe2\x80\x99\n'}
+[28.681138] (ydlidar_ros2_driver) StderrLine: {'line': b'  140 |   node->declare_parameter("angle_min");\n'}
+[28.682132] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~\n'}
+[28.683140] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.684138] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.685102] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.686124] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.687216] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note: candidate: \xe2\x80\x98const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.688325] (ydlidar_ros2_driver) StderrLine: {'line': b'  366 |   declare_parameter(\n'}
+[28.689320] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.690330] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.691409] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note: candidate: \xe2\x80\x98const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.692365] (ydlidar_ros2_driver) StderrLine: {'line': b'  391 |   declare_parameter(\n'}
+[28.693373] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.694379] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.695431] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:145:26: error: no matching function for call to \xe2\x80\x98rclcpp::Node::declare_parameter(const char [10])\xe2\x80\x99\n'}
+[28.696460] (ydlidar_ros2_driver) StderrLine: {'line': b'  145 |   node->declare_parameter("range_max");\n'}
+[28.697440] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~\n'}
+[28.698446] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.699558] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.700599] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.701574] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.702622] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note: candidate: \xe2\x80\x98template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.703767] (ydlidar_ros2_driver) StderrLine: {'line': b'  421 |   declare_parameter(\n'}
+[28.704797] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.705779] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note:   template argument deduction/substitution failed:\n'}
+[28.706733] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:145:26: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.707782] (ydlidar_ros2_driver) StderrLine: {'line': b'  145 |   node->declare_parameter("range_max");\n'}
+[28.708776] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~\n'}
+[28.709745] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.710735] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.711844] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.712865] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.713874] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note: candidate: \xe2\x80\x98template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.714908] (ydlidar_ros2_driver) StderrLine: {'line': b'  434 |   declare_parameter(\n'}
+[28.715983] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.716982] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note:   template argument deduction/substitution failed:\n'}
+[28.717997] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:145:26: note:   couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98ParameterT\xe2\x80\x99\n'}
+[28.718997] (ydlidar_ros2_driver) StderrLine: {'line': b'  145 |   node->declare_parameter("range_max");\n'}
+[28.720096] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~\n'}
+[28.721079] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.722085] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.723135] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.724171] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.725176] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note: candidate: \xe2\x80\x98const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.726092] (ydlidar_ros2_driver) StderrLine: {'line': b'  366 |   declare_parameter(\n'}
+[28.727053] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.728085] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.729079] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note: candidate: \xe2\x80\x98const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.730201] (ydlidar_ros2_driver) StderrLine: {'line': b'  391 |   declare_parameter(\n'}
+[28.731249] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.732280] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.733282] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:149:26: error: no matching function for call to \xe2\x80\x98rclcpp::Node::declare_parameter(const char [10])\xe2\x80\x99\n'}
+[28.734352] (ydlidar_ros2_driver) StderrLine: {'line': b'  149 |   node->declare_parameter("range_min");\n'}
+[28.735405] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~\n'}
+[28.736426] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.737449] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.738445] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.739512] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.740535] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note: candidate: \xe2\x80\x98template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.741560] (ydlidar_ros2_driver) StderrLine: {'line': b'  421 |   declare_parameter(\n'}
+[28.742569] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.743626] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note:   template argument deduction/substitution failed:\n'}
+[28.744644] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:149:26: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.745659] (ydlidar_ros2_driver) StderrLine: {'line': b'  149 |   node->declare_parameter("range_min");\n'}
+[28.746661] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~\n'}
+[28.747743] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.748773] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.749797] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.750839] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.751862] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note: candidate: \xe2\x80\x98template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.752882] (ydlidar_ros2_driver) StderrLine: {'line': b'  434 |   declare_parameter(\n'}
+[28.753915] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.754918] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note:   template argument deduction/substitution failed:\n'}
+[28.755991] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:149:26: note:   couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98ParameterT\xe2\x80\x99\n'}
+[28.757050] (ydlidar_ros2_driver) StderrLine: {'line': b'  149 |   node->declare_parameter("range_min");\n'}
+[28.758075] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~\n'}
+[28.759109] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.760134] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.761135] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.762059] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.763077] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note: candidate: \xe2\x80\x98const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.764126] (ydlidar_ros2_driver) StderrLine: {'line': b'  366 |   declare_parameter(\n'}
+[28.765123] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.766116] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.767169] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note: candidate: \xe2\x80\x98const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.768241] (ydlidar_ros2_driver) StderrLine: {'line': b'  391 |   declare_parameter(\n'}
+[28.769244] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.770213] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.771231] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:154:26: error: no matching function for call to \xe2\x80\x98rclcpp::Node::declare_parameter(const char [10])\xe2\x80\x99\n'}
+[28.772376] (ydlidar_ros2_driver) StderrLine: {'line': b'  154 |   node->declare_parameter("frequency");\n'}
+[28.773357] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~\n'}
+[28.774306] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.775316] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.776317] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.777407] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.779793] (-) TimerEvent: {}
+[28.780523] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note: candidate: \xe2\x80\x98template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.782103] (ydlidar_ros2_driver) StderrLine: {'line': b'  421 |   declare_parameter(\n'}
+[28.783380] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.784615] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note:   template argument deduction/substitution failed:\n'}
+[28.785829] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:154:26: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.787097] (ydlidar_ros2_driver) StderrLine: {'line': b'  154 |   node->declare_parameter("frequency");\n'}
+[28.788303] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~\n'}
+[28.789804] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.790982] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.792281] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.793436] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.794613] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note: candidate: \xe2\x80\x98template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.795896] (ydlidar_ros2_driver) StderrLine: {'line': b'  434 |   declare_parameter(\n'}
+[28.797587] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.799170] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note:   template argument deduction/substitution failed:\n'}
+[28.800395] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:154:26: note:   couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98ParameterT\xe2\x80\x99\n'}
+[28.801538] (ydlidar_ros2_driver) StderrLine: {'line': b'  154 |   node->declare_parameter("frequency");\n'}
+[28.802719] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~\n'}
+[28.803966] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.805068] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.806187] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.807445] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.808650] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note: candidate: \xe2\x80\x98const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.809746] (ydlidar_ros2_driver) StderrLine: {'line': b'  366 |   declare_parameter(\n'}
+[28.810892] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.812166] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.813357] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note: candidate: \xe2\x80\x98const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.814524] (ydlidar_ros2_driver) StderrLine: {'line': b'  391 |   declare_parameter(\n'}
+[28.815980] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.817706] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.818907] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:159:26: error: no matching function for call to \xe2\x80\x98rclcpp::Node::declare_parameter(const char [21])\xe2\x80\x99\n'}
+[28.820151] (ydlidar_ros2_driver) StderrLine: {'line': b'  159 |   node->declare_parameter("invalid_range_is_inf");\n'}
+[28.822588] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~\n'}
+[28.823852] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.825029] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.826236] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.827614] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.829103] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note: candidate: \xe2\x80\x98template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.830353] (ydlidar_ros2_driver) StderrLine: {'line': b'  421 |   declare_parameter(\n'}
+[28.831561] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.832835] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note:   template argument deduction/substitution failed:\n'}
+[28.834161] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:159:26: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.835326] (ydlidar_ros2_driver) StderrLine: {'line': b'  159 |   node->declare_parameter("invalid_range_is_inf");\n'}
+[28.836464] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~\n'}
+[28.837660] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.838848] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.840290] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.841460] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.842643] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note: candidate: \xe2\x80\x98template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.843931] (ydlidar_ros2_driver) StderrLine: {'line': b'  434 |   declare_parameter(\n'}
+[28.845050] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.846135] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note:   template argument deduction/substitution failed:\n'}
+[28.847336] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:159:26: note:   couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98ParameterT\xe2\x80\x99\n'}
+[28.848552] (ydlidar_ros2_driver) StderrLine: {'line': b'  159 |   node->declare_parameter("invalid_range_is_inf");\n'}
+[28.849708] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~\n'}
+[28.850831] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.852045] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.853144] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.854243] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.855460] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note: candidate: \xe2\x80\x98const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.856637] (ydlidar_ros2_driver) StderrLine: {'line': b'  366 |   declare_parameter(\n'}
+[28.857736] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.858840] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.859955] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note: candidate: \xe2\x80\x98const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.861052] (ydlidar_ros2_driver) StderrLine: {'line': b'  391 |   declare_parameter(\n'}
+[28.862149] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.863364] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.864513] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:168:28: error: no matching function for call to \xe2\x80\x98rclcpp::Node::declare_parameter(const char [8])\xe2\x80\x99\n'}
+[28.865622] (ydlidar_ros2_driver) StderrLine: {'line': b'  168 |     node->declare_parameter("m1_mode");\n'}
+[28.866707] (ydlidar_ros2_driver) StderrLine: {'line': b'      |     ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~\n'}
+[28.867955] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.869120] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.870320] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.871661] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.872848] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note: candidate: \xe2\x80\x98template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.874074] (ydlidar_ros2_driver) StderrLine: {'line': b'  421 |   declare_parameter(\n'}
+[28.875286] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.876461] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note:   template argument deduction/substitution failed:\n'}
+[28.877586] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:168:28: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.878668] (ydlidar_ros2_driver) StderrLine: {'line': b'  168 |     node->declare_parameter("m1_mode");\n'}
+[28.879735] (-) TimerEvent: {}
+[28.880062] (ydlidar_ros2_driver) StderrLine: {'line': b'      |     ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~\n'}
+[28.881208] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.882409] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.883691] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.884869] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.886058] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note: candidate: \xe2\x80\x98template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.887313] (ydlidar_ros2_driver) StderrLine: {'line': b'  434 |   declare_parameter(\n'}
+[28.888493] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.889600] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note:   template argument deduction/substitution failed:\n'}
+[28.890629] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:168:28: note:   couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98ParameterT\xe2\x80\x99\n'}
+[28.891786] (ydlidar_ros2_driver) StderrLine: {'line': b'  168 |     node->declare_parameter("m1_mode");\n'}
+[28.892850] (ydlidar_ros2_driver) StderrLine: {'line': b'      |     ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~\n'}
+[28.893997] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.895184] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.896326] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.897565] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.898733] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note: candidate: \xe2\x80\x98const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.900051] (ydlidar_ros2_driver) StderrLine: {'line': b'  366 |   declare_parameter(\n'}
+[28.901221] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.902387] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.903632] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note: candidate: \xe2\x80\x98const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.904779] (ydlidar_ros2_driver) StderrLine: {'line': b'  391 |   declare_parameter(\n'}
+[28.905827] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.906989] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.908189] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:172:28: error: no matching function for call to \xe2\x80\x98rclcpp::Node::declare_parameter(const char [8])\xe2\x80\x99\n'}
+[28.909367] (ydlidar_ros2_driver) StderrLine: {'line': b'  172 |     node->declare_parameter("m2_mode");\n'}
+[28.910483] (ydlidar_ros2_driver) StderrLine: {'line': b'      |     ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~\n'}
+[28.911676] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.912831] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.913988] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.915224] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.916407] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note: candidate: \xe2\x80\x98template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.917542] (ydlidar_ros2_driver) StderrLine: {'line': b'  421 |   declare_parameter(\n'}
+[28.918684] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.920180] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note:   template argument deduction/substitution failed:\n'}
+[28.921345] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:172:28: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.922456] (ydlidar_ros2_driver) StderrLine: {'line': b'  172 |     node->declare_parameter("m2_mode");\n'}
+[28.923732] (ydlidar_ros2_driver) StderrLine: {'line': b'      |     ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~\n'}
+[28.924873] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.925906] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.929334] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.930563] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.931783] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note: candidate: \xe2\x80\x98template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.932892] (ydlidar_ros2_driver) StderrLine: {'line': b'  434 |   declare_parameter(\n'}
+[28.934049] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.935612] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note:   template argument deduction/substitution failed:\n'}
+[28.936808] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:172:28: note:   couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98ParameterT\xe2\x80\x99\n'}
+[28.937870] (ydlidar_ros2_driver) StderrLine: {'line': b'  172 |     node->declare_parameter("m2_mode");\n'}
+[28.938896] (ydlidar_ros2_driver) StderrLine: {'line': b'      |     ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~\n'}
+[28.940121] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.941205] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.942298] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.943627] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.944738] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note: candidate: \xe2\x80\x98const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.945791] (ydlidar_ros2_driver) StderrLine: {'line': b'  366 |   declare_parameter(\n'}
+[28.946867] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.948106] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.949169] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note: candidate: \xe2\x80\x98const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.950301] (ydlidar_ros2_driver) StderrLine: {'line': b'  391 |   declare_parameter(\n'}
+[28.951598] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.952697] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.953760] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:176:28: error: no matching function for call to \xe2\x80\x98rclcpp::Node::declare_parameter(const char [8])\xe2\x80\x99\n'}
+[28.954766] (ydlidar_ros2_driver) StderrLine: {'line': b'  176 |     node->declare_parameter("m3_mode");\n'}
+[28.957809] (ydlidar_ros2_driver) StderrLine: {'line': b'      |     ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~\n'}
+[28.958905] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.960825] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.961973] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.963195] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.964311] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note: candidate: \xe2\x80\x98template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.968065] (ydlidar_ros2_driver) StderrLine: {'line': b'  421 |   declare_parameter(\n'}
+[28.969240] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.970356] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note:   template argument deduction/substitution failed:\n'}
+[28.971607] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:176:28: note:   candidate expects 4 arguments, 1 provided\n'}
+[28.972718] (ydlidar_ros2_driver) StderrLine: {'line': b'  176 |     node->declare_parameter("m3_mode");\n'}
+[28.973804] (ydlidar_ros2_driver) StderrLine: {'line': b'      |     ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~\n'}
+[28.974881] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.977866] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.978900] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[28.980067] (-) TimerEvent: {}
+[28.980409] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[28.981585] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note: candidate: \xe2\x80\x98template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[28.982726] (ydlidar_ros2_driver) StderrLine: {'line': b'  434 |   declare_parameter(\n'}
+[28.986397] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[28.987676] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note:   template argument deduction/substitution failed:\n'}
+[28.988807] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:176:28: note:   couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98ParameterT\xe2\x80\x99\n'}
+[28.989910] (ydlidar_ros2_driver) StderrLine: {'line': b'  176 |     node->declare_parameter("m3_mode");\n'}
+[28.990945] (ydlidar_ros2_driver) StderrLine: {'line': b'      |     ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~\n'}
+[28.997622] (ydlidar_ros2_driver) StderrLine: {'line': b'In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[28.998724] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[28.999955] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,\n'}
+[29.001050] (ydlidar_ros2_driver) StderrLine: {'line': b'                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:\n'}
+[29.002083] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note: candidate: \xe2\x80\x98const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[29.004984] (ydlidar_ros2_driver) StderrLine: {'line': b'  366 |   declare_parameter(\n'}
+[29.006192] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[29.007452] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note:   candidate expects 4 arguments, 1 provided\n'}
+[29.008591] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note: candidate: \xe2\x80\x98const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)\xe2\x80\x99\n'}
+[29.009729] (ydlidar_ros2_driver) StderrLine: {'line': b'  391 |   declare_parameter(\n'}
+[29.010882] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~\n'}
+[29.012233] (ydlidar_ros2_driver) StderrLine: {'line': b'/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note:   candidate expects 4 arguments, 1 provided\n'}
+[29.013268] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp: In lambda function:\n'}
+[29.014331] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:190:54: warning: unused parameter \xe2\x80\x98request_header\xe2\x80\x99 [-Wunused-parameter]\n'}
+[29.016533] (ydlidar_ros2_driver) StderrLine: {'line': b'  190 |     [&laser](const std::shared_ptr<rmw_request_id_t> request_header,\n'}
+[29.017702] (ydlidar_ros2_driver) StderrLine: {'line': b'      |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~\n'}
+[29.018826] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:191:56: warning: unused parameter \xe2\x80\x98req\xe2\x80\x99 [-Wunused-parameter]\n'}
+[29.020079] (ydlidar_ros2_driver) StderrLine: {'line': b'  191 |   const std::shared_ptr<std_srvs::srv::Empty::Request> req,\n'}
+[29.021112] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\n'}
+[29.022238] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:192:51: warning: unused parameter \xe2\x80\x98response\xe2\x80\x99 [-Wunused-parameter]\n'}
+[29.025934] (ydlidar_ros2_driver) StderrLine: {'line': b'  192 |   std::shared_ptr<std_srvs::srv::Empty::Response> response) -> bool\n'}
+[29.027180] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~\n'}
+[29.028328] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp: In lambda function:\n'}
+[29.029325] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:200:54: warning: unused parameter \xe2\x80\x98request_header\xe2\x80\x99 [-Wunused-parameter]\n'}
+[29.030378] (ydlidar_ros2_driver) StderrLine: {'line': b'  200 |     [&laser](const std::shared_ptr<rmw_request_id_t> request_header,\n'}
+[29.031757] (ydlidar_ros2_driver) StderrLine: {'line': b'      |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~\n'}
+[29.032872] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:201:56: warning: unused parameter \xe2\x80\x98req\xe2\x80\x99 [-Wunused-parameter]\n'}
+[29.033918] (ydlidar_ros2_driver) StderrLine: {'line': b'  201 |   const std::shared_ptr<std_srvs::srv::Empty::Request> req,\n'}
+[29.034959] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\n'}
+[29.039372] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:202:51: warning: unused parameter \xe2\x80\x98response\xe2\x80\x99 [-Wunused-parameter]\n'}
+[29.040442] (ydlidar_ros2_driver) StderrLine: {'line': b'  202 |   std::shared_ptr<std_srvs::srv::Empty::Response> response) -> bool\n'}
+[29.041508] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~\n'}
+[29.042562] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp: In function \xe2\x80\x98int main(int, char**)\xe2\x80\x99:\n'}
+[29.047132] (ydlidar_ros2_driver) StderrLine: {'line': b'/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:235:21: warning: unused variable \xe2\x80\x98p\xe2\x80\x99 [-Wunused-variable]\n'}
+[29.048274] (ydlidar_ros2_driver) StderrLine: {'line': b'  235 |         const auto& p = scan.points.at(i);\n'}
+[29.049279] (ydlidar_ros2_driver) StderrLine: {'line': b'      |                     ^\n'}
+[29.080342] (-) TimerEvent: {}
+[29.183794] (-) TimerEvent: {}
+[29.284374] (-) TimerEvent: {}
+[29.384952] (-) TimerEvent: {}
+[29.485524] (-) TimerEvent: {}
+[29.586074] (-) TimerEvent: {}
+[29.686616] (-) TimerEvent: {}
+[29.787165] (-) TimerEvent: {}
+[29.887655] (-) TimerEvent: {}
+[29.988151] (-) TimerEvent: {}
+[30.088676] (-) TimerEvent: {}
+[30.189182] (-) TimerEvent: {}
+[30.289672] (-) TimerEvent: {}
+[30.390167] (-) TimerEvent: {}
+[30.490718] (-) TimerEvent: {}
+[30.591268] (-) TimerEvent: {}
+[30.691799] (-) TimerEvent: {}
+[30.792324] (-) TimerEvent: {}
+[30.892860] (-) TimerEvent: {}
+[30.993362] (-) TimerEvent: {}
+[31.093877] (-) TimerEvent: {}
+[31.194393] (-) TimerEvent: {}
+[31.294920] (-) TimerEvent: {}
+[31.395490] (-) TimerEvent: {}
+[31.496050] (-) TimerEvent: {}
+[31.596621] (-) TimerEvent: {}
+[31.697144] (-) TimerEvent: {}
+[31.797691] (-) TimerEvent: {}
+[31.898215] (-) TimerEvent: {}
+[31.998740] (-) TimerEvent: {}
+[32.099322] (-) TimerEvent: {}
+[32.199866] (-) TimerEvent: {}
+[32.300383] (-) TimerEvent: {}
+[32.400922] (-) TimerEvent: {}
+[32.501514] (-) TimerEvent: {}
+[32.602084] (-) TimerEvent: {}
+[32.702611] (-) TimerEvent: {}
+[32.803160] (-) TimerEvent: {}
+[32.903674] (-) TimerEvent: {}
+[33.004188] (-) TimerEvent: {}
+[33.104715] (-) TimerEvent: {}
+[33.205233] (-) TimerEvent: {}
+[33.305726] (-) TimerEvent: {}
+[33.406280] (-) TimerEvent: {}
+[33.506823] (-) TimerEvent: {}
+[33.607429] (-) TimerEvent: {}
+[33.707964] (-) TimerEvent: {}
+[33.808508] (-) TimerEvent: {}
+[33.909039] (-) TimerEvent: {}
+[34.009537] (-) TimerEvent: {}
+[34.110038] (-) TimerEvent: {}
+[34.210548] (-) TimerEvent: {}
+[34.311134] (-) TimerEvent: {}
+[34.411675] (-) TimerEvent: {}
+[34.512199] (-) TimerEvent: {}
+[34.612742] (-) TimerEvent: {}
+[34.713279] (-) TimerEvent: {}
+[34.813976] (-) TimerEvent: {}
+[34.914584] (-) TimerEvent: {}
+[35.015236] (-) TimerEvent: {}
+[35.057670] (ydlidar_ros2_driver) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/ydlidar_ros2_driver_node.dir/build.make:76: CMakeFiles/ydlidar_ros2_driver_node.dir/src/ydlidar_ros2_driver_node.cpp.o] Error 1\n'}
+[35.059509] (ydlidar_ros2_driver) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/ydlidar_ros2_driver_node.dir/all] Error 2\n'}
+[35.060393] (ydlidar_ros2_driver) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[35.115457] (-) TimerEvent: {}
+[35.215991] (-) TimerEvent: {}
+[35.316498] (-) TimerEvent: {}
+[35.417334] (-) TimerEvent: {}
+[35.517908] (-) TimerEvent: {}
+[35.618435] (-) TimerEvent: {}
+[35.718988] (-) TimerEvent: {}
+[35.819640] (-) TimerEvent: {}
+[35.920181] (-) TimerEvent: {}
+[36.020692] (-) TimerEvent: {}
+[36.121185] (-) TimerEvent: {}
+[36.221672] (-) TimerEvent: {}
+[36.322150] (-) TimerEvent: {}
+[36.422634] (-) TimerEvent: {}
+[36.523147] (-) TimerEvent: {}
+[36.623645] (-) TimerEvent: {}
+[36.724153] (-) TimerEvent: {}
+[36.824645] (-) TimerEvent: {}
+[36.925138] (-) TimerEvent: {}
+[37.025616] (-) TimerEvent: {}
+[37.126086] (-) TimerEvent: {}
+[37.226628] (-) TimerEvent: {}
+[37.327176] (-) TimerEvent: {}
+[37.427668] (-) TimerEvent: {}
+[37.528140] (-) TimerEvent: {}
+[37.628626] (-) TimerEvent: {}
+[37.729082] (-) TimerEvent: {}
+[37.829538] (-) TimerEvent: {}
+[37.930007] (-) TimerEvent: {}
+[38.030491] (-) TimerEvent: {}
+[38.130943] (-) TimerEvent: {}
+[38.231460] (-) TimerEvent: {}
+[38.331907] (-) TimerEvent: {}
+[38.432508] (-) TimerEvent: {}
+[38.533033] (-) TimerEvent: {}
+[38.633538] (-) TimerEvent: {}
+[38.734089] (-) TimerEvent: {}
+[38.834596] (-) TimerEvent: {}
+[38.935196] (-) TimerEvent: {}
+[39.035767] (-) TimerEvent: {}
+[39.136305] (-) TimerEvent: {}
+[39.236853] (-) TimerEvent: {}
+[39.337379] (-) TimerEvent: {}
+[39.437892] (-) TimerEvent: {}
+[39.538373] (-) TimerEvent: {}
+[39.638859] (-) TimerEvent: {}
+[39.739397] (-) TimerEvent: {}
+[39.839868] (-) TimerEvent: {}
+[39.940340] (-) TimerEvent: {}
+[40.040796] (-) TimerEvent: {}
+[40.141265] (-) TimerEvent: {}
+[40.241766] (-) TimerEvent: {}
+[40.342293] (-) TimerEvent: {}
+[40.442869] (-) TimerEvent: {}
+[40.543557] (-) TimerEvent: {}
+[40.644201] (-) TimerEvent: {}
+[40.744758] (-) TimerEvent: {}
+[40.846942] (-) TimerEvent: {}
+[40.947589] (-) TimerEvent: {}
+[41.048146] (-) TimerEvent: {}
+[41.148723] (-) TimerEvent: {}
+[41.249343] (-) TimerEvent: {}
+[41.349918] (-) TimerEvent: {}
+[41.450471] (-) TimerEvent: {}
+[41.551005] (-) TimerEvent: {}
+[41.651635] (-) TimerEvent: {}
+[41.752124] (-) TimerEvent: {}
+[41.852590] (-) TimerEvent: {}
+[41.953053] (-) TimerEvent: {}
+[42.053504] (-) TimerEvent: {}
+[42.153973] (-) TimerEvent: {}
+[42.254443] (-) TimerEvent: {}
+[42.354989] (-) TimerEvent: {}
+[42.455591] (-) TimerEvent: {}
+[42.556081] (-) TimerEvent: {}
+[42.656542] (-) TimerEvent: {}
+[42.757000] (-) TimerEvent: {}
+[42.857445] (-) TimerEvent: {}
+[42.957867] (-) TimerEvent: {}
+[43.058306] (-) TimerEvent: {}
+[43.158775] (-) TimerEvent: {}
+[43.259313] (-) TimerEvent: {}
+[43.359817] (-) TimerEvent: {}
+[43.460378] (-) TimerEvent: {}
+[43.560917] (-) TimerEvent: {}
+[43.661430] (-) TimerEvent: {}
+[43.761943] (-) TimerEvent: {}
+[43.862441] (-) TimerEvent: {}
+[43.962902] (-) TimerEvent: {}
+[44.063418] (-) TimerEvent: {}
+[44.163930] (-) TimerEvent: {}
+[44.264495] (-) TimerEvent: {}
+[44.365080] (-) TimerEvent: {}
+[44.465630] (-) TimerEvent: {}
+[44.566139] (-) TimerEvent: {}
+[44.666653] (-) TimerEvent: {}
+[44.767201] (-) TimerEvent: {}
+[44.867698] (-) TimerEvent: {}
+[44.968179] (-) TimerEvent: {}
+[45.068656] (-) TimerEvent: {}
+[45.169144] (-) TimerEvent: {}
+[45.269613] (-) TimerEvent: {}
+[45.370075] (-) TimerEvent: {}
+[45.470560] (-) TimerEvent: {}
+[45.571139] (-) TimerEvent: {}
+[45.671645] (-) TimerEvent: {}
+[45.772124] (-) TimerEvent: {}
+[45.872622] (-) TimerEvent: {}
+[45.973101] (-) TimerEvent: {}
+[46.073571] (-) TimerEvent: {}
+[46.174038] (-) TimerEvent: {}
+[46.274507] (-) TimerEvent: {}
+[46.374964] (-) TimerEvent: {}
+[46.475490] (-) TimerEvent: {}
+[46.575974] (-) TimerEvent: {}
+[46.676440] (-) TimerEvent: {}
+[46.776913] (-) TimerEvent: {}
+[46.877401] (-) TimerEvent: {}
+[46.977886] (-) TimerEvent: {}
+[47.078393] (-) TimerEvent: {}
+[47.178868] (-) TimerEvent: {}
+[47.279369] (-) TimerEvent: {}
+[47.379833] (-) TimerEvent: {}
+[47.480407] (-) TimerEvent: {}
+[47.580914] (-) TimerEvent: {}
+[47.681407] (-) TimerEvent: {}
+[47.781937] (-) TimerEvent: {}
+[47.882426] (-) TimerEvent: {}
+[47.982919] (-) TimerEvent: {}
+[48.083431] (-) TimerEvent: {}
+[48.183938] (-) TimerEvent: {}
+[48.284441] (-) TimerEvent: {}
+[48.384961] (-) TimerEvent: {}
+[48.485479] (-) TimerEvent: {}
+[48.585983] (-) TimerEvent: {}
+[48.686462] (-) TimerEvent: {}
+[48.786998] (-) TimerEvent: {}
+[48.887553] (-) TimerEvent: {}
+[48.988032] (-) TimerEvent: {}
+[49.088523] (-) TimerEvent: {}
+[49.189000] (-) TimerEvent: {}
+[49.289496] (-) TimerEvent: {}
+[49.389967] (-) TimerEvent: {}
+[49.490482] (-) TimerEvent: {}
+[49.591007] (-) TimerEvent: {}
+[49.691543] (-) TimerEvent: {}
+[49.792019] (-) TimerEvent: {}
+[49.892521] (-) TimerEvent: {}
+[49.992993] (-) TimerEvent: {}
+[50.093481] (-) TimerEvent: {}
+[50.193954] (-) TimerEvent: {}
+[50.294435] (-) TimerEvent: {}
+[50.394912] (-) TimerEvent: {}
+[50.495526] (-) TimerEvent: {}
+[50.596052] (-) TimerEvent: {}
+[50.696547] (-) TimerEvent: {}
+[50.797052] (-) TimerEvent: {}
+[50.897530] (-) TimerEvent: {}
+[50.998025] (-) TimerEvent: {}
+[51.098518] (-) TimerEvent: {}
+[51.199081] (-) TimerEvent: {}
+[51.299569] (-) TimerEvent: {}
+[51.400072] (-) TimerEvent: {}
+[51.500562] (-) TimerEvent: {}
+[51.601061] (-) TimerEvent: {}
+[51.701511] (-) TimerEvent: {}
+[51.802002] (-) TimerEvent: {}
+[51.902458] (-) TimerEvent: {}
+[52.002983] (-) TimerEvent: {}
+[52.103489] (-) TimerEvent: {}
+[52.203939] (-) TimerEvent: {}
+[52.304442] (-) TimerEvent: {}
+[52.404950] (-) TimerEvent: {}
+[52.505478] (-) TimerEvent: {}
+[52.605972] (-) TimerEvent: {}
+[52.706491] (-) TimerEvent: {}
+[52.806973] (-) TimerEvent: {}
+[52.907524] (-) TimerEvent: {}
+[53.008027] (-) TimerEvent: {}
+[53.108531] (-) TimerEvent: {}
+[53.209024] (-) TimerEvent: {}
+[53.309519] (-) TimerEvent: {}
+[53.410028] (-) TimerEvent: {}
+[53.510552] (-) TimerEvent: {}
+[53.611099] (-) TimerEvent: {}
+[53.711595] (-) TimerEvent: {}
+[53.812096] (-) TimerEvent: {}
+[53.912621] (-) TimerEvent: {}
+[54.013183] (-) TimerEvent: {}
+[54.113764] (-) TimerEvent: {}
+[54.214271] (-) TimerEvent: {}
+[54.314786] (-) TimerEvent: {}
+[54.415410] (-) TimerEvent: {}
+[54.515962] (-) TimerEvent: {}
+[54.616467] (-) TimerEvent: {}
+[54.717035] (-) TimerEvent: {}
+[54.817526] (-) TimerEvent: {}
+[54.918022] (-) TimerEvent: {}
+[55.018490] (-) TimerEvent: {}
+[55.118944] (-) TimerEvent: {}
+[55.219488] (-) TimerEvent: {}
+[55.320004] (-) TimerEvent: {}
+[55.420541] (-) TimerEvent: {}
+[55.521121] (-) TimerEvent: {}
+[55.621738] (-) TimerEvent: {}
+[55.722349] (-) TimerEvent: {}
+[55.822932] (-) TimerEvent: {}
+[55.927287] (-) TimerEvent: {}
+[56.027880] (-) TimerEvent: {}
+[56.128823] (-) TimerEvent: {}
+[56.229472] (-) TimerEvent: {}
+[56.330037] (-) TimerEvent: {}
+[56.430988] (-) TimerEvent: {}
+[56.531968] (-) TimerEvent: {}
+[56.632495] (-) TimerEvent: {}
+[56.733016] (-) TimerEvent: {}
+[56.833527] (-) TimerEvent: {}
+[56.934074] (-) TimerEvent: {}
+[57.034626] (-) TimerEvent: {}
+[57.135223] (-) TimerEvent: {}
+[57.235761] (-) TimerEvent: {}
+[57.336242] (-) TimerEvent: {}
+[57.436762] (-) TimerEvent: {}
+[57.537283] (-) TimerEvent: {}
+[57.637812] (-) TimerEvent: {}
+[57.738307] (-) TimerEvent: {}
+[57.838775] (-) TimerEvent: {}
+[57.939271] (-) TimerEvent: {}
+[58.039735] (-) TimerEvent: {}
+[58.140233] (-) TimerEvent: {}
+[58.240778] (-) TimerEvent: {}
+[58.341336] (-) TimerEvent: {}
+[58.441892] (-) TimerEvent: {}
+[58.542436] (-) TimerEvent: {}
+[58.642948] (-) TimerEvent: {}
+[58.743517] (-) TimerEvent: {}
+[58.844066] (-) TimerEvent: {}
+[58.944592] (-) TimerEvent: {}
+[59.045107] (-) TimerEvent: {}
+[59.145627] (-) TimerEvent: {}
+[59.246105] (-) TimerEvent: {}
+[59.346616] (-) TimerEvent: {}
+[59.447187] (-) TimerEvent: {}
+[59.547681] (-) TimerEvent: {}
+[59.648166] (-) TimerEvent: {}
+[59.748647] (-) TimerEvent: {}
+[59.849147] (-) TimerEvent: {}
+[59.949639] (-) TimerEvent: {}
+[60.050138] (-) TimerEvent: {}
+[60.150607] (-) TimerEvent: {}
+[60.251128] (-) TimerEvent: {}
+[60.351589] (-) TimerEvent: {}
+[60.452092] (-) TimerEvent: {}
+[60.552556] (-) TimerEvent: {}
+[60.653058] (-) TimerEvent: {}
+[60.753530] (-) TimerEvent: {}
+[60.853996] (-) TimerEvent: {}
+[60.954466] (-) TimerEvent: {}
+[61.054938] (-) TimerEvent: {}
+[61.155476] (-) TimerEvent: {}
+[61.255942] (-) TimerEvent: {}
+[61.356415] (-) TimerEvent: {}
+[61.456885] (-) TimerEvent: {}
+[61.557394] (-) TimerEvent: {}
+[61.657880] (-) TimerEvent: {}
+[61.758380] (-) TimerEvent: {}
+[61.858857] (-) TimerEvent: {}
+[61.959358] (-) TimerEvent: {}
+[62.059865] (-) TimerEvent: {}
+[62.160341] (-) TimerEvent: {}
+[62.260801] (-) TimerEvent: {}
+[62.361249] (-) TimerEvent: {}
+[62.461769] (-) TimerEvent: {}
+[62.562256] (-) TimerEvent: {}
+[62.662777] (-) TimerEvent: {}
+[62.763311] (-) TimerEvent: {}
+[62.863827] (-) TimerEvent: {}
+[62.964326] (-) TimerEvent: {}
+[63.064836] (-) TimerEvent: {}
+[63.165326] (-) TimerEvent: {}
+[63.265814] (-) TimerEvent: {}
+[63.366264] (-) TimerEvent: {}
+[63.466785] (-) TimerEvent: {}
+[63.567315] (-) TimerEvent: {}
+[63.667822] (-) TimerEvent: {}
+[63.768277] (-) TimerEvent: {}
+[63.868792] (-) TimerEvent: {}
+[63.969273] (-) TimerEvent: {}
+[64.069772] (-) TimerEvent: {}
+[64.170250] (-) TimerEvent: {}
+[64.270711] (-) TimerEvent: {}
+[64.371201] (-) TimerEvent: {}
+[64.471712] (-) TimerEvent: {}
+[64.572219] (-) TimerEvent: {}
+[64.672712] (-) TimerEvent: {}
+[64.773207] (-) TimerEvent: {}
+[64.873731] (-) TimerEvent: {}
+[64.974303] (-) TimerEvent: {}
+[65.074858] (-) TimerEvent: {}
+[65.175469] (-) TimerEvent: {}
+[65.276032] (-) TimerEvent: {}
+[65.376563] (-) TimerEvent: {}
+[65.477105] (-) TimerEvent: {}
+[65.577626] (-) TimerEvent: {}
+[65.678198] (-) TimerEvent: {}
+[65.778762] (-) TimerEvent: {}
+[65.879325] (-) TimerEvent: {}
+[65.979853] (-) TimerEvent: {}
+[66.080381] (-) TimerEvent: {}
+[66.180896] (-) TimerEvent: {}
+[66.281405] (-) TimerEvent: {}
+[66.381893] (-) TimerEvent: {}
+[66.482416] (-) TimerEvent: {}
+[66.582911] (-) TimerEvent: {}
+[66.683464] (-) TimerEvent: {}
+[66.783949] (-) TimerEvent: {}
+[66.884437] (-) TimerEvent: {}
+[66.984921] (-) TimerEvent: {}
+[67.085377] (-) TimerEvent: {}
+[67.185852] (-) TimerEvent: {}
+[67.286318] (-) TimerEvent: {}
+[67.386779] (-) TimerEvent: {}
+[67.487383] (-) TimerEvent: {}
+[67.587948] (-) TimerEvent: {}
+[67.688451] (-) TimerEvent: {}
+[67.788915] (-) TimerEvent: {}
+[67.889399] (-) TimerEvent: {}
+[67.989864] (-) TimerEvent: {}
+[68.090377] (-) TimerEvent: {}
+[68.190894] (-) TimerEvent: {}
+[68.291504] (-) TimerEvent: {}
+[68.392066] (-) TimerEvent: {}
+[68.492602] (-) TimerEvent: {}
+[68.593131] (-) TimerEvent: {}
+[68.693656] (-) TimerEvent: {}
+[68.794215] (-) TimerEvent: {}
+[68.894786] (-) TimerEvent: {}
+[68.995401] (-) TimerEvent: {}
+[69.095912] (-) TimerEvent: {}
+[69.196386] (-) TimerEvent: {}
+[69.296850] (-) TimerEvent: {}
+[69.397303] (-) TimerEvent: {}
+[69.497780] (-) TimerEvent: {}
+[69.598248] (-) TimerEvent: {}
+[69.698712] (-) TimerEvent: {}
+[69.799206] (-) TimerEvent: {}
+[69.899670] (-) TimerEvent: {}
+[70.000135] (-) TimerEvent: {}
+[70.100667] (-) TimerEvent: {}
+[70.201312] (-) TimerEvent: {}
+[70.301988] (-) TimerEvent: {}
+[70.402608] (-) TimerEvent: {}
+[70.503214] (-) TimerEvent: {}
+[70.603745] (-) TimerEvent: {}
+[70.704305] (-) TimerEvent: {}
+[70.804833] (-) TimerEvent: {}
+[70.906221] (-) TimerEvent: {}
+[71.006832] (-) TimerEvent: {}
+[71.107458] (-) TimerEvent: {}
+[71.207994] (-) TimerEvent: {}
+[71.308495] (-) TimerEvent: {}
+[71.409059] (-) TimerEvent: {}
+[71.509632] (-) TimerEvent: {}
+[71.530495] (ydlidar_ros2_driver) StdoutLine: {'line': b'[ 75%] Linking CXX executable ydlidar_ros2_driver_client\n'}
+[71.609938] (-) TimerEvent: {}
+[71.710491] (-) TimerEvent: {}
+[71.810977] (-) TimerEvent: {}
+[71.911592] (-) TimerEvent: {}
+[72.012196] (-) TimerEvent: {}
+[72.112772] (-) TimerEvent: {}
+[72.213367] (-) TimerEvent: {}
+[72.314058] (-) TimerEvent: {}
+[72.414694] (-) TimerEvent: {}
+[72.515240] (-) TimerEvent: {}
+[72.615740] (-) TimerEvent: {}
+[72.716291] (-) TimerEvent: {}
+[72.816891] (-) TimerEvent: {}
+[72.917489] (-) TimerEvent: {}
+[73.018115] (-) TimerEvent: {}
+[73.118810] (-) TimerEvent: {}
+[73.219514] (-) TimerEvent: {}
+[73.320168] (-) TimerEvent: {}
+[73.420747] (-) TimerEvent: {}
+[73.521363] (-) TimerEvent: {}
+[73.621910] (-) TimerEvent: {}
+[73.722744] (-) TimerEvent: {}
+[73.823261] (-) TimerEvent: {}
+[73.923758] (-) TimerEvent: {}
+[74.024264] (-) TimerEvent: {}
+[74.124740] (-) TimerEvent: {}
+[74.225203] (-) TimerEvent: {}
+[74.325637] (-) TimerEvent: {}
+[74.426067] (-) TimerEvent: {}
+[74.526536] (-) TimerEvent: {}
+[74.626985] (-) TimerEvent: {}
+[74.727471] (-) TimerEvent: {}
+[74.827898] (-) TimerEvent: {}
+[74.928386] (-) TimerEvent: {}
+[75.028868] (-) TimerEvent: {}
+[75.129355] (-) TimerEvent: {}
+[75.229804] (-) TimerEvent: {}
+[75.330256] (-) TimerEvent: {}
+[75.430667] (-) TimerEvent: {}
+[75.531133] (-) TimerEvent: {}
+[75.631706] (-) TimerEvent: {}
+[75.716862] (ydlidar_ros2_driver) StdoutLine: {'line': b'[ 75%] Built target ydlidar_ros2_driver_client\n'}
+[75.722533] (ydlidar_ros2_driver) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[75.729531] (ydlidar_ros2_driver) CommandEnded: {'returncode': 2}
+[75.731909] (-) TimerEvent: {}
+[75.794384] (ydlidar_ros2_driver) JobEnded: {'identifier': 'ydlidar_ros2_driver', 'rc': 2}
+[75.805955] (-) EventReactorShutdown: {}

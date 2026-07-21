@@ -1,0 +1,126 @@
+[1.767s] Invoking command in '/home/sunrise/robot1_ws/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/sunrise/robot1_ws/src/ydlidar_ros2_driver -DCMAKE_INSTALL_PREFIX=/home/sunrise/robot1_ws/install/ydlidar_ros2_driver
+[2.085s] -- The C compiler identification is GNU 11.2.0
+[2.432s] -- The CXX compiler identification is GNU 11.2.0
+[2.470s] -- Detecting C compiler ABI info
+[2.831s] -- Detecting C compiler ABI info - done
+[2.897s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.899s] -- Detecting C compile features
+[2.902s] -- Detecting C compile features - done
+[2.923s] -- Detecting CXX compiler ABI info
+[3.387s] -- Detecting CXX compiler ABI info - done
+[3.487s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.491s] -- Detecting CXX compile features
+[3.497s] -- Detecting CXX compile features - done
+[3.509s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[6.627s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[7.233s] -- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+[7.458s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[7.486s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[7.536s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[7.626s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[7.747s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[8.169s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[8.187s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[8.713s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[8.864s] -- Found FastRTPS: /opt/ros/humble/include  
+[9.198s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[9.199s] -- Looking for pthread.h
+[9.647s] -- Looking for pthread.h - found
+[9.650s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[10.100s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[10.107s] -- Found Threads: TRUE  
+[10.578s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[10.849s] -- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[11.018s] -- Found std_srvs: 4.9.0 (/opt/ros/humble/share/std_srvs/cmake)
+[11.120s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[11.647s] -- Added test 'copyright' to check source files copyright and LICENSE
+[11.668s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[11.671s] -- Configured cppcheck include dirs: /home/sunrise/robot1_ws/src/ydlidar_ros2_driver/src
+[11.672s] -- Configured cppcheck exclude dirs and/or files: 
+[11.691s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[11.691s] -- Configured cpplint exclude dirs and/or files: 
+[11.696s] -- Added test 'flake8' to check Python code syntax and style conventions
+[11.702s] -- Added test 'lint_cmake' to check CMake code style
+[11.707s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[11.726s] -- Added test 'uncrustify' to check C / C++ code style
+[11.727s] -- Configured uncrustify additional arguments: 
+[11.731s] -- Added test 'xmllint' to check XML markup files
+[11.737s] -- Configuring done
+[11.821s] -- Generating done
+[11.861s] -- Build files have been written to: /home/sunrise/robot1_ws/build/ydlidar_ros2_driver
+[11.932s] Invoked command in '/home/sunrise/robot1_ws/build/ydlidar_ros2_driver' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/sunrise/robot1_ws/src/ydlidar_ros2_driver -DCMAKE_INSTALL_PREFIX=/home/sunrise/robot1_ws/install/ydlidar_ros2_driver
+[11.940s] Invoking command in '/home/sunrise/robot1_ws/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/sunrise/robot1_ws/build/ydlidar_ros2_driver -- -j4 -l4
+[12.138s] [ 50%] Building CXX object CMakeFiles/ydlidar_ros2_driver_client.dir/src/ydlidar_ros2_driver_client.cpp.o
+[12.139s] [ 50%] Building CXX object CMakeFiles/ydlidar_ros2_driver_node.dir/src/ydlidar_ros2_driver_node.cpp.o
+[31.317s] /home/sunrise/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp: In lambda function:
+[31.318s] /home/sunrise/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:192:54: warning: unused parameter ‘request_header’ [-Wunused-parameter]
+[31.319s]   192 |     [&laser](const std::shared_ptr<rmw_request_id_t> request_header,
+[31.320s]       |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+[31.321s] /home/sunrise/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:193:56: warning: unused parameter ‘req’ [-Wunused-parameter]
+[31.322s]   193 |   const std::shared_ptr<std_srvs::srv::Empty::Request> req,
+[31.323s]       |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+[31.324s] /home/sunrise/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:194:51: warning: unused parameter ‘response’ [-Wunused-parameter]
+[31.325s]   194 |   std::shared_ptr<std_srvs::srv::Empty::Response> response) -> bool
+[31.326s]       |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+[31.450s] /home/sunrise/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp: In lambda function:
+[31.451s] /home/sunrise/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:202:54: warning: unused parameter ‘request_header’ [-Wunused-parameter]
+[31.452s]   202 |     [&laser](const std::shared_ptr<rmw_request_id_t> request_header,
+[31.453s]       |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+[31.454s] /home/sunrise/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:203:56: warning: unused parameter ‘req’ [-Wunused-parameter]
+[31.455s]   203 |   const std::shared_ptr<std_srvs::srv::Empty::Request> req,
+[31.456s]       |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+[31.457s] /home/sunrise/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:204:51: warning: unused parameter ‘response’ [-Wunused-parameter]
+[31.458s]   204 |   std::shared_ptr<std_srvs::srv::Empty::Response> response) -> bool
+[31.459s]       |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+[58.484s] [ 75%] Linking CXX executable ydlidar_ros2_driver_node
+[61.494s] [ 75%] Built target ydlidar_ros2_driver_node
+[79.068s] [100%] Linking CXX executable ydlidar_ros2_driver_client
+[83.187s] [100%] Built target ydlidar_ros2_driver_client
+[83.246s] Invoked command in '/home/sunrise/robot1_ws/build/ydlidar_ros2_driver' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/sunrise/robot1_ws/build/ydlidar_ros2_driver -- -j4 -l4
+[83.293s] Invoking command in '/home/sunrise/robot1_ws/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/sunrise/robot1_ws/build/ydlidar_ros2_driver
+[83.337s] -- Install configuration: ""
+[83.339s] -- Installing: /home/sunrise/robot1_ws/install/ydlidar_ros2_driver/lib/ydlidar_ros2_driver/ydlidar_ros2_driver_node
+[83.351s] -- Set runtime path of "/home/sunrise/robot1_ws/install/ydlidar_ros2_driver/lib/ydlidar_ros2_driver/ydlidar_ros2_driver_node" to ""
+[83.352s] -- Installing: /home/sunrise/robot1_ws/install/ydlidar_ros2_driver/lib/ydlidar_ros2_driver/ydlidar_ros2_driver_client
+[83.371s] -- Set runtime path of "/home/sunrise/robot1_ws/install/ydlidar_ros2_driver/lib/ydlidar_ros2_driver/ydlidar_ros2_driver_client" to ""
+[83.374s] -- Installing: /home/sunrise/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch
+[83.375s] -- Installing: /home/sunrise/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar_launch_view.py
+[83.375s] -- Installing: /home/sunrise/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar.py
+[83.379s] -- Installing: /home/sunrise/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar_launch.py
+[83.380s] -- Installing: /home/sunrise/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params
+[83.384s] -- Installing: /home/sunrise/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/G6.yaml
+[83.386s] -- Installing: /home/sunrise/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/sdm15.yaml
+[83.388s] -- Installing: /home/sunrise/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/GS2.yaml
+[83.389s] -- Installing: /home/sunrise/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/TG.yaml
+[83.390s] -- Installing: /home/sunrise/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/Tmini.yaml
+[83.402s] -- Installing: /home/sunrise/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/X4.yaml
+[83.405s] -- Installing: /home/sunrise/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/X4-Pro.yaml
+[83.406s] -- Installing: /home/sunrise/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/Tmini-Plus-SH.yaml
+[83.407s] -- Installing: /home/sunrise/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/GS5.yaml
+[83.408s] -- Installing: /home/sunrise/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/G2.yaml
+[83.410s] -- Installing: /home/sunrise/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/X2.yaml
+[83.417s] -- Installing: /home/sunrise/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/TEA.yaml
+[83.420s] -- Installing: /home/sunrise/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/ydlidar.yaml
+[83.421s] -- Installing: /home/sunrise/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/G4.yaml
+[83.422s] -- Installing: /home/sunrise/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/X3.yaml
+[83.423s] -- Installing: /home/sunrise/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/G1.yaml
+[83.426s] -- Installing: /home/sunrise/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/startup
+[83.427s] -- Installing: /home/sunrise/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/startup/initenv.sh
+[83.429s] -- Installing: /home/sunrise/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/config
+[83.431s] -- Installing: /home/sunrise/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/config/ydlidar.rviz
+[83.432s] -- Installing: /home/sunrise/robot1_ws/install/ydlidar_ros2_driver/share/ament_index/resource_index/package_run_dependencies/ydlidar_ros2_driver
+[83.433s] -- Installing: /home/sunrise/robot1_ws/install/ydlidar_ros2_driver/share/ament_index/resource_index/parent_prefix_path/ydlidar_ros2_driver
+[83.433s] -- Installing: /home/sunrise/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/ament_prefix_path.sh
+[83.435s] -- Installing: /home/sunrise/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/ament_prefix_path.dsv
+[83.436s] -- Installing: /home/sunrise/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/path.sh
+[83.437s] -- Installing: /home/sunrise/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/path.dsv
+[83.438s] -- Installing: /home/sunrise/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.bash
+[83.438s] -- Installing: /home/sunrise/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.sh
+[83.439s] -- Installing: /home/sunrise/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.zsh
+[83.440s] -- Installing: /home/sunrise/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.dsv
+[83.441s] -- Installing: /home/sunrise/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.dsv
+[83.442s] -- Installing: /home/sunrise/robot1_ws/install/ydlidar_ros2_driver/share/ament_index/resource_index/packages/ydlidar_ros2_driver
+[83.449s] -- Installing: /home/sunrise/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/cmake/ydlidar_ros2_driverConfig.cmake
+[83.451s] -- Installing: /home/sunrise/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/cmake/ydlidar_ros2_driverConfig-version.cmake
+[83.454s] -- Installing: /home/sunrise/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.xml
+[83.455s] Invoked command in '/home/sunrise/robot1_ws/build/ydlidar_ros2_driver' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/sunrise/robot1_ws/build/ydlidar_ros2_driver

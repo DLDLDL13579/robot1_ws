@@ -1,0 +1,1048 @@
+-- The C compiler identification is GNU 11.2.0
+-- The CXX compiler identification is GNU 11.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+-- Found FastRTPS: /opt/ros/humble/include  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+-- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+-- Found std_srvs: 4.9.0 (/opt/ros/humble/share/std_srvs/cmake)
+-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /root/robot1_ws/src/ydlidar_ros2_driver/src
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /root/robot1_ws/build/ydlidar_ros2_driver
+[ 50%] Building CXX object CMakeFiles/ydlidar_ros2_driver_client.dir/src/ydlidar_ros2_driver_client.cpp.o
+[ 50%] Building CXX object CMakeFiles/ydlidar_ros2_driver_node.dir/src/ydlidar_ros2_driver_node.cpp.o
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp: In function ‘int main(int, char**)’:
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:44:26: error: no matching function for call to ‘rclcpp::Node::declare_parameter(const char [5])’
+   44 |   node->declare_parameter("port");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note: candidate: ‘template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)’
+  421 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note:   template argument deduction/substitution failed:
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:44:26: note:   candidate expects 4 arguments, 1 provided
+   44 |   node->declare_parameter("port");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note: candidate: ‘template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)’
+  434 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note:   template argument deduction/substitution failed:
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:44:26: note:   couldn’t deduce template parameter ‘ParameterT’
+   44 |   node->declare_parameter("port");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note: candidate: ‘const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)’
+  366 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note:   candidate expects 4 arguments, 1 provided
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note: candidate: ‘const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)’
+  391 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note:   candidate expects 4 arguments, 1 provided
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:51:26: error: no matching function for call to ‘rclcpp::Node::declare_parameter(const char [13])’
+   51 |   node->declare_parameter("ignore_array");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note: candidate: ‘template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)’
+  421 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note:   template argument deduction/substitution failed:
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:51:26: note:   candidate expects 4 arguments, 1 provided
+   51 |   node->declare_parameter("ignore_array");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note: candidate: ‘template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)’
+  434 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note:   template argument deduction/substitution failed:
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:51:26: note:   couldn’t deduce template parameter ‘ParameterT’
+   51 |   node->declare_parameter("ignore_array");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note: candidate: ‘const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)’
+  366 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note:   candidate expects 4 arguments, 1 provided
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note: candidate: ‘const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)’
+  391 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note:   candidate expects 4 arguments, 1 provided
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:56:26: error: no matching function for call to ‘rclcpp::Node::declare_parameter(const char [9])’
+   56 |   node->declare_parameter("frame_id");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note: candidate: ‘template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)’
+  421 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note:   template argument deduction/substitution failed:
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:56:26: note:   candidate expects 4 arguments, 1 provided
+   56 |   node->declare_parameter("frame_id");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note: candidate: ‘template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)’
+  434 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note:   template argument deduction/substitution failed:
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:56:26: note:   couldn’t deduce template parameter ‘ParameterT’
+   56 |   node->declare_parameter("frame_id");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note: candidate: ‘const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)’
+  366 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note:   candidate expects 4 arguments, 1 provided
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note: candidate: ‘const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)’
+  391 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note:   candidate expects 4 arguments, 1 provided
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:62:26: error: no matching function for call to ‘rclcpp::Node::declare_parameter(const char [9])’
+   62 |   node->declare_parameter("baudrate");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note: candidate: ‘template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)’
+  421 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note:   template argument deduction/substitution failed:
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:62:26: note:   candidate expects 4 arguments, 1 provided
+   62 |   node->declare_parameter("baudrate");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note: candidate: ‘template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)’
+  434 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note:   template argument deduction/substitution failed:
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:62:26: note:   couldn’t deduce template parameter ‘ParameterT’
+   62 |   node->declare_parameter("baudrate");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note: candidate: ‘const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)’
+  366 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note:   candidate expects 4 arguments, 1 provided
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note: candidate: ‘const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)’
+  391 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note:   candidate expects 4 arguments, 1 provided
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:67:26: error: no matching function for call to ‘rclcpp::Node::declare_parameter(const char [11])’
+   67 |   node->declare_parameter("lidar_type");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note: candidate: ‘template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)’
+  421 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note:   template argument deduction/substitution failed:
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:67:26: note:   candidate expects 4 arguments, 1 provided
+   67 |   node->declare_parameter("lidar_type");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note: candidate: ‘template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)’
+  434 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note:   template argument deduction/substitution failed:
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:67:26: note:   couldn’t deduce template parameter ‘ParameterT’
+   67 |   node->declare_parameter("lidar_type");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note: candidate: ‘const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)’
+  366 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note:   candidate expects 4 arguments, 1 provided
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note: candidate: ‘const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)’
+  391 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note:   candidate expects 4 arguments, 1 provided
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:72:26: error: no matching function for call to ‘rclcpp::Node::declare_parameter(const char [12])’
+   72 |   node->declare_parameter("device_type");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note: candidate: ‘template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)’
+  421 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note:   template argument deduction/substitution failed:
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:72:26: note:   candidate expects 4 arguments, 1 provided
+   72 |   node->declare_parameter("device_type");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note: candidate: ‘template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)’
+  434 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note:   template argument deduction/substitution failed:
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:72:26: note:   couldn’t deduce template parameter ‘ParameterT’
+   72 |   node->declare_parameter("device_type");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note: candidate: ‘const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)’
+  366 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note:   candidate expects 4 arguments, 1 provided
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note: candidate: ‘const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)’
+  391 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note:   candidate expects 4 arguments, 1 provided
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:77:26: error: no matching function for call to ‘rclcpp::Node::declare_parameter(const char [12])’
+   77 |   node->declare_parameter("sample_rate");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note: candidate: ‘template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)’
+  421 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note:   template argument deduction/substitution failed:
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:77:26: note:   candidate expects 4 arguments, 1 provided
+   77 |   node->declare_parameter("sample_rate");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note: candidate: ‘template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)’
+  434 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note:   template argument deduction/substitution failed:
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:77:26: note:   couldn’t deduce template parameter ‘ParameterT’
+   77 |   node->declare_parameter("sample_rate");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note: candidate: ‘const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)’
+  366 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note:   candidate expects 4 arguments, 1 provided
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note: candidate: ‘const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)’
+  391 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note:   candidate expects 4 arguments, 1 provided
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:82:26: error: no matching function for call to ‘rclcpp::Node::declare_parameter(const char [21])’
+   82 |   node->declare_parameter("abnormal_check_count");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note: candidate: ‘template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)’
+  421 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note:   template argument deduction/substitution failed:
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:82:26: note:   candidate expects 4 arguments, 1 provided
+   82 |   node->declare_parameter("abnormal_check_count");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note: candidate: ‘template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)’
+  434 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note:   template argument deduction/substitution failed:
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:82:26: note:   couldn’t deduce template parameter ‘ParameterT’
+   82 |   node->declare_parameter("abnormal_check_count");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note: candidate: ‘const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)’
+  366 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note:   candidate expects 4 arguments, 1 provided
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note: candidate: ‘const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)’
+  391 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note:   candidate expects 4 arguments, 1 provided
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:88:26: error: no matching function for call to ‘rclcpp::Node::declare_parameter(const char [14])’
+   88 |   node->declare_parameter("intensity_bit");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note: candidate: ‘template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)’
+  421 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note:   template argument deduction/substitution failed:
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:88:26: note:   candidate expects 4 arguments, 1 provided
+   88 |   node->declare_parameter("intensity_bit");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note: candidate: ‘template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)’
+  434 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note:   template argument deduction/substitution failed:
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:88:26: note:   couldn’t deduce template parameter ‘ParameterT’
+   88 |   node->declare_parameter("intensity_bit");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note: candidate: ‘const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)’
+  366 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note:   candidate expects 4 arguments, 1 provided
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note: candidate: ‘const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)’
+  391 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note:   candidate expects 4 arguments, 1 provided
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:95:26: error: no matching function for call to ‘rclcpp::Node::declare_parameter(const char [17])’
+   95 |   node->declare_parameter("fixed_resolution");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note: candidate: ‘template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)’
+  421 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note:   template argument deduction/substitution failed:
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:95:26: note:   candidate expects 4 arguments, 1 provided
+   95 |   node->declare_parameter("fixed_resolution");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note: candidate: ‘template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)’
+  434 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note:   template argument deduction/substitution failed:
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:95:26: note:   couldn’t deduce template parameter ‘ParameterT’
+   95 |   node->declare_parameter("fixed_resolution");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note: candidate: ‘const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)’
+  366 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note:   candidate expects 4 arguments, 1 provided
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note: candidate: ‘const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)’
+  391 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note:   candidate expects 4 arguments, 1 provided
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:100:26: error: no matching function for call to ‘rclcpp::Node::declare_parameter(const char [10])’
+  100 |   node->declare_parameter("reversion");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note: candidate: ‘template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)’
+  421 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note:   template argument deduction/substitution failed:
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:100:26: note:   candidate expects 4 arguments, 1 provided
+  100 |   node->declare_parameter("reversion");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note: candidate: ‘template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)’
+  434 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note:   template argument deduction/substitution failed:
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:100:26: note:   couldn’t deduce template parameter ‘ParameterT’
+  100 |   node->declare_parameter("reversion");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note: candidate: ‘const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)’
+  366 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note:   candidate expects 4 arguments, 1 provided
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note: candidate: ‘const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)’
+  391 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note:   candidate expects 4 arguments, 1 provided
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:105:26: error: no matching function for call to ‘rclcpp::Node::declare_parameter(const char [9])’
+  105 |   node->declare_parameter("inverted");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note: candidate: ‘template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)’
+  421 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note:   template argument deduction/substitution failed:
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:105:26: note:   candidate expects 4 arguments, 1 provided
+  105 |   node->declare_parameter("inverted");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note: candidate: ‘template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)’
+  434 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note:   template argument deduction/substitution failed:
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:105:26: note:   couldn’t deduce template parameter ‘ParameterT’
+  105 |   node->declare_parameter("inverted");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note: candidate: ‘const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)’
+  366 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note:   candidate expects 4 arguments, 1 provided
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note: candidate: ‘const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)’
+  391 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note:   candidate expects 4 arguments, 1 provided
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:109:26: error: no matching function for call to ‘rclcpp::Node::declare_parameter(const char [15])’
+  109 |   node->declare_parameter("auto_reconnect");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note: candidate: ‘template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)’
+  421 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note:   template argument deduction/substitution failed:
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:109:26: note:   candidate expects 4 arguments, 1 provided
+  109 |   node->declare_parameter("auto_reconnect");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note: candidate: ‘template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)’
+  434 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note:   template argument deduction/substitution failed:
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:109:26: note:   couldn’t deduce template parameter ‘ParameterT’
+  109 |   node->declare_parameter("auto_reconnect");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note: candidate: ‘const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)’
+  366 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note:   candidate expects 4 arguments, 1 provided
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note: candidate: ‘const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)’
+  391 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note:   candidate expects 4 arguments, 1 provided
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:114:26: error: no matching function for call to ‘rclcpp::Node::declare_parameter(const char [16])’
+  114 |   node->declare_parameter("isSingleChannel");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note: candidate: ‘template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)’
+  421 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note:   template argument deduction/substitution failed:
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:114:26: note:   candidate expects 4 arguments, 1 provided
+  114 |   node->declare_parameter("isSingleChannel");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note: candidate: ‘template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)’
+  434 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note:   template argument deduction/substitution failed:
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:114:26: note:   couldn’t deduce template parameter ‘ParameterT’
+  114 |   node->declare_parameter("isSingleChannel");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note: candidate: ‘const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)’
+  366 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note:   candidate expects 4 arguments, 1 provided
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note: candidate: ‘const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)’
+  391 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note:   candidate expects 4 arguments, 1 provided
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:119:26: error: no matching function for call to ‘rclcpp::Node::declare_parameter(const char [10])’
+  119 |   node->declare_parameter("intensity");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note: candidate: ‘template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)’
+  421 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note:   template argument deduction/substitution failed:
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:119:26: note:   candidate expects 4 arguments, 1 provided
+  119 |   node->declare_parameter("intensity");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note: candidate: ‘template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)’
+  434 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note:   template argument deduction/substitution failed:
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:119:26: note:   couldn’t deduce template parameter ‘ParameterT’
+  119 |   node->declare_parameter("intensity");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note: candidate: ‘const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)’
+  366 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note:   candidate expects 4 arguments, 1 provided
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note: candidate: ‘const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)’
+  391 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note:   candidate expects 4 arguments, 1 provided
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:124:26: error: no matching function for call to ‘rclcpp::Node::declare_parameter(const char [18])’
+  124 |   node->declare_parameter("support_motor_dtr");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note: candidate: ‘template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)’
+  421 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note:   template argument deduction/substitution failed:
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:124:26: note:   candidate expects 4 arguments, 1 provided
+  124 |   node->declare_parameter("support_motor_dtr");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note: candidate: ‘template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)’
+  434 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note:   template argument deduction/substitution failed:
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:124:26: note:   couldn’t deduce template parameter ‘ParameterT’
+  124 |   node->declare_parameter("support_motor_dtr");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note: candidate: ‘const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)’
+  366 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note:   candidate expects 4 arguments, 1 provided
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note: candidate: ‘const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)’
+  391 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note:   candidate expects 4 arguments, 1 provided
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:129:26: error: no matching function for call to ‘rclcpp::Node::declare_parameter(const char [6])’
+  129 |   node->declare_parameter("debug");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note: candidate: ‘template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)’
+  421 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note:   template argument deduction/substitution failed:
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:129:26: note:   candidate expects 4 arguments, 1 provided
+  129 |   node->declare_parameter("debug");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note: candidate: ‘template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)’
+  434 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note:   template argument deduction/substitution failed:
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:129:26: note:   couldn’t deduce template parameter ‘ParameterT’
+  129 |   node->declare_parameter("debug");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note: candidate: ‘const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)’
+  366 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note:   candidate expects 4 arguments, 1 provided
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note: candidate: ‘const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)’
+  391 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note:   candidate expects 4 arguments, 1 provided
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:131:9: error: ‘class CYdLidar’ has no member named ‘setEnableDebug’
+  131 |   laser.setEnableDebug(b_optvalue);
+      |         ^~~~~~~~~~~~~~
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:136:26: error: no matching function for call to ‘rclcpp::Node::declare_parameter(const char [10])’
+  136 |   node->declare_parameter("angle_max");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note: candidate: ‘template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)’
+  421 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note:   template argument deduction/substitution failed:
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:136:26: note:   candidate expects 4 arguments, 1 provided
+  136 |   node->declare_parameter("angle_max");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note: candidate: ‘template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)’
+  434 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note:   template argument deduction/substitution failed:
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:136:26: note:   couldn’t deduce template parameter ‘ParameterT’
+  136 |   node->declare_parameter("angle_max");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note: candidate: ‘const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)’
+  366 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note:   candidate expects 4 arguments, 1 provided
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note: candidate: ‘const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)’
+  391 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note:   candidate expects 4 arguments, 1 provided
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:140:26: error: no matching function for call to ‘rclcpp::Node::declare_parameter(const char [10])’
+  140 |   node->declare_parameter("angle_min");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note: candidate: ‘template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)’
+  421 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note:   template argument deduction/substitution failed:
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:140:26: note:   candidate expects 4 arguments, 1 provided
+  140 |   node->declare_parameter("angle_min");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note: candidate: ‘template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)’
+  434 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note:   template argument deduction/substitution failed:
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:140:26: note:   couldn’t deduce template parameter ‘ParameterT’
+  140 |   node->declare_parameter("angle_min");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note: candidate: ‘const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)’
+  366 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note:   candidate expects 4 arguments, 1 provided
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note: candidate: ‘const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)’
+  391 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note:   candidate expects 4 arguments, 1 provided
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:145:26: error: no matching function for call to ‘rclcpp::Node::declare_parameter(const char [10])’
+  145 |   node->declare_parameter("range_max");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note: candidate: ‘template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)’
+  421 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note:   template argument deduction/substitution failed:
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:145:26: note:   candidate expects 4 arguments, 1 provided
+  145 |   node->declare_parameter("range_max");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note: candidate: ‘template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)’
+  434 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note:   template argument deduction/substitution failed:
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:145:26: note:   couldn’t deduce template parameter ‘ParameterT’
+  145 |   node->declare_parameter("range_max");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note: candidate: ‘const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)’
+  366 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note:   candidate expects 4 arguments, 1 provided
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note: candidate: ‘const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)’
+  391 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note:   candidate expects 4 arguments, 1 provided
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:149:26: error: no matching function for call to ‘rclcpp::Node::declare_parameter(const char [10])’
+  149 |   node->declare_parameter("range_min");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note: candidate: ‘template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)’
+  421 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note:   template argument deduction/substitution failed:
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:149:26: note:   candidate expects 4 arguments, 1 provided
+  149 |   node->declare_parameter("range_min");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note: candidate: ‘template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)’
+  434 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note:   template argument deduction/substitution failed:
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:149:26: note:   couldn’t deduce template parameter ‘ParameterT’
+  149 |   node->declare_parameter("range_min");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note: candidate: ‘const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)’
+  366 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note:   candidate expects 4 arguments, 1 provided
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note: candidate: ‘const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)’
+  391 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note:   candidate expects 4 arguments, 1 provided
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:154:26: error: no matching function for call to ‘rclcpp::Node::declare_parameter(const char [10])’
+  154 |   node->declare_parameter("frequency");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note: candidate: ‘template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)’
+  421 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note:   template argument deduction/substitution failed:
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:154:26: note:   candidate expects 4 arguments, 1 provided
+  154 |   node->declare_parameter("frequency");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note: candidate: ‘template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)’
+  434 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note:   template argument deduction/substitution failed:
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:154:26: note:   couldn’t deduce template parameter ‘ParameterT’
+  154 |   node->declare_parameter("frequency");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note: candidate: ‘const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)’
+  366 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note:   candidate expects 4 arguments, 1 provided
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note: candidate: ‘const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)’
+  391 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note:   candidate expects 4 arguments, 1 provided
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:159:26: error: no matching function for call to ‘rclcpp::Node::declare_parameter(const char [21])’
+  159 |   node->declare_parameter("invalid_range_is_inf");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note: candidate: ‘template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)’
+  421 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note:   template argument deduction/substitution failed:
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:159:26: note:   candidate expects 4 arguments, 1 provided
+  159 |   node->declare_parameter("invalid_range_is_inf");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note: candidate: ‘template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)’
+  434 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note:   template argument deduction/substitution failed:
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:159:26: note:   couldn’t deduce template parameter ‘ParameterT’
+  159 |   node->declare_parameter("invalid_range_is_inf");
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note: candidate: ‘const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)’
+  366 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note:   candidate expects 4 arguments, 1 provided
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note: candidate: ‘const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)’
+  391 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note:   candidate expects 4 arguments, 1 provided
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:168:28: error: no matching function for call to ‘rclcpp::Node::declare_parameter(const char [8])’
+  168 |     node->declare_parameter("m1_mode");
+      |     ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note: candidate: ‘template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)’
+  421 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note:   template argument deduction/substitution failed:
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:168:28: note:   candidate expects 4 arguments, 1 provided
+  168 |     node->declare_parameter("m1_mode");
+      |     ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note: candidate: ‘template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)’
+  434 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note:   template argument deduction/substitution failed:
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:168:28: note:   couldn’t deduce template parameter ‘ParameterT’
+  168 |     node->declare_parameter("m1_mode");
+      |     ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note: candidate: ‘const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)’
+  366 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note:   candidate expects 4 arguments, 1 provided
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note: candidate: ‘const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)’
+  391 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note:   candidate expects 4 arguments, 1 provided
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:172:28: error: no matching function for call to ‘rclcpp::Node::declare_parameter(const char [8])’
+  172 |     node->declare_parameter("m2_mode");
+      |     ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note: candidate: ‘template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)’
+  421 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note:   template argument deduction/substitution failed:
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:172:28: note:   candidate expects 4 arguments, 1 provided
+  172 |     node->declare_parameter("m2_mode");
+      |     ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note: candidate: ‘template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)’
+  434 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note:   template argument deduction/substitution failed:
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:172:28: note:   couldn’t deduce template parameter ‘ParameterT’
+  172 |     node->declare_parameter("m2_mode");
+      |     ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note: candidate: ‘const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)’
+  366 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note:   candidate expects 4 arguments, 1 provided
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note: candidate: ‘const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)’
+  391 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note:   candidate expects 4 arguments, 1 provided
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:176:28: error: no matching function for call to ‘rclcpp::Node::declare_parameter(const char [8])’
+  176 |     node->declare_parameter("m3_mode");
+      |     ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note: candidate: ‘template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterT&, const ParameterDescriptor&, bool)’
+  421 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:421:3: note:   template argument deduction/substitution failed:
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:176:28: note:   candidate expects 4 arguments, 1 provided
+  176 |     node->declare_parameter("m3_mode");
+      |     ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note: candidate: ‘template<class ParameterT> auto rclcpp::Node::declare_parameter(const string&, const ParameterDescriptor&, bool)’
+  434 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:434:3: note:   template argument deduction/substitution failed:
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:176:28: note:   couldn’t deduce template parameter ‘ParameterT’
+  176 |     node->declare_parameter("m3_mode");
+      |     ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:23:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note: candidate: ‘const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, const rclcpp::ParameterValue&, const ParameterDescriptor&, bool)’
+  366 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:366:3: note:   candidate expects 4 arguments, 1 provided
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note: candidate: ‘const rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&, rclcpp::ParameterType, const ParameterDescriptor&, bool)’
+  391 |   declare_parameter(
+      |   ^~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:391:3: note:   candidate expects 4 arguments, 1 provided
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp: In lambda function:
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:190:54: warning: unused parameter ‘request_header’ [-Wunused-parameter]
+  190 |     [&laser](const std::shared_ptr<rmw_request_id_t> request_header,
+      |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:191:56: warning: unused parameter ‘req’ [-Wunused-parameter]
+  191 |   const std::shared_ptr<std_srvs::srv::Empty::Request> req,
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:192:51: warning: unused parameter ‘response’ [-Wunused-parameter]
+  192 |   std::shared_ptr<std_srvs::srv::Empty::Response> response) -> bool
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp: In lambda function:
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:200:54: warning: unused parameter ‘request_header’ [-Wunused-parameter]
+  200 |     [&laser](const std::shared_ptr<rmw_request_id_t> request_header,
+      |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:201:56: warning: unused parameter ‘req’ [-Wunused-parameter]
+  201 |   const std::shared_ptr<std_srvs::srv::Empty::Request> req,
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:202:51: warning: unused parameter ‘response’ [-Wunused-parameter]
+  202 |   std::shared_ptr<std_srvs::srv::Empty::Response> response) -> bool
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp: In function ‘int main(int, char**)’:
+/root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:235:21: warning: unused variable ‘p’ [-Wunused-variable]
+  235 |         const auto& p = scan.points.at(i);
+      |                     ^
+gmake[2]: *** [CMakeFiles/ydlidar_ros2_driver_node.dir/build.make:76: CMakeFiles/ydlidar_ros2_driver_node.dir/src/ydlidar_ros2_driver_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/ydlidar_ros2_driver_node.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 75%] Linking CXX executable ydlidar_ros2_driver_client
+[ 75%] Built target ydlidar_ros2_driver_client
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,33 @@
+[0.057s] Invoking command in '/root/robot1_ws/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/robot1_ws/build/ydlidar_ros2_driver -- -j4 -l4
+[0.309s] Consolidate compiler generated dependencies of target ydlidar_ros2_driver_node
+[0.311s] Consolidate compiler generated dependencies of target ydlidar_ros2_driver_client
+[0.400s] [ 50%] Built target ydlidar_ros2_driver_client
+[0.419s] [ 75%] Building CXX object CMakeFiles/ydlidar_ros2_driver_node.dir/src/ydlidar_ros2_driver_node.cpp.o
+[16.725s] /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp: In function ‘int main(int, char**)’:
+[16.726s] /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:131:9: error: ‘class CYdLidar’ has no member named ‘setEnableDebug’
+[16.727s]   131 |   laser.setEnableDebug(b_optvalue);
+[16.728s]       |         ^~~~~~~~~~~~~~
+[16.816s] /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp: In lambda function:
+[16.816s] /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:191:54: warning: unused parameter ‘request_header’ [-Wunused-parameter]
+[16.817s]   191 |     [&laser](const std::shared_ptr<rmw_request_id_t> request_header,
+[16.818s]       |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+[16.819s] /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:192:56: warning: unused parameter ‘req’ [-Wunused-parameter]
+[16.819s]   192 |   const std::shared_ptr<std_srvs::srv::Empty::Request> req,
+[16.820s]       |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+[16.821s] /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:193:51: warning: unused parameter ‘response’ [-Wunused-parameter]
+[16.822s]   193 |   std::shared_ptr<std_srvs::srv::Empty::Response> response) -> bool
+[16.822s]       |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+[16.926s] /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp: In lambda function:
+[16.927s] /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:201:54: warning: unused parameter ‘request_header’ [-Wunused-parameter]
+[16.928s]   201 |     [&laser](const std::shared_ptr<rmw_request_id_t> request_header,
+[16.928s]       |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+[16.929s] /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:202:56: warning: unused parameter ‘req’ [-Wunused-parameter]
+[16.930s]   202 |   const std::shared_ptr<std_srvs::srv::Empty::Request> req,
+[16.931s]       |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+[16.932s] /root/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:203:51: warning: unused parameter ‘response’ [-Wunused-parameter]
+[16.932s]   203 |   std::shared_ptr<std_srvs::srv::Empty::Response> response) -> bool
+[16.933s]       |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+[23.995s] gmake[2]: *** [CMakeFiles/ydlidar_ros2_driver_node.dir/build.make:76: CMakeFiles/ydlidar_ros2_driver_node.dir/src/ydlidar_ros2_driver_node.cpp.o] Error 1
+[23.996s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/ydlidar_ros2_driver_node.dir/all] Error 2
+[23.997s] gmake: *** [Makefile:146: all] Error 2
+[24.005s] Invoked command in '/root/robot1_ws/build/ydlidar_ros2_driver' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/robot1_ws/build/ydlidar_ros2_driver -- -j4 -l4
