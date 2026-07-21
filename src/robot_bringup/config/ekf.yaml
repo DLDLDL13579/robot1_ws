@@ -1,6 +1,9 @@
 robot1/ekf_filter_node:
   ros__parameters:
-    frequency: 30.0
+    # Lowered from 30Hz — on this ARM board EKF couldn't keep up at 30
+    # (you saw 'Failed to meet update rate' warnings). 20Hz matches
+    # controller_server and is well within capability.
+    frequency: 20.0
     sensor_timeout: 0.1
     two_d_mode: true
     publish_tf: true

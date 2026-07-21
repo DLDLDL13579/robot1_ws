@@ -10,23 +10,21 @@ def generate_launch_description():
     bringup_dir = get_package_share_directory('robot_bringup')
     my_nav_dir = get_package_share_directory('robot1_nav')
 
-    # Map and nav2 params
     map_yaml_file = LaunchConfiguration('map', default=os.path.join(my_nav_dir, 'maps', 'lab_map.yaml'))
     params_file = LaunchConfiguration('params_file', default=os.path.join(my_nav_dir, 'config', 'nav2_params.yaml'))
 
-    # === 1. 包含底盘、雷达与 EKF 的底层启动包 ===
     bringup_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(os.path.join(bringup_dir, 'launch', 'bringup.launch.py')),
     )
 
-    # === 2. Nav2 navigation stack (AMCL + costmaps + planner + controller) ===
     nav2_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(os.path.join(nav2_bringup_dir, 'launch', 'bringup_launch.py')),
         launch_arguments={
             'namespace': 'robot1',
+            'use_namespace': 'true',
             'map': map_yaml_file,
             'params_file': params_file,
-            'use_sim_time': 'false', 'use_namespace': 'true',
+            'use_sim_time': 'false',
             'autostart': 'true'
         }.items()
     )
