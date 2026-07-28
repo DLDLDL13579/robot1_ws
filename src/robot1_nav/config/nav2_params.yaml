@@ -1,213 +1,97 @@
-# Nav2 params for robot1 — uses <robot_namespace> placeholders.
-# nav2_bringup's RewrittenYaml will substitute <robot_namespace> with the actual namespace
-# (e.g. 'robot1'), giving '/robot1/base_link', '/robot1/odom', etc.
-# Topic names use relative form so the namespace prefix is applied automatically.
-#
-# IMPORTANT: DWB controller reads critic parameters as DOT-NOTATION paths
-# (e.g. "BaseObstacle.scale"), NOT as nested maps. Using nested maps causes
-# "No critics defined for FollowPath" at configure time.
+map_server:
+  ros__parameters:
+    yaml_filename: /home/sunrise/robot1_ws/src/robot1_nav/maps/lab_map.yaml
 
 amcl:
   ros__parameters:
-    use_sim_time: False
+    use_sim_time: false
     alpha1: 0.2
     alpha2: 0.2
     alpha3: 0.2
     alpha4: 0.2
     alpha5: 0.2
-    base_frame_id: "<robot_namespace>/base_link"
-    odom_frame_id: "<robot_namespace>/odom"
-    global_frame_id: "map"
-    laser_model_type: "likelihood_field"
+    base_frame_id: base_link
+    odom_frame_id: odom
+    global_frame_id: map
+    laser_model_type: likelihood_field
     max_particles: 2000
     min_particles: 500
     pf_err: 0.05
     pf_z: 0.99
-    robot_model_type: "nav2_amcl::DifferentialMotionModel"
-    # Relative topic; with namespace 'robot1' → subscribes /robot1/scan
-    topic_name: "scan"
-    set_initial_pose: True
-    initial_pose:
-      x: 0.0
-      y: 0.0
-      z: 0.0
-      yaw: 0.0
-    qos_overrides:
-      parameter_events:
-        publisher:
-          durability: volatile
-      /scan:
-        subscriber:
-          reliability: best_effort
-          durability: volatile
-
-bt_navigator:
-  ros__parameters:
-    use_sim_time: False
-    global_frame: "map"
-    robot_base_frame: "<robot_namespace>/base_link"
-    odom_topic: "<robot_namespace>/odom"
+    robot_model_type: nav2_amcl::DifferentialMotionModel
+    scan_topic: /scan
 
 controller_server:
   ros__parameters:
-    use_sim_time: False
     controller_frequency: 20.0
-    min_x_velocity_threshold: 0.001
-    min_y_velocity_threshold: 0.001
-    min_theta_velocity_threshold: 0.001
-    failure_tolerance: 0.3
-    progress_checker_plugins: ["progress_checker"]
-    goal_checker_plugins: ["general_goal_checker"]
-    controller_plugins: ["FollowPath"]
-    progress_checker:
-      plugin: "nav2_controller::SimpleProgressChecker"
-      required_movement_radius: 0.5
-      movement_time_allowance: 10.0
-    general_goal_checker:
-      stateful: True
-      plugin: "nav2_controller::SimpleGoalChecker"
-      xy_goal_tolerance: 0.25
-      yaw_goal_tolerance: 0.25
+    controller_plugins: [FollowPath]
     FollowPath:
-      plugin: "dwb_core::DWBLocalPlanner"
-      debug_trajectory_details: False
-      min_vel_x: 0.0
-      min_vel_y: 0.0
-      max_vel_x: 0.26
-      max_vel_y: 0.0
-      max_vel_theta: 1.0
-      min_speed_xy: 0.0
-      max_speed_xy: 0.26
-      min_speed_theta: 0.0
-      acc_lim_x: 2.5
-      acc_lim_y: 0.0
-      acc_lim_theta: 3.2
-      decel_lim_x: -2.5
-      decel_lim_y: 0.0
-      decel_lim_theta: -3.2
-      vx_samples: 20
-      vy_samples: 5
-      vtheta_samples: 20
-      sim_time: 1.7
-      linear_granularity: 0.05
-      angular_granularity: 0.025
-      transform_tolerance: 0.2
-      xy_goal_tolerance: 0.25
-      trans_stopped_velocity: 0.25
-      short_circuit_trajectory_evaluation: True
-      stateful: True
-      critics: ["RotateToGoal", "Oscillation", "BaseObstacle", "GoalAlign", "PathAlign", "PathDist", "GoalDist"]
-      # Critics must be configured with DOT-NOTATION keys, not nested maps.
+      plugin: dwb_core::DWBLocalPlanner
+      critics: [RotateToGoal, Oscillation, BaseObstacle, GoalAlign, PathAlign, PathDist, GoalDist]
+      RotateToGoal.scale: 32.0
       BaseObstacle.scale: 0.02
-      PathAlign.scale: 32.0
-      PathAlign.forward_point_distance: 0.1
       GoalAlign.scale: 24.0
-      GoalAlign.forward_point_distance: 0.1
       PathDist.scale: 32.0
       GoalDist.scale: 24.0
-      RotateToGoal.scale: 32.0
-      RotateToGoal.slowing_factor: 5.0
-      RotateToGoal.lookahead_time: -1.0
-      Oscillation.scale: 0.01
+
+planner_server:
+  ros__parameters:
+    planner_plugins: [GridBased]
+    GridBased:
+      plugin: nav2_navfn_planner/NavfnPlanner
+      tolerance: 0.5
+
+bt_navigator:
+  ros__parameters:
+    global_frame: map
+    robot_base_frame: base_link
+    odom_topic: /odom
 
 local_costmap:
   local_costmap:
     ros__parameters:
-      update_frequency: 5.0
-      publish_frequency: 2.0
-      global_frame: "<robot_namespace>/odom"
-      robot_base_frame: "<robot_namespace>/base_link"
-      rolling_window: True
+      global_frame: odom
+      robot_base_frame: base_link
+      rolling_window: true
       width: 3
       height: 3
       resolution: 0.05
       robot_radius: 0.15
-      plugins: ["voxel_layer", "inflation_layer"]
-      qos_overrides:
-        parameter_events:
-          publisher:
-            durability: volatile
-        /scan:
-          subscriber:
-            reliability: best_effort
-            durability: volatile
+      plugins: [voxel_layer, inflation_layer]
       voxel_layer:
-        plugin: "nav2_costmap_2d::VoxelLayer"
-        enabled: True
+        plugin: nav2_costmap_2d::VoxelLayer
+        enabled: true
         observation_sources: scan
         scan:
-          topic: "scan"
-          clearing: True
-          marking: True
-          data_type: "LaserScan"
-          sensor_frame: "<robot_namespace>/laser_frame"
+          topic: /scan
+          clearing: true
+          marking: true
+          data_type: LaserScan
       inflation_layer:
-        plugin: "nav2_costmap_2d::InflationLayer"
-        enabled: True
+        plugin: nav2_costmap_2d::InflationLayer
+        enabled: true
         inflation_radius: 0.55
 
 global_costmap:
   global_costmap:
     ros__parameters:
-      update_frequency: 1.0
-      publish_frequency: 1.0
-      global_frame: "map"
-      robot_base_frame: "<robot_namespace>/base_link"
+      global_frame: map
+      robot_base_frame: base_link
       robot_radius: 0.15
-      plugins: ["static_layer", "obstacle_layer", "inflation_layer"]
-      qos_overrides:
-        parameter_events:
-          publisher:
-            durability: volatile
-        /scan:
-          subscriber:
-            reliability: best_effort
-            durability: volatile
+      plugins: [static_layer, obstacle_layer, inflation_layer]
       static_layer:
-        plugin: "nav2_costmap_2d::StaticLayer"
-        enabled: True
-        map_subscribe_transient_local: True
+        plugin: nav2_costmap_2d::StaticLayer
+        enabled: true
       obstacle_layer:
-        plugin: "nav2_costmap_2d::ObstacleLayer"
-        enabled: True
+        plugin: nav2_costmap_2d::ObstacleLayer
+        enabled: true
         observation_sources: scan
         scan:
-          topic: "scan"
-          clearing: True
-          marking: True
-          data_type: "LaserScan"
-          sensor_frame: "<robot_namespace>/laser_frame"
+          topic: /scan
+          clearing: true
+          marking: true
+          data_type: LaserScan
       inflation_layer:
-        plugin: "nav2_costmap_2d::InflationLayer"
-        enabled: True
+        plugin: nav2_costmap_2d::InflationLayer
+        enabled: true
         inflation_radius: 0.55
-
-map_server:
-  ros__parameters:
-    use_sim_time: False
-    # yaml_filename is substituted by RewrittenYaml from the launch arg 'map'.
-    # Must be PRESENT in the file (even empty) so the substitution key is found.
-    yaml_filename: ""
-
-planner_server:
-  ros__parameters:
-    use_sim_time: False
-    planner_plugins: ["GridBased"]
-    GridBased:
-      plugin: "nav2_navfn_planner/NavfnPlanner"
-
-smoother_server:
-  ros__parameters:
-    use_sim_time: False
-
-behavior_server:
-  ros__parameters:
-    use_sim_time: False
-
-waypoint_follower:
-  ros__parameters:
-    use_sim_time: False
-
-velocity_smoother:
-  ros__parameters:
-    use_sim_time: False

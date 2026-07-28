@@ -10,7 +10,7 @@ def generate_launch_description():
     bringup_dir = get_package_share_directory('robot_bringup')
     ekf_config_path = os.path.join(bringup_dir, 'config', 'ekf.yaml')
 
-    robot_namespace = LaunchConfiguration('robot_namespace', default='robot1')
+    robot_namespace = LaunchConfiguration('robot_namespace', default='')
     port_name = LaunchConfiguration('port_name', default='/dev/ttyACM0')
 
     # 1. 传感器融合 EKF (in robot1 namespace)
@@ -32,6 +32,7 @@ def generate_launch_description():
         launch_arguments={
             'robot_namespace': robot_namespace,
             'port_name': port_name,
+            'baud_rate': '9600',
         }.items(),
     )
 
@@ -45,7 +46,7 @@ def generate_launch_description():
     )
 
     return LaunchDescription([
-        DeclareLaunchArgument('robot_namespace', default_value='robot1',
+        DeclareLaunchArgument('robot_namespace', default_value='',
                               description='Top-level robot namespace'),
         DeclareLaunchArgument('port_name', default_value='/dev/ttyACM0',
                               description='Serial port of chassis'),
