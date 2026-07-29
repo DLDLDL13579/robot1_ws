@@ -32,17 +32,31 @@ def generate_launch_description():
 
     stdout_linebuf_envvar = SetEnvironmentVariable('RCUTILS_LOGGING_BUFFERED_STREAM', '1')
 
+    # 定义我们要强制覆盖的 AMCL 核心参数
+    amcl_override_params = {
+        'base_frame_id': 'base_link',
+        'odom_frame_id': 'odom',
+        'set_initial_pose': True,
+        'initial_pose.x': 0.0,
+        'initial_pose.y': 0.0,
+        'initial_pose.yaw': 0.0
+    }
+
     # Non-composable
     load_nodes = GroupAction(
         condition=IfCondition(PythonExpression(['not ', use_composition])),
         actions=[
             Node(package='nav2_map_server', executable='map_server', name='map_server',
                  output='screen', respawn=use_respawn, respawn_delay=2.0,
-                 parameters=[params_file, {'yaml_filename': map_yaml_file}],
+                 parameters=[configured_params, {'yaml_filename': map_yaml_file}], # ✅ 修正为 configured_params
                  arguments=['--ros-args', '--log-level', log_level], remappings=remappings),
+            
             Node(package='nav2_amcl', executable='amcl', name='amcl',
                  output='screen', respawn=use_respawn, respawn_delay=2.0,
-                 parameters=[params_file], remappings=remappings),
+                 # ✅ 修正为 configured_params，并强行注入覆盖参数字典！
+                 parameters=[configured_params, amcl_override_params], 
+                 remappings=remappings),
+            
             Node(package='nav2_lifecycle_manager', executable='lifecycle_manager',
                  name='lifecycle_manager_localization', output='screen',
                  arguments=['--ros-args', '--log-level', log_level],
@@ -56,10 +70,16 @@ def generate_launch_description():
         target_container=container_name_full,
         composable_node_descriptions=[
             ComposableNode(package='nav2_map_server', plugin='nav2_map_server::MapServer',
-                name='map_server', parameters=[configured_params, {'yaml_filename': map_yaml_file}],
+                name='map_server', 
+                parameters=[configured_params, {'yaml_filename': map_yaml_file}], # ✅ 修正为 configured_params
                 remappings=remappings),
+            
             ComposableNode(package='nav2_amcl', plugin='nav2_amcl::AmclNode',
-                name='amcl', parameters=[configured_params], remappings=remappings),
+                name='amcl', 
+                # ✅ 修正为 configured_params，并强行注入覆盖参数字典！
+                parameters=[configured_params, amcl_override_params], 
+                remappings=remappings),
+            
             ComposableNode(package='nav2_lifecycle_manager',
                 plugin='nav2_lifecycle_manager::LifecycleManager',
                 name='lifecycle_manager_localization',

@@ -32,7 +32,7 @@ def generate_launch_description():
         launch_arguments={
             'robot_namespace': robot_namespace,
             'port_name': port_name,
-            'baud_rate': '9600',
+            'baud_rate': '115200',
         }.items(),
     )
 

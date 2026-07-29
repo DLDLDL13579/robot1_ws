@@ -20,11 +20,21 @@ amcl:
     pf_z: 0.99
     robot_model_type: nav2_amcl::DifferentialMotionModel
     scan_topic: /scan
+    # ================= 下面这几行为新增 =================
+    set_initial_pose: true
+    initial_pose:
+      x: 0.0
+      y: 0.0
+      z: 0.0
+      yaw: 0.0
+    # ===================================================
 
 controller_server:
   ros__parameters:
-    controller_frequency: 20.0
+    controller_frequency: 5.0
     controller_plugins: [FollowPath]
+    min_x_velocity_threshold: 0.001
+    min_theta_velocity_threshold: 0.001
     FollowPath:
       plugin: dwb_core::DWBLocalPlanner
       critics: [RotateToGoal, Oscillation, BaseObstacle, GoalAlign, PathAlign, PathDist, GoalDist]
@@ -46,6 +56,8 @@ bt_navigator:
     global_frame: map
     robot_base_frame: base_link
     odom_topic: /odom
+    bt_loop_duration: 200         # <--- 新增这一行：将行为树循环周期改为50毫秒(即降到20Hz，不再是默认的100Hz)
+    default_server_timeout: 60.0
 
 local_costmap:
   local_costmap:
@@ -70,7 +82,7 @@ local_costmap:
       inflation_layer:
         plugin: nav2_costmap_2d::InflationLayer
         enabled: true
-        inflation_radius: 0.55
+        inflation_radius: 0.25
 
 global_costmap:
   global_costmap:
@@ -94,4 +106,4 @@ global_costmap:
       inflation_layer:
         plugin: nav2_costmap_2d::InflationLayer
         enabled: true
-        inflation_radius: 0.55
+        inflation_radius: 0.25
