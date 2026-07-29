@@ -192,15 +192,21 @@ class RobotDriverNode(Node):
                     self.battery_pub.publish(bat_msg)
 
                     # --- Broadcast TF ---
-                    t = TransformStamped()
-                    t.header.stamp = odom_msg.header.stamp
-                    t.header.frame_id = f"{self.robot_namespace}/odom" if self.robot_namespace else "odom"
-                    t.child_frame_id = f"{self.robot_namespace}/base_link" if self.robot_namespace else "base_link"
-                    t.transform.translation.x = 0.0
-                    t.transform.translation.y = 0.0
-                    t.transform.translation.z = 0.0
-                    t.transform.rotation = quaternion_from_euler(roll, pitch, yaw)
-                    self.tf_broadcaster.sendTransform(t)
+                    # ⚠️ 已禁用底盘自发布 TF (2026-07-28)
+                    # 单一权威源原则: odom → base_link 的 TF 现在完全由 robot_localization EKF 发布,
+                    # 因为 EKF 同时融合了本节点的 odom(twist) 和 imu/data_raw,
+                    # 能给出比底盘自身更平滑的位姿估计。底盘若同时发 TF 会和 EKF 冲突,
+                    # 触发 TF_REPEATED_DATA / 双源抖动。底盘只负责发原始 odom + imu 数据。
+                    # 保留 self.tf_broadcaster 与 import 以便回滚。
+                    # t = TransformStamped()
+                    # t.header.stamp = odom_msg.header.stamp
+                    # t.header.frame_id = f"{self.robot_namespace}/odom" if self.robot_namespace else "odom"
+                    # t.child_frame_id = f"{self.robot_namespace}/base_link" if self.robot_namespace else "base_link"
+                    # t.transform.translation.x = 0.0
+                    # t.transform.translation.y = 0.0
+                    # t.transform.translation.z = 0.0
+                    # t.transform.rotation = quaternion_from_euler(roll, pitch, yaw)
+                    # self.tf_broadcaster.sendTransform(t)
 
                     # --- Consume frame ---
                     self.buffer = self.buffer[36:]
