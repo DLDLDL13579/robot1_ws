@@ -19,7 +19,7 @@ robot1/ekf_filter_node:
     imu0: imu/data_raw
     imu0_config: [false, false, false, false, false, false, false, false, false, false, false, true, true, false, false]
     imu0_queue_size: 10
-    imu0_nodelay: false
+    imu0_nodelay: true
     imu0_differential: false
     imu0_relative: true
     imu0_remove_gravitational_acceleration: true
