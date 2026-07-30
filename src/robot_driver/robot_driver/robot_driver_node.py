@@ -5,7 +5,7 @@ from rclpy.node import Node
 from rclpy.qos import QoSProfile, ReliabilityPolicy, HistoryPolicy
 from sensor_msgs.msg import Imu, BatteryState
 from nav_msgs.msg import Odometry
-from geometry_msgs.msg import Quaternion, TransformStamped
+from geometry_msgs.msg import Quaternion, TransformStamped, Twist
 from tf2_ros import TransformBroadcaster
 import serial
 import struct
@@ -50,6 +50,7 @@ class RobotDriverNode(Node):
         self.odom_pub = self.create_publisher(Odometry, f"{ns}odom", 10)
         self.imu_pub = self.create_publisher(Imu, f"{ns}imu/data_raw", 10)
         self.battery_pub = self.create_publisher(BatteryState, f"{ns}battery_state", 10)
+        self.cmd_vel_sub = self.create_subscription(Twist, f'{ns}cmd_vel', self.cmd_vel_callback, 10)
 
         # --- TF broadcaster ---
         self.tf_broadcaster = TransformBroadcaster(self)
@@ -217,6 +218,28 @@ class RobotDriverNode(Node):
 
         except Exception as e:
             self.get_logger().error(f'❌ Serial read error: {e}')
+
+    def cmd_vel_callback(self, msg):
+        try:
+            x_speed = int(max(min(msg.linear.x * 1000.0, 32767), -32768))
+            y_speed = int(max(min(msg.linear.y * 1000.0, 32767), -32768))
+            z_speed = int(max(min(msg.angular.z * 1000.0, 32767), -32768))
+            buffer = bytearray(11)
+            buffer[0] = 0x7B
+            buffer[1] = 0x00
+            buffer[2] = 0x00
+            import struct
+            struct.pack_into('>h', buffer, 3, x_speed)
+            struct.pack_into('>h', buffer, 5, y_speed)
+            struct.pack_into('>h', buffer, 7, z_speed)
+            checksum = 0
+            for i in range(9):
+                checksum ^= buffer[i]
+            buffer[9] = checksum
+            buffer[10] = 0x7D
+            self.ser.write(buffer)
+        except Exception as e:
+            self.get_logger().error(f'指令发送失败: {e}')
 
     def destroy_node(self):
         self.ser.close()

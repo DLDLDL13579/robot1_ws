@@ -34,29 +34,37 @@ def generate_launch_description():
 
     # === 3. EKF 融合定位 ===
     ekf = Node(package='robot_localization', executable='ekf_node', name='ekf_filter_node',
+               namespace=ns,  # <--- 新增
                output='screen', parameters=[soldier_ekf],
                remappings=[('odometry/filtered', 'odom_filtered')])
 
     # === 4. 地图服务 + AMCL 定位 (lifecycle 管理) ===
     lifecycle_nodes = ['map_server', 'amcl']
-    remaps = [('/tf', 'tf'), ('/tf_static', 'tf_static')]
+    
+    # <--- 修改: 将局部的 tf 映射到全局的 /tf，确保坐标系树不孤立
+    remaps = [('tf', '/tf'), ('tf_static', '/tf_static')]
 
     map_server = Node(package='nav2_map_server', executable='map_server', name='map_server',
+                      namespace=ns,  # <--- 新增
                       output='screen',
                       parameters=[soldier_params, {'yaml_filename': map_file}],
                       remappings=remaps)
 
     amcl = Node(package='nav2_amcl', executable='amcl', name='amcl',
+                namespace=ns,  # <--- 新增
                 output='screen',
                 parameters=[soldier_params], remappings=remaps)
 
     lcm = Node(package='nav2_lifecycle_manager', executable='lifecycle_manager',
-               name='lifecycle_manager_localization', output='screen',
+               name='lifecycle_manager_localization', 
+               namespace=ns,  # <--- 新增
+               output='screen',
                parameters=[{'use_sim_time': False}, {'autostart': True},
                            {'node_names': lifecycle_nodes}])
 
     # === 5. 位姿发布 (老大车订阅这个) ===
     pos_pub = Node(package='robot1_soldier', executable='position_publisher', name='position_publisher',
+                   namespace=ns,  # <--- 新增
                    output='screen',
                    parameters=[{'robot_id': ns}])
 

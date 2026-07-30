@@ -9,7 +9,7 @@ class PositionPublisher(Node):
         self.declare_parameter('robot_id', 'robot_1')
         self.robot_id = self.get_parameter('robot_id').value
         self.sub = self.create_subscription(
-            PoseWithCovarianceStamped, '/amcl_pose', self.pose_cb, 10)
+            PoseWithCovarianceStamped, 'amcl_pose', self.pose_cb, 10)
         self.pub = self.create_publisher(
             PoseWithCovarianceStamped, 'soldier_pose', 10)
         self.get_logger().info(f'Soldier [{self.robot_id}] position publisher ready')
