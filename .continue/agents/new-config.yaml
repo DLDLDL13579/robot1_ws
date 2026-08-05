@@ -1,0 +1,17 @@
+name: Main Config
+version: 1.0.0
+schema: v1
+
+# Define which models can be used
+# https://docs.continue.dev/customization/models
+models:
+  - name: Moss
+    provider: openai
+    model: Moss
+    apiBase: "http://106.53.70.59:3100/v1"
+    apiKey: "rdk-42a05ba4fe65bffd9a5961d5403911a6c053e5101dbb070f"
+    roles:
+      - chat
+      - edit
+      - apply
+      - autocomplete

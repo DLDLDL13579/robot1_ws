@@ -69,8 +69,16 @@ def generate_launch_description():
         package='tf2_ros',
         executable='static_transform_publisher',
         name='static_tf_pub_laser',
-        arguments=['0', '0', '0.02', '0', '0', '0', '1',
-                   base_link_frame, frame_id_value],
+        arguments=[
+            '--x', '0.0',
+            '--y', '0.0',
+            '--z', '0.02',
+            '--roll', '3.14159',   # <--- 绕 X 轴强行翻面，解除镜像
+            '--pitch', '0.0',
+            '--yaw', '0.0',
+            '--frame-id', base_link_frame,
+            '--child-frame-id', frame_id_value
+        ],
     )
 
     return LaunchDescription([

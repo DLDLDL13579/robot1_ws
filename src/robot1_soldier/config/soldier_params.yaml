@@ -5,23 +5,41 @@ robot_1/map_server:
 robot_1/amcl:
   ros__parameters:
     use_sim_time: false
-    alpha1: 0.2
-    alpha2: 0.2
-    alpha3: 0.2
-    alpha4: 0.2
-    alpha5: 0.2
+    
+    # --- 运动模型噪声调优（适配履带车打滑特性） ---
+    alpha1: 0.4                  # 增大旋转引起的旋转噪声容忍
+    alpha2: 0.4                  # 增大平移引起的旋转噪声容忍
+    alpha3: 0.2                  
+    alpha4: 0.2                  
+    alpha5: 0.2                  
+    
     base_frame_id: robot_1/base_link
     odom_frame_id: robot_1/odom
     global_frame_id: map
     laser_model_type: likelihood_field
-    max_particles: 2000
-    min_particles: 500
+    
+    # --- 粒子数扩容（应对履带原地转弯的严重扰动） ---
+    max_particles: 5000          # 从 2000 提升到 5000
+    min_particles: 1000          # 从 500 提升到 1000
+    
     pf_err: 0.05
     pf_z: 0.99
+    
+    # --- 核心：大幅提高更新频率（防止打滑后飘走不纠偏） ---
+    update_min_d: 0.05           # 改为小车移动 5 厘米就强制更新一次粒子
+    update_min_a: 0.05           # 改为小车转动约 2.8 度就强制更新一次粒子
+    
+    # --- 激光雷达数据过滤 ---
+    laser_min_range: 0.12        # 过滤贴地杂波
+    laser_max_range: 10.0        # 过滤远端稀疏噪点，提高匹配精度
+    
     robot_model_type: nav2_amcl::DifferentialMotionModel
     scan_topic: scan
-    # === 自动初始定位 ===
-    set_initial_pose: true
+    
+    # --- 初始位姿策略 ---
+    # ⚠️ 警告：仅当每次上电小车物理位置“绝对精准”对齐地图 (0,0,0) 时才设为 true。
+    # 如果做不到，建议手动改为 false，并在启动后使用 RViz 的 2D Pose Estimate 指定初始位置。
+    set_initial_pose: true       
     initial_pose:
       x: 0.0
       y: 0.0
