@@ -4,6 +4,7 @@ robot_1/map_server:
 
 robot_1/amcl:
   ros__parameters:
+    bond_timeout: 20.0
     use_sim_time: false
     
     # --- 运动模型噪声调优（适配履带车打滑特性） ---

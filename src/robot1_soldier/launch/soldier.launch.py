@@ -1,7 +1,7 @@
 import os
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
-from launch.actions import IncludeLaunchDescription, DeclareLaunchArgument
+from launch.actions import IncludeLaunchDescription, DeclareLaunchArgument, ExecuteProcess, TimerAction
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import Node
@@ -9,6 +9,8 @@ from launch_ros.actions import Node
 _rd = "/home/sunrise/robot1_ws/install/robot_driver"
 if _rd not in os.environ.get("AMENT_PREFIX_PATH", ""):
     os.environ["AMENT_PREFIX_PATH"] = _rd + ":" + os.environ.get("AMENT_PREFIX_PATH", "")
+
+RELAY_SCRIPT = "/home/sunrise/robot1_ws/src/robot1_nav/scripts/map_relay.py"
 
 def generate_launch_description():
     ns = "robot_1"
@@ -24,7 +26,7 @@ def generate_launch_description():
 
     chassis = Node(package="robot_driver", executable="robot_driver_node", name="robot_driver_node",
                    output="screen",
-                   parameters=[{"robot_namespace": ns, "port_name": "/dev/ttyACM0", "baud_rate": 115200}])
+                   parameters=[{"robot_namespace": ns, "port_name": "/dev/ttyACM0", "baud_rate": 115200, "linear_scale": 1.58, "angular_scale": 0.62}])
 
     lidar = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(os.path.join(ydlidar_dir, "launch", "ydlidar_launch.py")),
@@ -52,7 +54,17 @@ def generate_launch_description():
                    namespace=ns, output="screen",
                    parameters=[{"robot_id": ns}])
 
+    # ★ Relay: subscribe robot_0's /map → publish to /robot_1/map
+    relay_node = ExecuteProcess(
+        cmd=["bash", "-c",
+             "source /opt/ros/humble/setup.bash && "
+             "source /home/sunrise/robot1_ws/install/setup.bash && "
+             "python3 " + RELAY_SCRIPT],
+        output="screen",
+    )
+
     return LaunchDescription([
         DeclareLaunchArgument("map", default_value=os.path.join(my_dir, "maps", "lab_map.yaml")),
         chassis, lidar, ekf, map_server, amcl, lcm, pos_pub,
+        TimerAction(period=2.0, actions=[relay_node]),
     ])

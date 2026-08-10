@@ -11,13 +11,12 @@ def generate_launch_description():
         DeclareLaunchArgument('wheel_track', default_value='0.13'),
         DeclareLaunchArgument('wheel_radius', default_value='0.0225'),
         DeclareLaunchArgument('slip_factor', default_value='1.0'),
-
+        DeclareLaunchArgument('linear_scale', default_value='1.0'),
+        DeclareLaunchArgument('angular_scale', default_value='1.0'),
         Node(
             package='robot_driver',
             executable='robot_driver_node',
             name='robot_driver_node',
-            # 不设置 ROS2 namespace，由节点内部通过参数 robot_namespace 控制 topic 前缀
-            # 避免双层嵌套（/robot1/robot1/odom）
             parameters=[{
                 'port_name': LaunchConfiguration('port_name'),
                 'baud_rate': LaunchConfiguration('baud_rate'),
@@ -25,6 +24,8 @@ def generate_launch_description():
                 'wheel_track': LaunchConfiguration('wheel_track'),
                 'wheel_radius': LaunchConfiguration('wheel_radius'),
                 'slip_factor': LaunchConfiguration('slip_factor'),
+                'linear_scale': LaunchConfiguration('linear_scale'),
+                'angular_scale': LaunchConfiguration('angular_scale'),
             }],
             output='screen',
         ),

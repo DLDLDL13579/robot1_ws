@@ -44,6 +44,11 @@ class RobotDriverNode(Node):
         self.wheel_track = self.get_parameter('wheel_track').value
         self.wheel_radius = self.get_parameter('wheel_radius').value
         self.slip_factor = self.get_parameter('slip_factor').value
+        self.declare_parameter('linear_scale', 1.0)
+        self.linear_scale = self.get_parameter('linear_scale').value
+        self.declare_parameter('angular_scale', 1.0)
+        self.angular_scale = self.get_parameter('angular_scale').value
+
 
         # --- Topic names with namespace ---
         ns = f"{self.robot_namespace}/" if self.robot_namespace else ""
@@ -57,7 +62,7 @@ class RobotDriverNode(Node):
 
         # --- Serial ---
         try:
-            self.ser = serial.Serial(self.port_name, self.baud_rate, timeout=0.1)
+            self.ser = serial.Serial(self.port_name, self.baud_rate, timeout=0.01)
             self.get_logger().info(f'✅ Serial opened: {self.port_name} @ {self.baud_rate}')
         except Exception as e:
             self.get_logger().error(f'❌ Failed to open serial: {e}')
@@ -70,10 +75,26 @@ class RobotDriverNode(Node):
         # --- Timer ---
         self.create_timer(0.05, self.read_serial_callback)  # 20Hz
 
+        # --- cmd_vel watchdog: 20Hz continuous send, 0.5s timeout auto-stop ---
+        self._last_cmd_time = self.get_clock().now()
+        self._current_twist = Twist()
+        self._cmd_timeout = 0.5  # 500ms no new cmd -> auto stop
+        self._watchdog_timer = self.create_timer(0.05, self._cmd_vel_watchdog)
+
+        # --- Odom integration state ---
+        self._odom_x = 0.0
+        self._odom_y = 0.0
+        self._odom_yaw = 0.0  # radians, integrated from wz
+        self._odom_yaw_init = False  # first frame hasnt set yaw yet
+        self._last_odom_time = None
+
     def read_serial_callback(self):
         try:
             data = self.ser.read(100)
             if not data:
+                self._serial_empty_count = getattr(self, '_serial_empty_count', 0) + 1
+                if self._serial_empty_count % 200 == 0:  # every ~1000ms at 20Hz
+                    self.get_logger().warn(f'Serial read empty (count={self._serial_empty_count}), port={self.port_name}')
                 return
 
             self.buffer.extend(data)
@@ -162,11 +183,23 @@ class RobotDriverNode(Node):
                     odom_msg.twist.twist.linear.z = 0.0
 
                     # Angular velocity (Z only, with slip factor)
-                    odom_msg.twist.twist.angular.z = z_speed * self.slip_factor
+                    odom_msg.twist.twist.angular.z = z_speed * self.slip_factor * self.angular_scale
 
-                    # Position & orientation (we don't integrate here — use robot_localization or similar)
-                    # So set pose to zero, or leave as identity
-                    odom_msg.pose.pose.orientation = quaternion_from_euler(roll, pitch, yaw)
+                    # --- Integrate position using twist (vx, wz) ---
+                    # Odom frame: start at (0,0,0) heading=0, pure dead-reckoning
+                    now = self.get_clock().now()
+                    if self._last_odom_time is not None:
+                        dt = (now - self._last_odom_time).nanoseconds / 1e9
+                        if dt > 0 and dt < 1.0:  # sanity check
+                            self._odom_x += x_speed * self.slip_factor * self.linear_scale * math.cos(self._odom_yaw) * dt
+                            self._odom_y += x_speed * self.slip_factor * self.linear_scale * math.sin(self._odom_yaw) * dt
+                            self._odom_yaw += z_speed * self.slip_factor * self.angular_scale * dt
+                    self._last_odom_time = now
+
+                    odom_msg.pose.pose.position.x = self._odom_x
+                    odom_msg.pose.pose.position.y = self._odom_y
+                    odom_msg.pose.pose.position.z = 0.0
+                    odom_msg.pose.pose.orientation = quaternion_from_euler(roll, pitch, self._odom_yaw)  # USE INTEGRATED YAW
 
                     self.odom_pub.publish(odom_msg)
 
@@ -179,8 +212,8 @@ class RobotDriverNode(Node):
                     imu_msg.linear_acceleration.z = az * 9.81
                     imu_msg.angular_velocity.x = math.radians(gx)
                     imu_msg.angular_velocity.y = math.radians(gy)
-                    imu_msg.angular_velocity.z = math.radians(gz) * self.slip_factor  # apply slip to yaw rate
-                    imu_msg.orientation = quaternion_from_euler(roll, pitch, yaw)
+                    imu_msg.angular_velocity.z = math.radians(gz) * self.slip_factor * self.angular_scale  # apply slip to yaw rate
+                    imu_msg.orientation = quaternion_from_euler(roll, pitch, self._odom_yaw)  # USE INTEGRATED YAW
                     self.imu_pub.publish(imu_msg)
 
                     # --- Publish Battery ---
@@ -221,16 +254,37 @@ class RobotDriverNode(Node):
 
     def cmd_vel_callback(self, msg):
         try:
-            x_speed = int(max(min(msg.linear.x * 1000.0, 32767), -32768))
-            y_speed = int(max(min(msg.linear.y * 1000.0, 32767), -32768))
-            z_speed = int(max(min(msg.angular.z * 1000.0, 32767), -32768))
+            self._last_cmd_time = self.get_clock().now()
+            self._current_twist = msg
+        except Exception as e:
+            self.get_logger().error(f'cmd_vel callback error: {e}')
+
+    def _cmd_vel_watchdog(self):
+        """20Hz watchdog: continuously send cmd_vel via serial.
+        Auto-stop (zero speed) when no new command for 0.5s."""
+        try:
+            elapsed = (self.get_clock().now() - self._last_cmd_time).nanoseconds / 1e9
+            if elapsed > self._cmd_timeout:
+                self._send_cmd_vel_serial(0.0, 0.0)  # timeout -> stop
+            else:
+                self._send_cmd_vel_serial(
+                    self._current_twist.linear.x,
+                    self._current_twist.angular.z)
+        except Exception as e:
+            self.get_logger().error(f'watchdog error: {e}')
+
+    def _send_cmd_vel_serial(self, vx, wz):
+        """Encode and send cmd_vel to serial port (11-byte packet)"""
+        try:
+            x_speed = int(max(min(vx * 1000.0, 32767), -32768))
+            z_speed = int(max(min(wz * 1000.0, 32767), -32768))
             buffer = bytearray(11)
             buffer[0] = 0x7B
             buffer[1] = 0x00
             buffer[2] = 0x00
             import struct
             struct.pack_into('>h', buffer, 3, x_speed)
-            struct.pack_into('>h', buffer, 5, y_speed)
+            struct.pack_into('>h', buffer, 5, 0)  # y_speed = 0
             struct.pack_into('>h', buffer, 7, z_speed)
             checksum = 0
             for i in range(9):
@@ -239,7 +293,7 @@ class RobotDriverNode(Node):
             buffer[10] = 0x7D
             self.ser.write(buffer)
         except Exception as e:
-            self.get_logger().error(f'指令发送失败: {e}')
+            self.get_logger().error(f'Serial send error: {e}')
 
     def destroy_node(self):
         self.ser.close()

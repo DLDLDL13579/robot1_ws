@@ -4,7 +4,7 @@ if(COMPILER_WARNINGS)
   add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 find_package(ament_cmake REQUIRED)
-install(DIRECTORY launch config maps
+install(DIRECTORY launch config maps scripts
   DESTINATION share/${PROJECT_NAME}/)
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
