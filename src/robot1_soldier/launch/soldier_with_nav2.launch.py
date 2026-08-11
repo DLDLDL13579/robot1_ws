@@ -20,7 +20,7 @@ def generate_launch_description():
 
         # 2. 延迟 8 秒启动 Nav2
         TimerAction(
-            period=8.0,
+            period=15.0,
             actions=[
                 ExecuteProcess(
                     cmd=["bash", nav2_script],

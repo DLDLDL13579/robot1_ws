@@ -3,7 +3,7 @@ robot_1/ekf_filter_node:
     frequency: 10.0
     sensor_timeout: 0.5          # 放宽超时阈值，防止偶发卡顿触发报错
     two_d_mode: true
-    publish_tf: true
+    publish_tf: false
     map_frame: map
     odom_frame: robot_1/odom
     base_link_frame: robot_1/base_link

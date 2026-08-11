@@ -21,7 +21,6 @@ def generate_launch_description():
 
     map_file = LaunchConfiguration("map", default=os.path.join(my_dir, "maps", "lab_map.yaml"))
     soldier_params = os.path.join(sld_dir, "config", "soldier_params.yaml")
-    soldier_ekf = os.path.join(sld_dir, "config", "soldier_ekf.yaml")
     remaps = [("tf", "/tf"), ("tf_static", "/tf_static")]
 
     chassis = Node(package="robot_driver", executable="robot_driver_node", name="robot_driver_node",
@@ -32,9 +31,6 @@ def generate_launch_description():
         PythonLaunchDescriptionSource(os.path.join(ydlidar_dir, "launch", "ydlidar_launch.py")),
         launch_arguments={"robot_namespace": ns}.items())
 
-    ekf = Node(package="robot_localization", executable="ekf_node", name="ekf_filter_node",
-               namespace=ns, output="screen", parameters=[soldier_ekf],
-               remappings=[("odometry/filtered", "odom_filtered")])
 
     map_server = Node(package="nav2_map_server", executable="map_server", name="map_server",
                       namespace=ns, output="screen",
@@ -48,6 +44,7 @@ def generate_launch_description():
     lcm = Node(package="nav2_lifecycle_manager", executable="lifecycle_manager",
                name="lifecycle_manager_localization", namespace=ns, output="screen",
                parameters=[{"use_sim_time": False}, {"autostart": True},
+                           {"bond_timeout": 30.0},
                            {"node_names": ["map_server", "amcl"]}])
 
     pos_pub = Node(package="robot1_soldier", executable="position_publisher", name="position_publisher",
@@ -63,8 +60,18 @@ def generate_launch_description():
         output="screen",
     )
 
+    # Bootstrap map->odom TF: AMCL needs this to accept its first scan
+    # (AMCL will override this with its own TF once it starts updating)
+    init_map_odom = Node(
+        package="tf2_ros", executable="static_transform_publisher",
+        name="init_map_to_odom", arguments=[
+            "--x", "0", "--y", "0", "--z", "0",
+            "--roll", "0", "--pitch", "0", "--yaw", "0",
+            "--frame-id", "map", "--child-frame-id", "robot_1/odom",
+        ])
+
     return LaunchDescription([
         DeclareLaunchArgument("map", default_value=os.path.join(my_dir, "maps", "lab_map.yaml")),
-        chassis, lidar, ekf, map_server, amcl, lcm, pos_pub,
+        chassis, lidar, map_server, amcl, lcm, pos_pub, init_map_odom,
         TimerAction(period=2.0, actions=[relay_node]),
     ])

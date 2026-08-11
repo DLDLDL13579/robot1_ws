@@ -199,7 +199,7 @@ class RobotDriverNode(Node):
                     odom_msg.pose.pose.position.x = self._odom_x
                     odom_msg.pose.pose.position.y = self._odom_y
                     odom_msg.pose.pose.position.z = 0.0
-                    odom_msg.pose.pose.orientation = quaternion_from_euler(roll, pitch, self._odom_yaw)  # USE INTEGRATED YAW
+                    odom_msg.pose.pose.orientation = quaternion_from_euler(0.0, 0.0, self._odom_yaw)  # 2D: roll=0, pitch=0
 
                     self.odom_pub.publish(odom_msg)
 
@@ -213,7 +213,7 @@ class RobotDriverNode(Node):
                     imu_msg.angular_velocity.x = math.radians(gx)
                     imu_msg.angular_velocity.y = math.radians(gy)
                     imu_msg.angular_velocity.z = math.radians(gz) * self.slip_factor * self.angular_scale  # apply slip to yaw rate
-                    imu_msg.orientation = quaternion_from_euler(roll, pitch, self._odom_yaw)  # USE INTEGRATED YAW
+                    imu_msg.orientation = quaternion_from_euler(0.0, 0.0, self._odom_yaw)  # 2D: roll=0, pitch=0
                     self.imu_pub.publish(imu_msg)
 
                     # --- Publish Battery ---
@@ -232,15 +232,15 @@ class RobotDriverNode(Node):
                     # 能给出比底盘自身更平滑的位姿估计。底盘若同时发 TF 会和 EKF 冲突,
                     # 触发 TF_REPEATED_DATA / 双源抖动。底盘只负责发原始 odom + imu 数据。
                     # 保留 self.tf_broadcaster 与 import 以便回滚。
-                    # t = TransformStamped()
-                    # t.header.stamp = odom_msg.header.stamp
-                    # t.header.frame_id = f"{self.robot_namespace}/odom" if self.robot_namespace else "odom"
-                    # t.child_frame_id = f"{self.robot_namespace}/base_link" if self.robot_namespace else "base_link"
-                    # t.transform.translation.x = 0.0
-                    # t.transform.translation.y = 0.0
-                    # t.transform.translation.z = 0.0
-                    # t.transform.rotation = quaternion_from_euler(roll, pitch, yaw)
-                    # self.tf_broadcaster.sendTransform(t)
+                    t = TransformStamped()
+                    t.header.stamp = odom_msg.header.stamp
+                    t.header.frame_id = f"{self.robot_namespace}/odom" if self.robot_namespace else "odom"
+                    t.child_frame_id = f"{self.robot_namespace}/base_link" if self.robot_namespace else "base_link"
+                    t.transform.translation.x = self._odom_x
+                    t.transform.translation.y = self._odom_y
+                    t.transform.translation.z = 0.0
+                    t.transform.rotation = quaternion_from_euler(0.0, 0.0, self._odom_yaw)  # 2D: roll=0, pitch=0
+                    self.tf_broadcaster.sendTransform(t)
 
                     # --- Consume frame ---
                     self.buffer = self.buffer[36:]
