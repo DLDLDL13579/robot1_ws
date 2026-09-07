@@ -1,4 +1,0 @@
-/home/xumeng/robot1_ws/src/gimbal_ws/gimbal_control_cpp/src/gimbal_controller.cpp: In member function ‘int GimbalController::open_serial(const string&, int)’:
-/home/xumeng/robot1_ws/src/gimbal_ws/gimbal_control_cpp/src/gimbal_controller.cpp:71:54: warning: unused parameter ‘baudrate’ [-Wunused-parameter]
-   71 |     int open_serial(const std::string& port_name,int baudrate){
-      |                                                  ~~~~^~~~~~~~

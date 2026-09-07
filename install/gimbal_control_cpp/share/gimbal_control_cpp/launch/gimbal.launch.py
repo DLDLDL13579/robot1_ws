@@ -1,1 +1,0 @@
-/home/xumeng/robot1_ws/src/gimbal_ws/gimbal_control_cpp/launch/gimbal.launch.py

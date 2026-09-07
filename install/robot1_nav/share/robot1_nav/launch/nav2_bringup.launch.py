@@ -1,1 +1,0 @@
-/home/xumeng/robot1_ws/src/robot1_nav/launch/nav2_bringup.launch.py

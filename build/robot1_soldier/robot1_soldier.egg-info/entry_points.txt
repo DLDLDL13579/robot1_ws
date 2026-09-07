@@ -1,4 +1,0 @@
-[console_scripts]
-nav_goal_gateway = robot1_soldier.nav_goal_gateway:main
-position_publisher = robot1_soldier.position_publisher:main
-
