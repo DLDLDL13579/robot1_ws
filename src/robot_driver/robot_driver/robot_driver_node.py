@@ -48,6 +48,18 @@ class RobotDriverNode(Node):
         self.linear_scale = self.get_parameter('linear_scale').value
         self.declare_parameter('angular_scale', 1.0)
         self.angular_scale = self.get_parameter('angular_scale').value
+        # 电池电压上层补偿/滤波（C10B 底层 ADC/IMU 漂移兜底，2026-09-07）
+        self.declare_parameter('voltage_scale', 1.0)
+        self.declare_parameter('voltage_offset', 0.0)
+        self.declare_parameter('voltage_min', 9.0)   # 3S 锂电保护电压
+        self.declare_parameter('voltage_max', 12.6)  # 3S 锂电满电
+        self.declare_parameter('voltage_median_n', 5)
+        self.voltage_scale = self.get_parameter('voltage_scale').value
+        self.voltage_offset = self.get_parameter('voltage_offset').value
+        self.voltage_min = self.get_parameter('voltage_min').value
+        self.voltage_max = self.get_parameter('voltage_max').value
+        self.voltage_median_n = int(self.get_parameter('voltage_median_n').value)
+        self._voltage_hist = []
 
 
         # --- Topic names with namespace ---
@@ -252,8 +264,14 @@ class RobotDriverNode(Node):
                     bat_msg = BatteryState()
                     bat_msg.header.stamp = odom_msg.header.stamp
                     bat_msg.header.frame_id = f"{self.robot_namespace}/base_link" if self.robot_namespace else "base_link"
-                    bat_msg.voltage = float(battery_v)
-                    bat_msg.percentage = min(max((battery_v - 6.0) / (8.4 - 6.0) * 100.0, 0.0), 100.0)
+                    self._voltage_hist.append(float(battery_v))
+                    if len(self._voltage_hist) > self.voltage_median_n:
+                        self._voltage_hist.pop(0)
+                    v_med = sorted(self._voltage_hist)[len(self._voltage_hist)//2]
+                    v_out = v_med * self.voltage_scale + self.voltage_offset
+                    bat_msg.voltage = v_out
+                    v_pct = (v_out - self.voltage_min) / (self.voltage_max - self.voltage_min) * 100.0
+                    bat_msg.percentage = min(max(v_pct, 0.0), 100.0)
                     bat_msg.power_supply_status = BatteryState.POWER_SUPPLY_STATUS_UNKNOWN
                     self.battery_pub.publish(bat_msg)
 
