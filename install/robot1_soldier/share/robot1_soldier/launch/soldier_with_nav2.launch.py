@@ -1,0 +1,1 @@
+/home/xumeng/robot1_ws/build/robot1_soldier/launch/soldier_with_nav2.launch.py

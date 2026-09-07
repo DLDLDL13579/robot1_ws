@@ -1,0 +1,23 @@
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/xumeng/robot1_ws/install/robot1_nav/share/robot1_nav//launch/__pycache__/nav2_bringup.launch.cpython-310.pyc
+-- Up-to-date symlink: /home/xumeng/robot1_ws/install/robot1_nav/share/robot1_nav//launch/nav2_bringup.launch.py
+-- Up-to-date symlink: /home/xumeng/robot1_ws/install/robot1_nav/share/robot1_nav//config/nav2_params.yaml
+-- Up-to-date symlink: /home/xumeng/robot1_ws/install/robot1_nav/share/robot1_nav//maps/lab_map.pgm
+-- Up-to-date symlink: /home/xumeng/robot1_ws/install/robot1_nav/share/robot1_nav//maps/lab_map.yaml
+-- Up-to-date symlink: /home/xumeng/robot1_ws/install/robot1_nav/share/robot1_nav//scripts/map_relay.py
+-- Up-to-date symlink: /home/xumeng/robot1_ws/install/robot1_nav/share/ament_index/resource_index/package_run_dependencies/robot1_nav
+-- Up-to-date symlink: /home/xumeng/robot1_ws/install/robot1_nav/share/ament_index/resource_index/parent_prefix_path/robot1_nav
+-- Up-to-date symlink: /home/xumeng/robot1_ws/install/robot1_nav/share/robot1_nav/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/xumeng/robot1_ws/install/robot1_nav/share/robot1_nav/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/xumeng/robot1_ws/install/robot1_nav/share/robot1_nav/environment/path.sh
+-- Up-to-date symlink: /home/xumeng/robot1_ws/install/robot1_nav/share/robot1_nav/environment/path.dsv
+-- Up-to-date symlink: /home/xumeng/robot1_ws/install/robot1_nav/share/robot1_nav/local_setup.bash
+-- Up-to-date symlink: /home/xumeng/robot1_ws/install/robot1_nav/share/robot1_nav/local_setup.sh
+-- Up-to-date symlink: /home/xumeng/robot1_ws/install/robot1_nav/share/robot1_nav/local_setup.zsh
+-- Up-to-date symlink: /home/xumeng/robot1_ws/install/robot1_nav/share/robot1_nav/local_setup.dsv
+-- Symlinking: /home/xumeng/robot1_ws/install/robot1_nav/share/robot1_nav/package.dsv
+-- Up-to-date symlink: /home/xumeng/robot1_ws/install/robot1_nav/share/ament_index/resource_index/packages/robot1_nav
+-- Up-to-date symlink: /home/xumeng/robot1_ws/install/robot1_nav/share/robot1_nav/cmake/robot1_navConfig.cmake
+-- Up-to-date symlink: /home/xumeng/robot1_ws/install/robot1_nav/share/robot1_nav/cmake/robot1_navConfig-version.cmake
+-- Up-to-date symlink: /home/xumeng/robot1_ws/install/robot1_nav/share/robot1_nav/package.xml

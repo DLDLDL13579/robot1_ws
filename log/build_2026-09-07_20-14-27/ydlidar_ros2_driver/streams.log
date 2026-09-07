@@ -1,0 +1,68 @@
+[0.045s] Invoking command in '/home/xumeng/robot1_ws/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/xumeng/robot1_ws/build/ydlidar_ros2_driver -- -j4 -l4
+[0.315s] [ 75%] Built target ydlidar_ros2_driver_client
+[0.316s] [ 75%] Building CXX object CMakeFiles/ydlidar_ros2_driver_node.dir/src/ydlidar_ros2_driver_node.cpp.o
+[8.776s] /home/xumeng/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp: In lambda function:
+[8.776s] /home/xumeng/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:192:54: warning: unused parameter ‘request_header’ [-Wunused-parameter]
+[8.777s]   192 |     [&laser](const std::shared_ptr<rmw_request_id_t> request_header,
+[8.777s]       |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+[8.777s] /home/xumeng/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:193:56: warning: unused parameter ‘req’ [-Wunused-parameter]
+[8.777s]   193 |   const std::shared_ptr<std_srvs::srv::Empty::Request> req,
+[8.778s]       |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+[8.778s] /home/xumeng/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:194:51: warning: unused parameter ‘response’ [-Wunused-parameter]
+[8.778s]   194 |   std::shared_ptr<std_srvs::srv::Empty::Response> response) -> bool
+[8.778s]       |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+[8.839s] /home/xumeng/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp: In lambda function:
+[8.839s] /home/xumeng/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:202:54: warning: unused parameter ‘request_header’ [-Wunused-parameter]
+[8.840s]   202 |     [&laser](const std::shared_ptr<rmw_request_id_t> request_header,
+[8.840s]       |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+[8.840s] /home/xumeng/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:203:56: warning: unused parameter ‘req’ [-Wunused-parameter]
+[8.840s]   203 |   const std::shared_ptr<std_srvs::srv::Empty::Request> req,
+[8.841s]       |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+[8.841s] /home/xumeng/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:204:51: warning: unused parameter ‘response’ [-Wunused-parameter]
+[8.842s]   204 |   std::shared_ptr<std_srvs::srv::Empty::Response> response) -> bool
+[8.842s]       |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+[19.889s] [100%] Linking CXX executable ydlidar_ros2_driver_node
+[21.042s] [100%] Built target ydlidar_ros2_driver_node
+[21.073s] Invoked command in '/home/xumeng/robot1_ws/build/ydlidar_ros2_driver' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/xumeng/robot1_ws/build/ydlidar_ros2_driver -- -j4 -l4
+[21.107s] Invoking command in '/home/xumeng/robot1_ws/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/xumeng/robot1_ws/build/ydlidar_ros2_driver
+[21.135s] -- Install configuration: ""
+[21.137s] -- Execute custom install script
+[21.139s] -- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/lib/ydlidar_ros2_driver/ydlidar_ros2_driver_node
+[21.141s] -- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/lib/ydlidar_ros2_driver/ydlidar_ros2_driver_client
+[21.143s] -- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar.py
+[21.143s] -- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar_launch.py
+[21.144s] -- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar_launch_view.py
+[21.145s] -- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/G1.yaml
+[21.145s] -- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/G2.yaml
+[21.146s] -- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/G4.yaml
+[21.147s] -- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/G6.yaml
+[21.147s] -- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/GS2.yaml
+[21.148s] -- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/GS5.yaml
+[21.149s] -- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/TEA.yaml
+[21.150s] -- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/TG.yaml
+[21.150s] -- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/Tmini-Plus-SH.yaml
+[21.151s] -- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/Tmini.yaml
+[21.151s] -- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/X2.yaml
+[21.151s] -- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/X3.yaml
+[21.155s] -- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/X4-Pro.yaml
+[21.156s] -- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/X4.yaml
+[21.156s] -- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/sdm15.yaml
+[21.156s] -- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/ydlidar.yaml
+[21.156s] -- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/startup/initenv.sh
+[21.157s] -- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/config/ydlidar.rviz
+[21.157s] -- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ament_index/resource_index/package_run_dependencies/ydlidar_ros2_driver
+[21.157s] -- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ament_index/resource_index/parent_prefix_path/ydlidar_ros2_driver
+[21.157s] -- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/ament_prefix_path.sh
+[21.159s] -- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/ament_prefix_path.dsv
+[21.159s] -- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/path.sh
+[21.160s] -- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/path.dsv
+[21.160s] -- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.bash
+[21.161s] -- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.sh
+[21.161s] -- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.zsh
+[21.162s] -- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.dsv
+[21.162s] -- Symlinking: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.dsv
+[21.189s] -- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ament_index/resource_index/packages/ydlidar_ros2_driver
+[21.194s] -- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/cmake/ydlidar_ros2_driverConfig.cmake
+[21.195s] -- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/cmake/ydlidar_ros2_driverConfig-version.cmake
+[21.196s] -- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.xml
+[21.198s] Invoked command in '/home/xumeng/robot1_ws/build/ydlidar_ros2_driver' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/xumeng/robot1_ws/build/ydlidar_ros2_driver

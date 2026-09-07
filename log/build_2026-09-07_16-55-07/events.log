@@ -1,0 +1,222 @@
+[0.000000] (-) TimerEvent: {}
+[0.000424] (gimbal_control_cpp) JobQueued: {'identifier': 'gimbal_control_cpp', 'dependencies': OrderedDict()}
+[0.001235] (robot1_nav) JobQueued: {'identifier': 'robot1_nav', 'dependencies': OrderedDict()}
+[0.001571] (robot_driver) JobQueued: {'identifier': 'robot_driver', 'dependencies': OrderedDict()}
+[0.001637] (ydlidar_ros2_driver) JobQueued: {'identifier': 'ydlidar_ros2_driver', 'dependencies': OrderedDict()}
+[0.002037] (robot1_soldier) JobQueued: {'identifier': 'robot1_soldier', 'dependencies': OrderedDict([('gimbal_control_cpp', '/home/xumeng/robot1_ws/install/gimbal_control_cpp')])}
+[0.002184] (gimbal_control_cpp) JobStarted: {'identifier': 'gimbal_control_cpp'}
+[0.021212] (robot1_nav) JobStarted: {'identifier': 'robot1_nav'}
+[0.030302] (robot_driver) JobStarted: {'identifier': 'robot_driver'}
+[0.045670] (ydlidar_ros2_driver) JobStarted: {'identifier': 'ydlidar_ros2_driver'}
+[0.058984] (gimbal_control_cpp) JobProgress: {'identifier': 'gimbal_control_cpp', 'progress': 'cmake'}
+[0.061354] (gimbal_control_cpp) JobProgress: {'identifier': 'gimbal_control_cpp', 'progress': 'build'}
+[0.063279] (gimbal_control_cpp) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/xumeng/robot1_ws/build/gimbal_control_cpp', '--', '-j4', '-l4'], 'cwd': '/home/xumeng/robot1_ws/build/gimbal_control_cpp', 'env': OrderedDict([('USER', 'xumeng'), ('SSH_CLIENT', '192.168.31.57 49703 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '0'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/xumeng'), ('OLDPWD', '/home/xumeng/robot1_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'xumeng'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('XDG_SESSION_ID', '72'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'zh_CN.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('PWD', '/home/xumeng/robot1_ws/build/gimbal_control_cpp'), ('SSH_CONNECTION', '192.168.31.57 49703 192.168.31.235 22'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.066700] (robot1_nav) JobProgress: {'identifier': 'robot1_nav', 'progress': 'cmake'}
+[0.069987] (robot1_nav) JobProgress: {'identifier': 'robot1_nav', 'progress': 'build'}
+[0.071108] (robot1_nav) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/xumeng/robot1_ws/build/robot1_nav', '--', '-j4', '-l4'], 'cwd': '/home/xumeng/robot1_ws/build/robot1_nav', 'env': OrderedDict([('USER', 'xumeng'), ('SSH_CLIENT', '192.168.31.57 49703 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '0'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/xumeng'), ('OLDPWD', '/home/xumeng/robot1_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'xumeng'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('XDG_SESSION_ID', '72'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'zh_CN.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('PWD', '/home/xumeng/robot1_ws/build/robot1_nav'), ('SSH_CONNECTION', '192.168.31.57 49703 192.168.31.235 22'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.100277] (-) TimerEvent: {}
+[0.200906] (-) TimerEvent: {}
+[0.301446] (-) TimerEvent: {}
+[0.402257] (-) TimerEvent: {}
+[0.502786] (-) TimerEvent: {}
+[0.603170] (-) TimerEvent: {}
+[0.703535] (-) TimerEvent: {}
+[0.803919] (-) TimerEvent: {}
+[0.904419] (-) TimerEvent: {}
+[1.005172] (-) TimerEvent: {}
+[1.020103] (ydlidar_ros2_driver) JobProgress: {'identifier': 'ydlidar_ros2_driver', 'progress': 'cmake'}
+[1.022680] (ydlidar_ros2_driver) JobProgress: {'identifier': 'ydlidar_ros2_driver', 'progress': 'build'}
+[1.023629] (ydlidar_ros2_driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/xumeng/robot1_ws/build/ydlidar_ros2_driver', '--', '-j4', '-l4'], 'cwd': '/home/xumeng/robot1_ws/build/ydlidar_ros2_driver', 'env': OrderedDict([('USER', 'xumeng'), ('SSH_CLIENT', '192.168.31.57 49703 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '0'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/xumeng'), ('OLDPWD', '/home/xumeng/robot1_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'xumeng'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('XDG_SESSION_ID', '72'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'zh_CN.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('PWD', '/home/xumeng/robot1_ws/build/ydlidar_ros2_driver'), ('SSH_CONNECTION', '192.168.31.57 49703 192.168.31.235 22'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.030824] (gimbal_control_cpp) StdoutLine: {'line': b'[100%] Built target gimbal_controller\n'}
+[1.031528] (gimbal_control_cpp) CommandEnded: {'returncode': 0}
+[1.032486] (gimbal_control_cpp) JobProgress: {'identifier': 'gimbal_control_cpp', 'progress': 'install'}
+[1.061614] (gimbal_control_cpp) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/xumeng/robot1_ws/build/gimbal_control_cpp'], 'cwd': '/home/xumeng/robot1_ws/build/gimbal_control_cpp', 'env': OrderedDict([('USER', 'xumeng'), ('SSH_CLIENT', '192.168.31.57 49703 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '0'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/xumeng'), ('OLDPWD', '/home/xumeng/robot1_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'xumeng'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('XDG_SESSION_ID', '72'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'zh_CN.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('PWD', '/home/xumeng/robot1_ws/build/gimbal_control_cpp'), ('SSH_CONNECTION', '192.168.31.57 49703 192.168.31.235 22'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.065491] (robot1_nav) CommandEnded: {'returncode': 0}
+[1.069117] (robot1_nav) JobProgress: {'identifier': 'robot1_nav', 'progress': 'install'}
+[1.069246] (robot1_nav) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/xumeng/robot1_ws/build/robot1_nav'], 'cwd': '/home/xumeng/robot1_ws/build/robot1_nav', 'env': OrderedDict([('USER', 'xumeng'), ('SSH_CLIENT', '192.168.31.57 49703 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '0'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/xumeng'), ('OLDPWD', '/home/xumeng/robot1_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'xumeng'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('XDG_SESSION_ID', '72'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'zh_CN.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('PWD', '/home/xumeng/robot1_ws/build/robot1_nav'), ('SSH_CONNECTION', '192.168.31.57 49703 192.168.31.235 22'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.089645] (robot1_nav) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.091729] (robot1_nav) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[1.093637] (gimbal_control_cpp) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.095428] (robot1_nav) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/robot1_nav/share/robot1_nav//launch/__pycache__/nav2_bringup.launch.cpython-310.pyc\n'}
+[1.095835] (robot1_nav) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/robot1_nav/share/robot1_nav//launch/nav2_bringup.launch.py\n'}
+[1.096087] (robot1_nav) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/robot1_nav/share/robot1_nav//config/nav2_params.yaml\n'}
+[1.096605] (robot1_nav) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/robot1_nav/share/robot1_nav//maps/lab_map.pgm\n'}
+[1.096880] (robot1_nav) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/robot1_nav/share/robot1_nav//maps/lab_map.yaml\n'}
+[1.097295] (robot1_nav) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/robot1_nav/share/robot1_nav//scripts/map_relay.py\n'}
+[1.097806] (robot1_nav) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/robot1_nav/share/ament_index/resource_index/package_run_dependencies/robot1_nav\n'}
+[1.098269] (robot1_nav) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/robot1_nav/share/ament_index/resource_index/parent_prefix_path/robot1_nav\n'}
+[1.098709] (robot1_nav) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/robot1_nav/share/robot1_nav/environment/ament_prefix_path.sh\n'}
+[1.099269] (robot1_nav) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/robot1_nav/share/robot1_nav/environment/ament_prefix_path.dsv\n'}
+[1.102055] (robot1_nav) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/robot1_nav/share/robot1_nav/environment/path.sh\n'}
+[1.104475] (robot1_nav) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/robot1_nav/share/robot1_nav/environment/path.dsv\n'}
+[1.104871] (robot1_nav) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/robot1_nav/share/robot1_nav/local_setup.bash\n'}
+[1.105212] (-) TimerEvent: {}
+[1.105272] (robot1_nav) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/robot1_nav/share/robot1_nav/local_setup.sh\n'}
+[1.105775] (robot1_nav) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/robot1_nav/share/robot1_nav/local_setup.zsh\n'}
+[1.106121] (robot1_nav) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/robot1_nav/share/robot1_nav/local_setup.dsv\n'}
+[1.106357] (robot1_nav) StdoutLine: {'line': b'-- Symlinking: /home/xumeng/robot1_ws/install/robot1_nav/share/robot1_nav/package.dsv\n'}
+[1.109997] (gimbal_control_cpp) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[1.112354] (gimbal_control_cpp) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/gimbal_control_cpp/lib/gimbal_control_cpp/gimbal_controller\n'}
+[1.115379] (gimbal_control_cpp) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/gimbal_control_cpp/share/gimbal_control_cpp/launch/gimbal.launch.py\n'}
+[1.116810] (gimbal_control_cpp) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/gimbal_control_cpp/share/ament_index/resource_index/package_run_dependencies/gimbal_control_cpp\n'}
+[1.123580] (gimbal_control_cpp) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/gimbal_control_cpp/share/ament_index/resource_index/parent_prefix_path/gimbal_control_cpp\n'}
+[1.124105] (gimbal_control_cpp) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/gimbal_control_cpp/share/gimbal_control_cpp/environment/ament_prefix_path.sh\n'}
+[1.124361] (gimbal_control_cpp) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/gimbal_control_cpp/share/gimbal_control_cpp/environment/ament_prefix_path.dsv\n'}
+[1.124570] (gimbal_control_cpp) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/gimbal_control_cpp/share/gimbal_control_cpp/environment/path.sh\n'}
+[1.124770] (gimbal_control_cpp) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/gimbal_control_cpp/share/gimbal_control_cpp/environment/path.dsv\n'}
+[1.125037] (gimbal_control_cpp) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/gimbal_control_cpp/share/gimbal_control_cpp/local_setup.bash\n'}
+[1.125224] (gimbal_control_cpp) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/gimbal_control_cpp/share/gimbal_control_cpp/local_setup.sh\n'}
+[1.125404] (gimbal_control_cpp) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/gimbal_control_cpp/share/gimbal_control_cpp/local_setup.zsh\n'}
+[1.125580] (gimbal_control_cpp) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/gimbal_control_cpp/share/gimbal_control_cpp/local_setup.dsv\n'}
+[1.125751] (gimbal_control_cpp) StdoutLine: {'line': b'-- Symlinking: /home/xumeng/robot1_ws/install/gimbal_control_cpp/share/gimbal_control_cpp/package.dsv\n'}
+[1.132416] (robot1_nav) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/robot1_nav/share/ament_index/resource_index/packages/robot1_nav\n'}
+[1.132851] (robot1_nav) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/robot1_nav/share/robot1_nav/cmake/robot1_navConfig.cmake\n'}
+[1.133093] (robot1_nav) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/robot1_nav/share/robot1_nav/cmake/robot1_navConfig-version.cmake\n'}
+[1.133382] (robot1_nav) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/robot1_nav/share/robot1_nav/package.xml\n'}
+[1.143949] (robot1_nav) CommandEnded: {'returncode': 0}
+[1.193610] (robot1_nav) JobEnded: {'identifier': 'robot1_nav', 'rc': 0}
+[1.196845] (ydlidar_ros2_driver) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target ydlidar_ros2_driver_node\n'}
+[1.197337] (ydlidar_ros2_driver) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target ydlidar_ros2_driver_client\n'}
+[1.197588] (gimbal_control_cpp) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/gimbal_control_cpp/share/ament_index/resource_index/packages/gimbal_control_cpp\n'}
+[1.197817] (gimbal_control_cpp) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/gimbal_control_cpp/share/gimbal_control_cpp/cmake/gimbal_control_cppConfig.cmake\n'}
+[1.198008] (gimbal_control_cpp) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/gimbal_control_cpp/share/gimbal_control_cpp/cmake/gimbal_control_cppConfig-version.cmake\n'}
+[1.198194] (gimbal_control_cpp) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/gimbal_control_cpp/share/gimbal_control_cpp/package.xml\n'}
+[1.199131] (gimbal_control_cpp) CommandEnded: {'returncode': 0}
+[1.205341] (-) TimerEvent: {}
+[1.244200] (gimbal_control_cpp) JobEnded: {'identifier': 'gimbal_control_cpp', 'rc': 0}
+[1.246017] (robot1_soldier) JobStarted: {'identifier': 'robot1_soldier'}
+[1.261604] (ydlidar_ros2_driver) StdoutLine: {'line': b'[ 50%] Built target ydlidar_ros2_driver_client\n'}
+[1.262035] (ydlidar_ros2_driver) StdoutLine: {'line': b'[100%] Built target ydlidar_ros2_driver_node\n'}
+[1.305526] (-) TimerEvent: {}
+[1.405895] (-) TimerEvent: {}
+[1.506278] (-) TimerEvent: {}
+[1.606649] (-) TimerEvent: {}
+[1.707010] (-) TimerEvent: {}
+[1.807382] (-) TimerEvent: {}
+[1.907741] (-) TimerEvent: {}
+[2.008213] (-) TimerEvent: {}
+[2.108672] (-) TimerEvent: {}
+[2.209969] (-) TimerEvent: {}
+[2.220700] (ydlidar_ros2_driver) CommandEnded: {'returncode': 0}
+[2.222425] (ydlidar_ros2_driver) JobProgress: {'identifier': 'ydlidar_ros2_driver', 'progress': 'install'}
+[2.223220] (ydlidar_ros2_driver) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/xumeng/robot1_ws/build/ydlidar_ros2_driver'], 'cwd': '/home/xumeng/robot1_ws/build/ydlidar_ros2_driver', 'env': OrderedDict([('USER', 'xumeng'), ('SSH_CLIENT', '192.168.31.57 49703 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '0'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/xumeng'), ('OLDPWD', '/home/xumeng/robot1_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'xumeng'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('XDG_SESSION_ID', '72'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'zh_CN.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('PWD', '/home/xumeng/robot1_ws/build/ydlidar_ros2_driver'), ('SSH_CONNECTION', '192.168.31.57 49703 192.168.31.235 22'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.245896] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.246669] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[2.248188] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/lib/ydlidar_ros2_driver/ydlidar_ros2_driver_node\n'}
+[2.248748] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/lib/ydlidar_ros2_driver/ydlidar_ros2_driver_client\n'}
+[2.250211] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar.py\n'}
+[2.250542] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar_launch.py\n'}
+[2.250756] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar_launch_view.py\n'}
+[2.251443] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/G1.yaml\n'}
+[2.253045] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/G2.yaml\n'}
+[2.253336] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/G4.yaml\n'}
+[2.253543] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/G6.yaml\n'}
+[2.253764] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/GS2.yaml\n'}
+[2.254628] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/GS5.yaml\n'}
+[2.254919] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/TEA.yaml\n'}
+[2.255121] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/TG.yaml\n'}
+[2.261703] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/Tmini-Plus-SH.yaml\n'}
+[2.262044] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/Tmini.yaml\n'}
+[2.262265] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/X2.yaml\n'}
+[2.262467] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/X3.yaml\n'}
+[2.262655] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/X4-Pro.yaml\n'}
+[2.262831] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/X4.yaml\n'}
+[2.263003] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/sdm15.yaml\n'}
+[2.263170] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/ydlidar.yaml\n'}
+[2.263340] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/startup/initenv.sh\n'}
+[2.263506] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/config/ydlidar.rviz\n'}
+[2.263672] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ament_index/resource_index/package_run_dependencies/ydlidar_ros2_driver\n'}
+[2.263977] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ament_index/resource_index/parent_prefix_path/ydlidar_ros2_driver\n'}
+[2.264208] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/ament_prefix_path.sh\n'}
+[2.264390] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/ament_prefix_path.dsv\n'}
+[2.264560] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/path.sh\n'}
+[2.264729] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/path.dsv\n'}
+[2.264895] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.bash\n'}
+[2.265055] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.sh\n'}
+[2.265216] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.zsh\n'}
+[2.265464] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.dsv\n'}
+[2.265637] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Symlinking: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.dsv\n'}
+[2.301874] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ament_index/resource_index/packages/ydlidar_ros2_driver\n'}
+[2.302744] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/cmake/ydlidar_ros2_driverConfig.cmake\n'}
+[2.303005] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/cmake/ydlidar_ros2_driverConfig-version.cmake\n'}
+[2.303388] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.xml\n'}
+[2.309482] (ydlidar_ros2_driver) CommandEnded: {'returncode': 0}
+[2.310866] (-) TimerEvent: {}
+[2.373660] (ydlidar_ros2_driver) JobEnded: {'identifier': 'ydlidar_ros2_driver', 'rc': 0}
+[2.411083] (-) TimerEvent: {}
+[2.511464] (-) TimerEvent: {}
+[2.611914] (-) TimerEvent: {}
+[2.712270] (-) TimerEvent: {}
+[2.812622] (-) TimerEvent: {}
+[2.912971] (-) TimerEvent: {}
+[3.013334] (-) TimerEvent: {}
+[3.113696] (-) TimerEvent: {}
+[3.214072] (-) TimerEvent: {}
+[3.314423] (-) TimerEvent: {}
+[3.381569] (robot_driver) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/xumeng/robot1_ws/build/robot_driver/build', '--no-deps', 'symlink_data'], 'cwd': '/home/xumeng/robot1_ws/build/robot_driver', 'env': {'USER': 'xumeng', 'SSH_CLIENT': '192.168.31.57 49703 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/xumeng', 'OLDPWD': '/home/xumeng/robot1_ws/src', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'humble', 'LOGNAME': 'xumeng', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'XDG_SESSION_ID': '72', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'zh_CN.UTF-8', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'PWD': '/home/xumeng/robot1_ws/build/robot_driver', 'SSH_CONNECTION': '192.168.31.57 49703 192.168.31.235 22', 'PYTHONPATH': '/home/xumeng/robot1_ws/build/robot_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/xumeng/robot1_ws/install/robot_driver/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1'}, 'shell': False}
+[3.414595] (-) TimerEvent: {}
+[3.514961] (-) TimerEvent: {}
+[3.615336] (-) TimerEvent: {}
+[3.715706] (-) TimerEvent: {}
+[3.816097] (-) TimerEvent: {}
+[3.916449] (-) TimerEvent: {}
+[4.016828] (-) TimerEvent: {}
+[4.117195] (-) TimerEvent: {}
+[4.217553] (-) TimerEvent: {}
+[4.317906] (-) TimerEvent: {}
+[4.418235] (-) TimerEvent: {}
+[4.501641] (robot1_soldier) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/xumeng/robot1_ws/build/robot1_soldier/build', '--no-deps', 'symlink_data'], 'cwd': '/home/xumeng/robot1_ws/build/robot1_soldier', 'env': {'USER': 'xumeng', 'SSH_CLIENT': '192.168.31.57 49703 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/xumeng', 'OLDPWD': '/home/xumeng/robot1_ws/src', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'humble', 'LOGNAME': 'xumeng', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'XDG_SESSION_ID': '72', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'zh_CN.UTF-8', 'AMENT_PREFIX_PATH': '/home/xumeng/robot1_ws/install/gimbal_control_cpp:/opt/ros/humble', 'SHELL': '/bin/bash', 'PWD': '/home/xumeng/robot1_ws/build/robot1_soldier', 'SSH_CONNECTION': '192.168.31.57 49703 192.168.31.235 22', 'PYTHONPATH': '/home/xumeng/robot1_ws/build/robot1_soldier/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/xumeng/robot1_ws/install/robot1_soldier/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/xumeng/robot1_ws/install/gimbal_control_cpp'}, 'shell': False}
+[4.518354] (-) TimerEvent: {}
+[4.558741] (robot_driver) StdoutLine: {'line': b'running develop\n'}
+[4.618520] (-) TimerEvent: {}
+[4.718886] (-) TimerEvent: {}
+[4.819239] (-) TimerEvent: {}
+[4.919601] (-) TimerEvent: {}
+[5.019957] (-) TimerEvent: {}
+[5.120327] (-) TimerEvent: {}
+[5.220730] (-) TimerEvent: {}
+[5.321123] (-) TimerEvent: {}
+[5.420733] (robot_driver) StdoutLine: {'line': b'running egg_info\n'}
+[5.421411] (-) TimerEvent: {}
+[5.421487] (robot_driver) StdoutLine: {'line': b'writing robot_driver.egg-info/PKG-INFO\n'}
+[5.422237] (robot_driver) StdoutLine: {'line': b'writing dependency_links to robot_driver.egg-info/dependency_links.txt\n'}
+[5.424091] (robot_driver) StdoutLine: {'line': b'writing entry points to robot_driver.egg-info/entry_points.txt\n'}
+[5.424964] (robot_driver) StdoutLine: {'line': b'writing requirements to robot_driver.egg-info/requires.txt\n'}
+[5.425613] (robot_driver) StdoutLine: {'line': b'writing top-level names to robot_driver.egg-info/top_level.txt\n'}
+[5.433106] (robot1_soldier) StdoutLine: {'line': b'running develop\n'}
+[5.434599] (robot_driver) StdoutLine: {'line': b"reading manifest file 'robot_driver.egg-info/SOURCES.txt'\n"}
+[5.438286] (robot_driver) StdoutLine: {'line': b"writing manifest file 'robot_driver.egg-info/SOURCES.txt'\n"}
+[5.444725] (robot_driver) StdoutLine: {'line': b'running build_ext\n'}
+[5.445847] (robot_driver) StdoutLine: {'line': b'Creating /home/xumeng/robot1_ws/install/robot_driver/lib/python3.10/site-packages/robot-driver.egg-link (link to .)\n'}
+[5.453501] (robot_driver) StdoutLine: {'line': b'Installing robot_driver_node script to /home/xumeng/robot1_ws/install/robot_driver/lib/robot_driver\n'}
+[5.455194] (robot_driver) StdoutLine: {'line': b'\n'}
+[5.455544] (robot_driver) StdoutLine: {'line': b'Installed /home/xumeng/robot1_ws/build/robot_driver\n'}
+[5.456167] (robot_driver) StdoutLine: {'line': b'running symlink_data\n'}
+[5.521625] (-) TimerEvent: {}
+[5.586830] (robot_driver) CommandEnded: {'returncode': 0}
+[5.613954] (robot_driver) JobEnded: {'identifier': 'robot_driver', 'rc': 0}
+[5.621765] (-) TimerEvent: {}
+[5.722118] (-) TimerEvent: {}
+[5.822522] (-) TimerEvent: {}
+[5.922923] (-) TimerEvent: {}
+[6.023315] (-) TimerEvent: {}
+[6.123715] (-) TimerEvent: {}
+[6.140128] (robot1_soldier) StdoutLine: {'line': b'running egg_info\n'}
+[6.140837] (robot1_soldier) StdoutLine: {'line': b'writing robot1_soldier.egg-info/PKG-INFO\n'}
+[6.141532] (robot1_soldier) StdoutLine: {'line': b'writing dependency_links to robot1_soldier.egg-info/dependency_links.txt\n'}
+[6.142038] (robot1_soldier) StdoutLine: {'line': b'writing entry points to robot1_soldier.egg-info/entry_points.txt\n'}
+[6.142429] (robot1_soldier) StdoutLine: {'line': b'writing requirements to robot1_soldier.egg-info/requires.txt\n'}
+[6.142830] (robot1_soldier) StdoutLine: {'line': b'writing top-level names to robot1_soldier.egg-info/top_level.txt\n'}
+[6.149304] (robot1_soldier) StdoutLine: {'line': b"reading manifest file 'robot1_soldier.egg-info/SOURCES.txt'\n"}
+[6.152517] (robot1_soldier) StdoutLine: {'line': b"writing manifest file 'robot1_soldier.egg-info/SOURCES.txt'\n"}
+[6.156934] (robot1_soldier) StdoutLine: {'line': b'running build_ext\n'}
+[6.157506] (robot1_soldier) StdoutLine: {'line': b'Creating /home/xumeng/robot1_ws/install/robot1_soldier/lib/python3.10/site-packages/robot1-soldier.egg-link (link to .)\n'}
+[6.160337] (robot1_soldier) StdoutLine: {'line': b'Installing nav_goal_gateway script to /home/xumeng/robot1_ws/install/robot1_soldier/lib/robot1_soldier\n'}
+[6.160848] (robot1_soldier) StdoutLine: {'line': b'Installing position_publisher script to /home/xumeng/robot1_ws/install/robot1_soldier/lib/robot1_soldier\n'}
+[6.161543] (robot1_soldier) StdoutLine: {'line': b'\n'}
+[6.161908] (robot1_soldier) StdoutLine: {'line': b'Installed /home/xumeng/robot1_ws/build/robot1_soldier\n'}
+[6.162098] (robot1_soldier) StdoutLine: {'line': b'running symlink_data\n'}
+[6.223947] (-) TimerEvent: {}
+[6.272033] (robot1_soldier) CommandEnded: {'returncode': 0}
+[6.303217] (robot1_soldier) JobEnded: {'identifier': 'robot1_soldier', 'rc': 0}
+[6.305765] (-) EventReactorShutdown: {}

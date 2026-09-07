@@ -1,0 +1,17 @@
+/home/xumeng/robot1_ws/install/gimbal_control_cpp/lib/gimbal_control_cpp/gimbal_controller
+/home/xumeng/robot1_ws/install/gimbal_control_cpp/share/gimbal_control_cpp/launch/gimbal.launch.py
+/home/xumeng/robot1_ws/install/gimbal_control_cpp/share/ament_index/resource_index/package_run_dependencies/gimbal_control_cpp
+/home/xumeng/robot1_ws/install/gimbal_control_cpp/share/ament_index/resource_index/parent_prefix_path/gimbal_control_cpp
+/home/xumeng/robot1_ws/install/gimbal_control_cpp/share/gimbal_control_cpp/environment/ament_prefix_path.sh
+/home/xumeng/robot1_ws/install/gimbal_control_cpp/share/gimbal_control_cpp/environment/ament_prefix_path.dsv
+/home/xumeng/robot1_ws/install/gimbal_control_cpp/share/gimbal_control_cpp/environment/path.sh
+/home/xumeng/robot1_ws/install/gimbal_control_cpp/share/gimbal_control_cpp/environment/path.dsv
+/home/xumeng/robot1_ws/install/gimbal_control_cpp/share/gimbal_control_cpp/local_setup.bash
+/home/xumeng/robot1_ws/install/gimbal_control_cpp/share/gimbal_control_cpp/local_setup.sh
+/home/xumeng/robot1_ws/install/gimbal_control_cpp/share/gimbal_control_cpp/local_setup.zsh
+/home/xumeng/robot1_ws/install/gimbal_control_cpp/share/gimbal_control_cpp/local_setup.dsv
+/home/xumeng/robot1_ws/install/gimbal_control_cpp/share/gimbal_control_cpp/package.dsv
+/home/xumeng/robot1_ws/install/gimbal_control_cpp/share/ament_index/resource_index/packages/gimbal_control_cpp
+/home/xumeng/robot1_ws/install/gimbal_control_cpp/share/gimbal_control_cpp/cmake/gimbal_control_cppConfig.cmake
+/home/xumeng/robot1_ws/install/gimbal_control_cpp/share/gimbal_control_cpp/cmake/gimbal_control_cppConfig-version.cmake
+/home/xumeng/robot1_ws/install/gimbal_control_cpp/share/gimbal_control_cpp/package.xml

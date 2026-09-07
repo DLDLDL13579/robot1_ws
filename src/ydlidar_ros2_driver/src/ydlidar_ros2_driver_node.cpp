@@ -223,7 +223,7 @@ int main(int argc, char *argv[]) {
 // COMMENTED:       scan_msg->header.stamp.nanosec =  scan.stamp - RCL_S_TO_NS(scan_msg->header.stamp.sec);
       scan_msg->header.frame_id = frame_id;
      // FIX: use ROS system time instead of SDK-relative stamp (AMCL stale-data fix)
-     scan_msg->header.stamp = node->get_clock()->now();
+     scan_msg->header.stamp = node->get_clock()->now() - rclcpp::Duration::from_seconds(scan.config.scan_time * 0.5);  // 扫描内容跨越scan_time, 取中点时刻
       pc_msg->header = scan_msg->header;
       scan_msg->angle_min = scan.config.min_angle;
       scan_msg->angle_max = scan.config.max_angle;

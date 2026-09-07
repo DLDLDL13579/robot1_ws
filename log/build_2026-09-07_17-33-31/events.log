@@ -1,0 +1,74 @@
+[0.000000] (-) TimerEvent: {}
+[0.000407] (-) JobUnselected: {'identifier': 'gimbal_control_cpp'}
+[0.001069] (-) JobUnselected: {'identifier': 'robot1_nav'}
+[0.001452] (-) JobUnselected: {'identifier': 'robot1_soldier'}
+[0.001839] (-) JobUnselected: {'identifier': 'ydlidar_ros2_driver'}
+[0.001976] (robot_driver) JobQueued: {'identifier': 'robot_driver', 'dependencies': OrderedDict()}
+[0.002198] (robot_driver) JobStarted: {'identifier': 'robot_driver'}
+[0.099093] (-) TimerEvent: {}
+[0.199485] (-) TimerEvent: {}
+[0.299882] (-) TimerEvent: {}
+[0.400289] (-) TimerEvent: {}
+[0.500712] (-) TimerEvent: {}
+[0.601076] (-) TimerEvent: {}
+[0.701451] (-) TimerEvent: {}
+[0.801844] (-) TimerEvent: {}
+[0.902255] (-) TimerEvent: {}
+[1.002643] (-) TimerEvent: {}
+[1.103013] (-) TimerEvent: {}
+[1.203405] (-) TimerEvent: {}
+[1.303799] (-) TimerEvent: {}
+[1.404178] (-) TimerEvent: {}
+[1.504562] (-) TimerEvent: {}
+[1.604901] (-) TimerEvent: {}
+[1.705269] (-) TimerEvent: {}
+[1.805662] (-) TimerEvent: {}
+[1.906058] (-) TimerEvent: {}
+[2.006448] (-) TimerEvent: {}
+[2.106867] (-) TimerEvent: {}
+[2.207278] (-) TimerEvent: {}
+[2.307662] (-) TimerEvent: {}
+[2.408073] (-) TimerEvent: {}
+[2.508505] (-) TimerEvent: {}
+[2.608889] (-) TimerEvent: {}
+[2.709271] (-) TimerEvent: {}
+[2.809674] (-) TimerEvent: {}
+[2.910077] (-) TimerEvent: {}
+[3.010486] (-) TimerEvent: {}
+[3.110924] (-) TimerEvent: {}
+[3.160669] (robot_driver) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/xumeng/robot1_ws/build/robot_driver/build', '--no-deps', 'symlink_data'], 'cwd': '/home/xumeng/robot1_ws/build/robot_driver', 'env': {'USER': 'xumeng', 'SSH_CLIENT': '192.168.31.57 61930 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/xumeng', 'OLDPWD': '/home/xumeng', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'humble', 'LOGNAME': 'xumeng', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'XDG_SESSION_ID': '25', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'zh_CN.UTF-8', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'PWD': '/home/xumeng/robot1_ws/build/robot_driver', 'SSH_CONNECTION': '192.168.31.57 61930 192.168.31.235 22', 'PYTHONPATH': '/home/xumeng/robot1_ws/build/robot_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/xumeng/robot1_ws/install/robot_driver/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1'}, 'shell': False}
+[3.211050] (-) TimerEvent: {}
+[3.311419] (-) TimerEvent: {}
+[3.411829] (-) TimerEvent: {}
+[3.512230] (-) TimerEvent: {}
+[3.612630] (-) TimerEvent: {}
+[3.713029] (-) TimerEvent: {}
+[3.813415] (-) TimerEvent: {}
+[3.913807] (-) TimerEvent: {}
+[4.014211] (-) TimerEvent: {}
+[4.044507] (robot_driver) StdoutLine: {'line': b'running develop\n'}
+[4.114344] (-) TimerEvent: {}
+[4.214681] (-) TimerEvent: {}
+[4.315020] (-) TimerEvent: {}
+[4.415391] (-) TimerEvent: {}
+[4.515798] (-) TimerEvent: {}
+[4.616164] (-) TimerEvent: {}
+[4.716535] (-) TimerEvent: {}
+[4.723518] (robot_driver) StdoutLine: {'line': b'running egg_info\n'}
+[4.724305] (robot_driver) StdoutLine: {'line': b'writing robot_driver.egg-info/PKG-INFO\n'}
+[4.725465] (robot_driver) StdoutLine: {'line': b'writing dependency_links to robot_driver.egg-info/dependency_links.txt\n'}
+[4.726040] (robot_driver) StdoutLine: {'line': b'writing entry points to robot_driver.egg-info/entry_points.txt\n'}
+[4.726582] (robot_driver) StdoutLine: {'line': b'writing requirements to robot_driver.egg-info/requires.txt\n'}
+[4.726816] (robot_driver) StdoutLine: {'line': b'writing top-level names to robot_driver.egg-info/top_level.txt\n'}
+[4.732663] (robot_driver) StdoutLine: {'line': b"reading manifest file 'robot_driver.egg-info/SOURCES.txt'\n"}
+[4.734603] (robot_driver) StdoutLine: {'line': b"writing manifest file 'robot_driver.egg-info/SOURCES.txt'\n"}
+[4.738686] (robot_driver) StdoutLine: {'line': b'running build_ext\n'}
+[4.739280] (robot_driver) StdoutLine: {'line': b'Creating /home/xumeng/robot1_ws/install/robot_driver/lib/python3.10/site-packages/robot-driver.egg-link (link to .)\n'}
+[4.741986] (robot_driver) StdoutLine: {'line': b'Installing robot_driver_node script to /home/xumeng/robot1_ws/install/robot_driver/lib/robot_driver\n'}
+[4.743000] (robot_driver) StdoutLine: {'line': b'\n'}
+[4.743307] (robot_driver) StdoutLine: {'line': b'Installed /home/xumeng/robot1_ws/build/robot_driver\n'}
+[4.743534] (robot_driver) StdoutLine: {'line': b'running symlink_data\n'}
+[4.816732] (-) TimerEvent: {}
+[4.841518] (robot_driver) CommandEnded: {'returncode': 0}
+[4.888877] (robot_driver) JobEnded: {'identifier': 'robot_driver', 'rc': 0}
+[4.890618] (-) EventReactorShutdown: {}

@@ -1,0 +1,2 @@
+source;share/robot1_nav/environment/ament_prefix_path.sh
+source;share/robot1_nav/environment/path.sh

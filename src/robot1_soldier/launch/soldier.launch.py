@@ -26,7 +26,7 @@ def generate_launch_description():
 
     chassis = Node(package="robot_driver", executable="robot_driver_node", name="robot_driver_node",
                    output="screen",
-                   parameters=[{"robot_namespace": ns, "port_name": "/dev/serial/by-id/usb-1a86_USB_Single_Serial_5897131917-if00", "baud_rate": 115200, "linear_scale": 1.09, "angular_scale": 0.55}])
+                   parameters=[{"robot_namespace": ns, "port_name": "/dev/serial/by-id/usb-1a86_USB_Single_Serial_5897131917-if00", "baud_rate": 115200, "linear_scale": 1.09, "angular_scale": 0.80}])
 
     lidar = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(os.path.join(ydlidar_dir, "launch", "ydlidar_launch.py")),

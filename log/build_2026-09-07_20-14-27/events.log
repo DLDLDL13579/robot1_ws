@@ -1,0 +1,291 @@
+[0.000000] (-) TimerEvent: {}
+[0.000336] (-) JobUnselected: {'identifier': 'gimbal_control_cpp'}
+[0.000754] (-) JobUnselected: {'identifier': 'robot1_nav'}
+[0.001438] (-) JobUnselected: {'identifier': 'robot1_soldier'}
+[0.001803] (-) JobUnselected: {'identifier': 'robot_driver'}
+[0.002264] (ydlidar_ros2_driver) JobQueued: {'identifier': 'ydlidar_ros2_driver', 'dependencies': OrderedDict()}
+[0.002404] (ydlidar_ros2_driver) JobStarted: {'identifier': 'ydlidar_ros2_driver'}
+[0.037897] (ydlidar_ros2_driver) JobProgress: {'identifier': 'ydlidar_ros2_driver', 'progress': 'cmake'}
+[0.040972] (ydlidar_ros2_driver) JobProgress: {'identifier': 'ydlidar_ros2_driver', 'progress': 'build'}
+[0.043074] (ydlidar_ros2_driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/xumeng/robot1_ws/build/ydlidar_ros2_driver', '--', '-j4', '-l4'], 'cwd': '/home/xumeng/robot1_ws/build/ydlidar_ros2_driver', 'env': OrderedDict([('USER', 'xumeng'), ('SSH_CLIENT', '192.168.31.57 49427 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '0'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/xumeng'), ('OLDPWD', '/home/xumeng/robot1_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'xumeng'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('XDG_SESSION_ID', '76'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'zh_CN.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('PWD', '/home/xumeng/robot1_ws/build/ydlidar_ros2_driver'), ('SSH_CONNECTION', '192.168.31.57 49427 192.168.31.235 22'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099758] (-) TimerEvent: {}
+[0.200221] (-) TimerEvent: {}
+[0.300686] (-) TimerEvent: {}
+[0.317440] (ydlidar_ros2_driver) StdoutLine: {'line': b'[ 75%] Built target ydlidar_ros2_driver_client\n'}
+[0.318100] (ydlidar_ros2_driver) StdoutLine: {'line': b'[ 75%] Building CXX object CMakeFiles/ydlidar_ros2_driver_node.dir/src/ydlidar_ros2_driver_node.cpp.o\n'}
+[0.400878] (-) TimerEvent: {}
+[0.501410] (-) TimerEvent: {}
+[0.601904] (-) TimerEvent: {}
+[0.702370] (-) TimerEvent: {}
+[0.802871] (-) TimerEvent: {}
+[0.903333] (-) TimerEvent: {}
+[1.003800] (-) TimerEvent: {}
+[1.104258] (-) TimerEvent: {}
+[1.204728] (-) TimerEvent: {}
+[1.305175] (-) TimerEvent: {}
+[1.405649] (-) TimerEvent: {}
+[1.506113] (-) TimerEvent: {}
+[1.606575] (-) TimerEvent: {}
+[1.707023] (-) TimerEvent: {}
+[1.807463] (-) TimerEvent: {}
+[1.907904] (-) TimerEvent: {}
+[2.008344] (-) TimerEvent: {}
+[2.108783] (-) TimerEvent: {}
+[2.209250] (-) TimerEvent: {}
+[2.309687] (-) TimerEvent: {}
+[2.410109] (-) TimerEvent: {}
+[2.510548] (-) TimerEvent: {}
+[2.610989] (-) TimerEvent: {}
+[2.711455] (-) TimerEvent: {}
+[2.811916] (-) TimerEvent: {}
+[2.912368] (-) TimerEvent: {}
+[3.012833] (-) TimerEvent: {}
+[3.113432] (-) TimerEvent: {}
+[3.213898] (-) TimerEvent: {}
+[3.314355] (-) TimerEvent: {}
+[3.414824] (-) TimerEvent: {}
+[3.515295] (-) TimerEvent: {}
+[3.615760] (-) TimerEvent: {}
+[3.716242] (-) TimerEvent: {}
+[3.816761] (-) TimerEvent: {}
+[3.917273] (-) TimerEvent: {}
+[4.017715] (-) TimerEvent: {}
+[4.119342] (-) TimerEvent: {}
+[4.219776] (-) TimerEvent: {}
+[4.320212] (-) TimerEvent: {}
+[4.421165] (-) TimerEvent: {}
+[4.521598] (-) TimerEvent: {}
+[4.622024] (-) TimerEvent: {}
+[4.722453] (-) TimerEvent: {}
+[4.823425] (-) TimerEvent: {}
+[4.923862] (-) TimerEvent: {}
+[5.024300] (-) TimerEvent: {}
+[5.124733] (-) TimerEvent: {}
+[5.225158] (-) TimerEvent: {}
+[5.325589] (-) TimerEvent: {}
+[5.426591] (-) TimerEvent: {}
+[5.527041] (-) TimerEvent: {}
+[5.627477] (-) TimerEvent: {}
+[5.727917] (-) TimerEvent: {}
+[5.828355] (-) TimerEvent: {}
+[5.928848] (-) TimerEvent: {}
+[6.029378] (-) TimerEvent: {}
+[6.129817] (-) TimerEvent: {}
+[6.230382] (-) TimerEvent: {}
+[6.330823] (-) TimerEvent: {}
+[6.431274] (-) TimerEvent: {}
+[6.531704] (-) TimerEvent: {}
+[6.632134] (-) TimerEvent: {}
+[6.732592] (-) TimerEvent: {}
+[6.833079] (-) TimerEvent: {}
+[6.933506] (-) TimerEvent: {}
+[7.033930] (-) TimerEvent: {}
+[7.134364] (-) TimerEvent: {}
+[7.234780] (-) TimerEvent: {}
+[7.335207] (-) TimerEvent: {}
+[7.435621] (-) TimerEvent: {}
+[7.536067] (-) TimerEvent: {}
+[7.636506] (-) TimerEvent: {}
+[7.736948] (-) TimerEvent: {}
+[7.837444] (-) TimerEvent: {}
+[7.937915] (-) TimerEvent: {}
+[8.038365] (-) TimerEvent: {}
+[8.138821] (-) TimerEvent: {}
+[8.239265] (-) TimerEvent: {}
+[8.339703] (-) TimerEvent: {}
+[8.440211] (-) TimerEvent: {}
+[8.541493] (-) TimerEvent: {}
+[8.642373] (-) TimerEvent: {}
+[8.744777] (-) TimerEvent: {}
+[8.777842] (ydlidar_ros2_driver) StderrLine: {'line': b'/home/xumeng/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp: In lambda function:\n'}
+[8.778863] (ydlidar_ros2_driver) StderrLine: {'line': b'/home/xumeng/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:192:54: warning: unused parameter \xe2\x80\x98request_header\xe2\x80\x99 [-Wunused-parameter]\n'}
+[8.779145] (ydlidar_ros2_driver) StderrLine: {'line': b'  192 |     [&laser](const std::shared_ptr<rmw_request_id_t> request_header,\n'}
+[8.779370] (ydlidar_ros2_driver) StderrLine: {'line': b'      |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~\n'}
+[8.779580] (ydlidar_ros2_driver) StderrLine: {'line': b'/home/xumeng/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:193:56: warning: unused parameter \xe2\x80\x98req\xe2\x80\x99 [-Wunused-parameter]\n'}
+[8.779784] (ydlidar_ros2_driver) StderrLine: {'line': b'  193 |   const std::shared_ptr<std_srvs::srv::Empty::Request> req,\n'}
+[8.779985] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\n'}
+[8.780177] (ydlidar_ros2_driver) StderrLine: {'line': b'/home/xumeng/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:194:51: warning: unused parameter \xe2\x80\x98response\xe2\x80\x99 [-Wunused-parameter]\n'}
+[8.780369] (ydlidar_ros2_driver) StderrLine: {'line': b'  194 |   std::shared_ptr<std_srvs::srv::Empty::Response> response) -> bool\n'}
+[8.780555] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~\n'}
+[8.841222] (ydlidar_ros2_driver) StderrLine: {'line': b'/home/xumeng/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp: In lambda function:\n'}
+[8.841860] (ydlidar_ros2_driver) StderrLine: {'line': b'/home/xumeng/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:202:54: warning: unused parameter \xe2\x80\x98request_header\xe2\x80\x99 [-Wunused-parameter]\n'}
+[8.842155] (ydlidar_ros2_driver) StderrLine: {'line': b'  202 |     [&laser](const std::shared_ptr<rmw_request_id_t> request_header,\n'}
+[8.842390] (ydlidar_ros2_driver) StderrLine: {'line': b'      |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~\n'}
+[8.842604] (ydlidar_ros2_driver) StderrLine: {'line': b'/home/xumeng/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:203:56: warning: unused parameter \xe2\x80\x98req\xe2\x80\x99 [-Wunused-parameter]\n'}
+[8.842808] (ydlidar_ros2_driver) StderrLine: {'line': b'  203 |   const std::shared_ptr<std_srvs::srv::Empty::Request> req,\n'}
+[8.843016] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\n'}
+[8.843645] (ydlidar_ros2_driver) StderrLine: {'line': b'/home/xumeng/robot1_ws/src/ydlidar_ros2_driver/src/ydlidar_ros2_driver_node.cpp:204:51: warning: unused parameter \xe2\x80\x98response\xe2\x80\x99 [-Wunused-parameter]\n'}
+[8.843935] (ydlidar_ros2_driver) StderrLine: {'line': b'  204 |   std::shared_ptr<std_srvs::srv::Empty::Response> response) -> bool\n'}
+[8.844155] (ydlidar_ros2_driver) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~\n'}
+[8.844930] (-) TimerEvent: {}
+[8.945300] (-) TimerEvent: {}
+[9.045749] (-) TimerEvent: {}
+[9.146207] (-) TimerEvent: {}
+[9.246659] (-) TimerEvent: {}
+[9.347118] (-) TimerEvent: {}
+[9.447606] (-) TimerEvent: {}
+[9.548113] (-) TimerEvent: {}
+[9.648591] (-) TimerEvent: {}
+[9.749176] (-) TimerEvent: {}
+[9.849642] (-) TimerEvent: {}
+[9.950159] (-) TimerEvent: {}
+[10.050619] (-) TimerEvent: {}
+[10.151098] (-) TimerEvent: {}
+[10.251568] (-) TimerEvent: {}
+[10.352043] (-) TimerEvent: {}
+[10.452502] (-) TimerEvent: {}
+[10.552971] (-) TimerEvent: {}
+[10.653570] (-) TimerEvent: {}
+[10.754428] (-) TimerEvent: {}
+[10.854934] (-) TimerEvent: {}
+[10.955985] (-) TimerEvent: {}
+[11.056974] (-) TimerEvent: {}
+[11.157443] (-) TimerEvent: {}
+[11.257876] (-) TimerEvent: {}
+[11.358288] (-) TimerEvent: {}
+[11.458707] (-) TimerEvent: {}
+[11.559133] (-) TimerEvent: {}
+[11.659559] (-) TimerEvent: {}
+[11.759988] (-) TimerEvent: {}
+[11.860422] (-) TimerEvent: {}
+[11.960864] (-) TimerEvent: {}
+[12.061397] (-) TimerEvent: {}
+[12.162034] (-) TimerEvent: {}
+[12.262470] (-) TimerEvent: {}
+[12.362896] (-) TimerEvent: {}
+[12.463390] (-) TimerEvent: {}
+[12.564010] (-) TimerEvent: {}
+[12.664454] (-) TimerEvent: {}
+[12.764908] (-) TimerEvent: {}
+[12.865394] (-) TimerEvent: {}
+[12.965853] (-) TimerEvent: {}
+[13.066332] (-) TimerEvent: {}
+[13.166831] (-) TimerEvent: {}
+[13.267286] (-) TimerEvent: {}
+[13.367708] (-) TimerEvent: {}
+[13.468117] (-) TimerEvent: {}
+[13.568545] (-) TimerEvent: {}
+[13.669039] (-) TimerEvent: {}
+[13.769450] (-) TimerEvent: {}
+[13.869876] (-) TimerEvent: {}
+[13.970618] (-) TimerEvent: {}
+[14.071239] (-) TimerEvent: {}
+[14.171724] (-) TimerEvent: {}
+[14.272148] (-) TimerEvent: {}
+[14.372584] (-) TimerEvent: {}
+[14.473033] (-) TimerEvent: {}
+[14.573449] (-) TimerEvent: {}
+[14.673937] (-) TimerEvent: {}
+[14.774355] (-) TimerEvent: {}
+[14.874917] (-) TimerEvent: {}
+[14.975414] (-) TimerEvent: {}
+[15.076141] (-) TimerEvent: {}
+[15.176702] (-) TimerEvent: {}
+[15.277151] (-) TimerEvent: {}
+[15.377574] (-) TimerEvent: {}
+[15.477990] (-) TimerEvent: {}
+[15.578401] (-) TimerEvent: {}
+[15.678830] (-) TimerEvent: {}
+[15.779243] (-) TimerEvent: {}
+[15.879702] (-) TimerEvent: {}
+[15.980125] (-) TimerEvent: {}
+[16.080927] (-) TimerEvent: {}
+[16.181384] (-) TimerEvent: {}
+[16.281821] (-) TimerEvent: {}
+[16.382228] (-) TimerEvent: {}
+[16.482644] (-) TimerEvent: {}
+[16.583083] (-) TimerEvent: {}
+[16.683626] (-) TimerEvent: {}
+[16.785534] (-) TimerEvent: {}
+[16.886003] (-) TimerEvent: {}
+[16.986956] (-) TimerEvent: {}
+[17.087409] (-) TimerEvent: {}
+[17.187913] (-) TimerEvent: {}
+[17.288381] (-) TimerEvent: {}
+[17.388831] (-) TimerEvent: {}
+[17.489374] (-) TimerEvent: {}
+[17.589849] (-) TimerEvent: {}
+[17.690320] (-) TimerEvent: {}
+[17.790788] (-) TimerEvent: {}
+[17.891382] (-) TimerEvent: {}
+[17.991836] (-) TimerEvent: {}
+[18.092261] (-) TimerEvent: {}
+[18.192683] (-) TimerEvent: {}
+[18.293139] (-) TimerEvent: {}
+[18.393556] (-) TimerEvent: {}
+[18.493981] (-) TimerEvent: {}
+[18.594416] (-) TimerEvent: {}
+[18.694838] (-) TimerEvent: {}
+[18.795438] (-) TimerEvent: {}
+[18.896065] (-) TimerEvent: {}
+[18.996537] (-) TimerEvent: {}
+[19.097006] (-) TimerEvent: {}
+[19.197472] (-) TimerEvent: {}
+[19.297917] (-) TimerEvent: {}
+[19.398362] (-) TimerEvent: {}
+[19.498807] (-) TimerEvent: {}
+[19.599593] (-) TimerEvent: {}
+[19.700158] (-) TimerEvent: {}
+[19.800634] (-) TimerEvent: {}
+[19.888592] (ydlidar_ros2_driver) StdoutLine: {'line': b'[100%] Linking CXX executable ydlidar_ros2_driver_node\n'}
+[19.900803] (-) TimerEvent: {}
+[20.001330] (-) TimerEvent: {}
+[20.102368] (-) TimerEvent: {}
+[20.202857] (-) TimerEvent: {}
+[20.303345] (-) TimerEvent: {}
+[20.403824] (-) TimerEvent: {}
+[20.504317] (-) TimerEvent: {}
+[20.605458] (-) TimerEvent: {}
+[20.705936] (-) TimerEvent: {}
+[20.806406] (-) TimerEvent: {}
+[20.906865] (-) TimerEvent: {}
+[21.007264] (-) TimerEvent: {}
+[21.044099] (ydlidar_ros2_driver) StdoutLine: {'line': b'[100%] Built target ydlidar_ros2_driver_node\n'}
+[21.074584] (ydlidar_ros2_driver) CommandEnded: {'returncode': 0}
+[21.078250] (ydlidar_ros2_driver) JobProgress: {'identifier': 'ydlidar_ros2_driver', 'progress': 'install'}
+[21.107594] (ydlidar_ros2_driver) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/xumeng/robot1_ws/build/ydlidar_ros2_driver'], 'cwd': '/home/xumeng/robot1_ws/build/ydlidar_ros2_driver', 'env': OrderedDict([('USER', 'xumeng'), ('SSH_CLIENT', '192.168.31.57 49427 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '0'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/xumeng'), ('OLDPWD', '/home/xumeng/robot1_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'xumeng'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('XDG_SESSION_ID', '76'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'zh_CN.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('PWD', '/home/xumeng/robot1_ws/build/ydlidar_ros2_driver'), ('SSH_CONNECTION', '192.168.31.57 49427 192.168.31.235 22'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[21.110339] (-) TimerEvent: {}
+[21.136796] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[21.139517] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[21.141704] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/lib/ydlidar_ros2_driver/ydlidar_ros2_driver_node\n'}
+[21.143071] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/lib/ydlidar_ros2_driver/ydlidar_ros2_driver_client\n'}
+[21.144795] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar.py\n'}
+[21.145473] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar_launch.py\n'}
+[21.145972] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar_launch_view.py\n'}
+[21.147081] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/G1.yaml\n'}
+[21.147572] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/G2.yaml\n'}
+[21.148303] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/G4.yaml\n'}
+[21.149145] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/G6.yaml\n'}
+[21.149706] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/GS2.yaml\n'}
+[21.150377] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/GS5.yaml\n'}
+[21.151047] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/TEA.yaml\n'}
+[21.152103] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/TG.yaml\n'}
+[21.152623] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/Tmini-Plus-SH.yaml\n'}
+[21.153118] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/Tmini.yaml\n'}
+[21.153357] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/X2.yaml\n'}
+[21.153855] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/X3.yaml\n'}
+[21.157106] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/X4-Pro.yaml\n'}
+[21.157802] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/X4.yaml\n'}
+[21.158199] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/sdm15.yaml\n'}
+[21.158415] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/ydlidar.yaml\n'}
+[21.158771] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/startup/initenv.sh\n'}
+[21.158978] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/config/ydlidar.rviz\n'}
+[21.159169] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ament_index/resource_index/package_run_dependencies/ydlidar_ros2_driver\n'}
+[21.159560] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ament_index/resource_index/parent_prefix_path/ydlidar_ros2_driver\n'}
+[21.159893] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/ament_prefix_path.sh\n'}
+[21.161235] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/ament_prefix_path.dsv\n'}
+[21.161599] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/path.sh\n'}
+[21.162050] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/path.dsv\n'}
+[21.162497] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.bash\n'}
+[21.163278] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.sh\n'}
+[21.163798] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.zsh\n'}
+[21.164313] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.dsv\n'}
+[21.164674] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Symlinking: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.dsv\n'}
+[21.190494] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ament_index/resource_index/packages/ydlidar_ros2_driver\n'}
+[21.191330] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/cmake/ydlidar_ros2_driverConfig.cmake\n'}
+[21.197346] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/cmake/ydlidar_ros2_driverConfig-version.cmake\n'}
+[21.198067] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/xumeng/robot1_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.xml\n'}
+[21.199990] (ydlidar_ros2_driver) CommandEnded: {'returncode': 0}
+[21.210523] (-) TimerEvent: {}
+[21.272671] (ydlidar_ros2_driver) JobEnded: {'identifier': 'ydlidar_ros2_driver', 'rc': 0}
+[21.274630] (-) EventReactorShutdown: {}

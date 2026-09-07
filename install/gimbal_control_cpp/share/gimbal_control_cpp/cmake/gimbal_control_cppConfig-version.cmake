@@ -1,0 +1,1 @@
+/home/xumeng/robot1_ws/build/gimbal_control_cpp/ament_cmake_core/gimbal_control_cppConfig-version.cmake
