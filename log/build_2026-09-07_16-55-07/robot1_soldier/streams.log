@@ -1,0 +1,18 @@
+[3.259s] Invoking command in '/home/xumeng/robot1_ws/build/robot1_soldier': AMENT_PREFIX_PATH=/home/xumeng/robot1_ws/install/gimbal_control_cpp:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/xumeng/robot1_ws/install/gimbal_control_cpp PYTHONPATH=/home/xumeng/robot1_ws/build/robot1_soldier/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/xumeng/robot1_ws/install/robot1_soldier/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/xumeng/robot1_ws/build/robot1_soldier/build --no-deps symlink_data
+[4.187s] running develop
+[4.894s] running egg_info
+[4.895s] writing robot1_soldier.egg-info/PKG-INFO
+[4.896s] writing dependency_links to robot1_soldier.egg-info/dependency_links.txt
+[4.896s] writing entry points to robot1_soldier.egg-info/entry_points.txt
+[4.897s] writing requirements to robot1_soldier.egg-info/requires.txt
+[4.897s] writing top-level names to robot1_soldier.egg-info/top_level.txt
+[4.904s] reading manifest file 'robot1_soldier.egg-info/SOURCES.txt'
+[4.907s] writing manifest file 'robot1_soldier.egg-info/SOURCES.txt'
+[4.911s] running build_ext
+[4.912s] Creating /home/xumeng/robot1_ws/install/robot1_soldier/lib/python3.10/site-packages/robot1-soldier.egg-link (link to .)
+[4.914s] Installing nav_goal_gateway script to /home/xumeng/robot1_ws/install/robot1_soldier/lib/robot1_soldier
+[4.915s] Installing position_publisher script to /home/xumeng/robot1_ws/install/robot1_soldier/lib/robot1_soldier
+[4.916s] 
+[4.916s] Installed /home/xumeng/robot1_ws/build/robot1_soldier
+[4.916s] running symlink_data
+[5.028s] Invoked command in '/home/xumeng/robot1_ws/build/robot1_soldier' returned '0': AMENT_PREFIX_PATH=/home/xumeng/robot1_ws/install/gimbal_control_cpp:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/xumeng/robot1_ws/install/gimbal_control_cpp PYTHONPATH=/home/xumeng/robot1_ws/build/robot1_soldier/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/xumeng/robot1_ws/install/robot1_soldier/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/xumeng/robot1_ws/build/robot1_soldier/build --no-deps symlink_data

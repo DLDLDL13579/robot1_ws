@@ -1,6 +1,6 @@
 robot_1/map_server:
   ros__parameters:
-    yaml_filename: /home/sunrise/robot1_ws/src/robot1_nav/maps/lab_map.yaml
+    yaml_filename: /home/xumeng/robot1_ws/src/robot1_nav/maps/lab_map.yaml
 
 robot_1/amcl:
   ros__parameters:

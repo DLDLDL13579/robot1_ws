@@ -1,0 +1,25 @@
+[3.927s] Invoking command in '/home/xumeng/robot1_ws/build/robot_driver': PYTHONPATH=/home/xumeng/robot1_ws/build/robot_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/xumeng/robot1_ws/install/robot_driver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/xumeng/robot1_ws/build/robot_driver/build --no-deps symlink_data
+[4.876s] running develop
+[5.583s] running egg_info
+[5.584s] creating robot_driver.egg-info
+[5.584s] writing robot_driver.egg-info/PKG-INFO
+[5.585s] writing dependency_links to robot_driver.egg-info/dependency_links.txt
+[5.585s] writing entry points to robot_driver.egg-info/entry_points.txt
+[5.586s] writing requirements to robot_driver.egg-info/requires.txt
+[5.586s] writing top-level names to robot_driver.egg-info/top_level.txt
+[5.587s] writing manifest file 'robot_driver.egg-info/SOURCES.txt'
+[5.593s] reading manifest file 'robot_driver.egg-info/SOURCES.txt'
+[5.595s] writing manifest file 'robot_driver.egg-info/SOURCES.txt'
+[5.600s] running build_ext
+[5.601s] Creating /home/xumeng/robot1_ws/install/robot_driver/lib/python3.10/site-packages/robot-driver.egg-link (link to .)
+[5.603s] Installing robot_driver_node script to /home/xumeng/robot1_ws/install/robot_driver/lib/robot_driver
+[5.604s] 
+[5.605s] Installed /home/xumeng/robot1_ws/build/robot_driver
+[5.605s] running symlink_data
+[5.605s] creating /home/xumeng/robot1_ws/install/robot_driver/share/ament_index
+[5.606s] creating /home/xumeng/robot1_ws/install/robot_driver/share/ament_index/resource_index
+[5.606s] creating /home/xumeng/robot1_ws/install/robot_driver/share/ament_index/resource_index/packages
+[5.606s] symbolically linking /home/xumeng/robot1_ws/build/robot_driver/resource/robot_driver -> /home/xumeng/robot1_ws/install/robot_driver/share/ament_index/resource_index/packages
+[5.606s] symbolically linking /home/xumeng/robot1_ws/build/robot_driver/package.xml -> /home/xumeng/robot1_ws/install/robot_driver/share/robot_driver
+[5.607s] creating /home/xumeng/robot1_ws/install/robot_driver/share/robot_driver/launch
+[5.607s] symbolically linking /home/xumeng/robot1_ws/build/robot_driver/launch/robot_driver_launch.py -> /home/xumeng/robot1_ws/install/robot_driver/share/robot_driver/launch

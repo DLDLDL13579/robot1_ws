@@ -5,7 +5,7 @@ from rclpy.node import Node
 from rclpy.qos import QoSProfile, ReliabilityPolicy, HistoryPolicy
 from sensor_msgs.msg import Imu, BatteryState
 from nav_msgs.msg import Odometry
-from geometry_msgs.msg import Quaternion, TransformStamped, Twist
+from geometry_msgs.msg import Quaternion, TransformStamped, Twist, Vector3Stamped
 from tf2_ros import TransformBroadcaster
 import serial
 import struct
@@ -54,6 +54,9 @@ class RobotDriverNode(Node):
         ns = f"{self.robot_namespace}/" if self.robot_namespace else ""
         self.odom_pub = self.create_publisher(Odometry, f"{ns}odom", 10)
         self.imu_pub = self.create_publisher(Imu, f"{ns}imu/data_raw", 10)
+        self.body_attitude_pub = self.create_publisher(
+            Vector3Stamped, f"{ns}imu/body_attitude", 10
+        )
         self.battery_pub = self.create_publisher(BatteryState, f"{ns}battery_state", 10)
         self.cmd_vel_sub = self.create_subscription(Twist, f'{ns}cmd_vel', self.cmd_vel_callback, 10)
 
@@ -87,6 +90,27 @@ class RobotDriverNode(Node):
         self._odom_yaw = 0.0  # radians, integrated from wz
         self._odom_yaw_init = False  # first frame hasnt set yaw yet
         self._last_odom_time = None
+                # Keep odom->base_link alive when the lower controller pauses telemetry.
+        self._tf_timer = self.create_timer(0.05, self._broadcast_odom_tf)
+
+    def _broadcast_odom_tf(self):
+        t = TransformStamped()
+        t.header.stamp = self.get_clock().now().to_msg()
+        t.header.frame_id = (
+            f"{self.robot_namespace}/odom"
+            if self.robot_namespace else "odom"
+        )
+        t.child_frame_id = (
+            f"{self.robot_namespace}/base_link"
+            if self.robot_namespace else "base_link"
+        )
+        t.transform.translation.x = self._odom_x
+        t.transform.translation.y = self._odom_y
+        t.transform.translation.z = 0.0
+        t.transform.rotation = quaternion_from_euler(
+            0.0, 0.0, self._odom_yaw
+        )
+        self.tf_broadcaster.sendTransform(t)
 
     def read_serial_callback(self):
         try:
@@ -215,6 +239,14 @@ class RobotDriverNode(Node):
                     imu_msg.angular_velocity.z = math.radians(gz) * self.slip_factor * self.angular_scale  # apply slip to yaw rate
                     imu_msg.orientation = quaternion_from_euler(0.0, 0.0, self._odom_yaw)  # 2D: roll=0, pitch=0
                     self.imu_pub.publish(imu_msg)
+                                        # Real MPU6050 attitude for gimbal stabilization only.
+                    body_attitude_msg = Vector3Stamped()
+                    body_attitude_msg.header.stamp = odom_msg.header.stamp
+                    body_attitude_msg.header.frame_id = imu_msg.header.frame_id
+                    body_attitude_msg.vector.x = roll
+                    body_attitude_msg.vector.y = pitch
+                    body_attitude_msg.vector.z = yaw
+                    self.body_attitude_pub.publish(body_attitude_msg)
 
                     # --- Publish Battery ---
                     bat_msg = BatteryState()
@@ -225,22 +257,24 @@ class RobotDriverNode(Node):
                     bat_msg.power_supply_status = BatteryState.POWER_SUPPLY_STATUS_UNKNOWN
                     self.battery_pub.publish(bat_msg)
 
-                    # --- Broadcast TF ---
-                    # ⚠️ 已禁用底盘自发布 TF (2026-07-28)
-                    # 单一权威源原则: odom → base_link 的 TF 现在完全由 robot_localization EKF 发布,
-                    # 因为 EKF 同时融合了本节点的 odom(twist) 和 imu/data_raw,
-                    # 能给出比底盘自身更平滑的位姿估计。底盘若同时发 TF 会和 EKF 冲突,
-                    # 触发 TF_REPEATED_DATA / 双源抖动。底盘只负责发原始 odom + imu 数据。
-                    # 保留 self.tf_broadcaster 与 import 以便回滚。
-                    t = TransformStamped()
-                    t.header.stamp = odom_msg.header.stamp
-                    t.header.frame_id = f"{self.robot_namespace}/odom" if self.robot_namespace else "odom"
-                    t.child_frame_id = f"{self.robot_namespace}/base_link" if self.robot_namespace else "base_link"
-                    t.transform.translation.x = self._odom_x
-                    t.transform.translation.y = self._odom_y
-                    t.transform.translation.z = 0.0
-                    t.transform.rotation = quaternion_from_euler(0.0, 0.0, self._odom_yaw)  # 2D: roll=0, pitch=0
-                    self.tf_broadcaster.sendTransform(t)
+                    # # --- Broadcast TF ---
+                    # # ⚠️ 已禁用底盘自发布 TF (2026-07-28)
+                    # # 单一权威源原则: odom → base_link 的 TF 现在完全由 robot_localization EKF 发布,
+                    # # 因为 EKF 同时融合了本节点的 odom(twist) 和 imu/data_raw,
+                    # # 能给出比底盘自身更平滑的位姿估计。底盘若同时发 TF 会和 EKF 冲突,
+                    # # 触发 TF_REPEATED_DATA / 双源抖动。底盘只负责发原始 odom + imu 数据。
+                    # # 保留 self.tf_broadcaster 与 import 以便回滚。
+                    # t = TransformStamped()
+                    # t.header.stamp = odom_msg.header.stamp
+                    # t.header.frame_id = f"{self.robot_namespace}/odom" if self.robot_namespace else "odom"
+                    # t.child_frame_id = f"{self.robot_namespace}/base_link" if self.robot_namespace else "base_link"
+                    # t.transform.translation.x = self._odom_x
+                    # t.transform.translation.y = self._odom_y
+                    # t.transform.translation.z = 0.0
+                    # t.transform.rotation = quaternion_from_euler(0.0, 0.0, self._odom_yaw)  # 2D: roll=0, pitch=0
+                    # self.tf_broadcaster.sendTransform(t)
+
+                    # TF is broadcast continuously by _broadcast_odom_tf().
 
                     # --- Consume frame ---
                     self.buffer = self.buffer[36:]

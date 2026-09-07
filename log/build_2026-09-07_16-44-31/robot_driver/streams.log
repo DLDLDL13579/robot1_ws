@@ -1,0 +1,17 @@
+[3.771s] Invoking command in '/home/xumeng/robot1_ws/build/robot_driver': PYTHONPATH=/home/xumeng/robot1_ws/build/robot_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/xumeng/robot1_ws/install/robot_driver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/xumeng/robot1_ws/build/robot_driver/build --no-deps symlink_data
+[4.753s] running develop
+[5.551s] running egg_info
+[5.553s] writing robot_driver.egg-info/PKG-INFO
+[5.554s] writing dependency_links to robot_driver.egg-info/dependency_links.txt
+[5.555s] writing entry points to robot_driver.egg-info/entry_points.txt
+[5.557s] writing requirements to robot_driver.egg-info/requires.txt
+[5.558s] writing top-level names to robot_driver.egg-info/top_level.txt
+[5.566s] reading manifest file 'robot_driver.egg-info/SOURCES.txt'
+[5.569s] writing manifest file 'robot_driver.egg-info/SOURCES.txt'
+[5.575s] running build_ext
+[5.577s] Creating /home/xumeng/robot1_ws/install/robot_driver/lib/python3.10/site-packages/robot-driver.egg-link (link to .)
+[5.580s] Installing robot_driver_node script to /home/xumeng/robot1_ws/install/robot_driver/lib/robot_driver
+[5.583s] 
+[5.584s] Installed /home/xumeng/robot1_ws/build/robot_driver
+[5.584s] running symlink_data
+[5.727s] Invoked command in '/home/xumeng/robot1_ws/build/robot_driver' returned '0': PYTHONPATH=/home/xumeng/robot1_ws/build/robot_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/xumeng/robot1_ws/install/robot_driver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/xumeng/robot1_ws/build/robot_driver/build --no-deps symlink_data

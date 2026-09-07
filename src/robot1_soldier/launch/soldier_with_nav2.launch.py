@@ -10,7 +10,7 @@ def generate_launch_description():
     soldier_launch = os.path.join(robot1_soldier_dir, "launch", "soldier.launch.py")
 
     # 启动 Nav2 的脚本
-    nav2_script = "/home/sunrise/robot1_ws/src/robot1_soldier/launch/start_nav2.sh"
+    nav2_script = "/home/xumeng/robot1_ws/src/robot1_soldier/launch/start_nav2.sh"
 
     return LaunchDescription([
         # 1. 启动 soldier.launch.py（底盘 + 定位 + map_relay）

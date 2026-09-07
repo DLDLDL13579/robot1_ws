@@ -1,0 +1,16 @@
+running develop
+running egg_info
+writing robot1_soldier.egg-info/PKG-INFO
+writing dependency_links to robot1_soldier.egg-info/dependency_links.txt
+writing entry points to robot1_soldier.egg-info/entry_points.txt
+writing requirements to robot1_soldier.egg-info/requires.txt
+writing top-level names to robot1_soldier.egg-info/top_level.txt
+reading manifest file 'robot1_soldier.egg-info/SOURCES.txt'
+writing manifest file 'robot1_soldier.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/xumeng/robot1_ws/install/robot1_soldier/lib/python3.10/site-packages/robot1-soldier.egg-link (link to .)
+Installing nav_goal_gateway script to /home/xumeng/robot1_ws/install/robot1_soldier/lib/robot1_soldier
+Installing position_publisher script to /home/xumeng/robot1_ws/install/robot1_soldier/lib/robot1_soldier
+
+Installed /home/xumeng/robot1_ws/build/robot1_soldier
+running symlink_data

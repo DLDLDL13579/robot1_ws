@@ -19,5 +19,10 @@ setup(
     maintainer='sunrise', maintainer_email='sunrise@robot',
     description='Soldier robot localization node', license='Apache-2.0',
     tests_require=['pytest'],
-    entry_points={'console_scripts': ['position_publisher = robot1_soldier.position_publisher:main']},
+    entry_points={
+        'console_scripts': [
+            'position_publisher = robot1_soldier.position_publisher:main',
+            'nav_goal_gateway = robot1_soldier.nav_goal_gateway:main',
+        ],
+    },
 )
