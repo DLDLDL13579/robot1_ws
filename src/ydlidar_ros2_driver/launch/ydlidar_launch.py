@@ -73,8 +73,8 @@ def generate_launch_description():
             '--x', '0.0',
             '--y', '0.0',
             '--z', '0.02',
-            '--roll', '3.14159',   # <--- 绕 X 轴强行翻面，解除镜像
-            '--pitch', '0.0',
+            '--roll', '0.0',
+            '--pitch', '3.14159',  # 2026-09-08 翻面+180度偏航补偿(Rz(pi)*Rx(pi)=Ry(pi)): 修正激光0度朝向指向车尾导致车向反转
             '--yaw', '0.0',
             '--frame-id', base_link_frame,
             '--child-frame-id', frame_id_value
