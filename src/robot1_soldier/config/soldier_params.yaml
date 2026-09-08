@@ -27,8 +27,8 @@ robot_1/amcl:
     pf_z: 0.99
     
     # --- 核心：大幅提高更新频率（防止打滑后飘走不纠偏） ---
-    update_min_d: 0.0            # 2026-09-08 每帧激光都更新(5Hz TF刷新, 消除RViz丢帧/静态卡顿)
-    update_min_a: 0.0
+    update_min_d: 0.001            # 2026-09-08 每帧激光都更新(5Hz TF刷新, 消除RViz丢帧/静态卡顿)
+    update_min_a: 0.001
     
     # --- 激光雷达数据过滤 ---
     laser_min_range: 0.12        # 过滤贴地杂波
