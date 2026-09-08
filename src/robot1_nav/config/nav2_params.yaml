@@ -62,13 +62,13 @@ robot_1/controller_server:
       max_vel_x: 0.25
       min_vel_y: 0.0
       max_vel_y: 0.0
-      max_vel_theta: 0.6
+      max_vel_theta: 1.0
       min_speed_xy: 0.0
       min_speed_theta: 0.8
       max_speed_xy: 0.25
       acc_lim_x: 0.25
       acc_lim_y: 0.0
-      acc_lim_theta: 3.0
+      acc_lim_theta: 8.0
       decel_lim_x: -0.5
       decel_lim_y: 0.0
       decel_lim_theta: -2.0
@@ -139,7 +139,7 @@ robot_1/velocity_smoother:
     smoothing_frequency: 20.0
     scale_velocities: False
     feedback: "OPEN_LOOP"
-    max_velocity: [0.35, 0.0, 0.6]
+    max_velocity: [0.35, 0.0, 1.0]
     min_velocity: [-0.35, 0.0, -1.2]
     max_accel: [0.5, 0.0, 2.0]
     max_decel: [-0.5, 0.0, -2.0]
